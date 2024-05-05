@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>妇女保健 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/5. 妇女保健统计指标正确的是 【单选题】</p>
+        <p>A．孕产妇死亡率=当年孕产妇死亡率/当然活产儿率×100，000/10</p>
+        <p>B．新生儿死亡率=当年新生儿死亡数/当年新生儿出生总数×1000%</p>
+        <p>C．住院分娩率=当年住院分娩的孕产妇人数/当年孕产妇总数×100%</p>
+        <p>D．产前检查率=当年产前检查的孕产妇人数/当年活产儿数</p>
+        <p>E．普查率=期内实查人数/期内应查人数×1000%</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 妇女保健工作范围包括 【多选题】</p>
+        <p>A．妇女各期检查</p>
+        <p>B．孕产妇系统管理，提高围生期保健质量</p>
+        <p>C．计划生育指导</p>
+        <p>D．常见妇女病及恶性肿瘤的普查普治</p>
+        <p>E．贯彻落实妇女劳动保健制度</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 围生期保健包括 【多选题】</p>
+        <p>A．妊娠期</p>
+        <p>B．分娩期</p>
+        <p>C．产褥期</p>
+        <p>D．哺乳期</p>
+        <p>E．新生儿期</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、有新生儿期吗？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 母乳喂养的有点有 【多选题】</p>
+        <p>A．母乳易消化和吸收</p>
+        <p>B．增强机体免疫力</p>
+        <p>C．防止产后出血</p>
+        <p>D．促进婴儿心理健康</p>
+        <p>E．降低母亲乳腺癌的危险性</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 哺乳期保健人员的职责有 【多选题】</p>
+        <p>A．定期访视</p>
+        <p>B．评估母亲身心状况</p>
+        <p>C．指导计划生育及用药</p>
+        <p>D．评估婴儿生长发育</p>
+        <p>E．给予婴儿接种免疫疫苗</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：ABCD<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

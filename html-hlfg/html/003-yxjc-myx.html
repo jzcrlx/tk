@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>免疫器官(共2题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">属于中枢免疫器官的是</div>
+                <div class="layui-input-block">
+
+                    <p>A.淋巴结</p>
+
+                    <p>B.胸腺</p>
+
+                    <p>C.脾脏</p>
+
+                    <p>D.阑尾</p>
+
+                    <p>E.扁桃体</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：B</p>
+                    <p>题目解析：免疫器官由中枢免疫器官和外周免疫器官两部分组成：中枢免疫器官包括胸腺和骨髓，外周免疫器官包括脾脏、淋巴结、阑尾和扁桃体等。A、C、D、E均为外周免疫器官，可以排除。故选B。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">患儿，女，出生后表现持续性鹅口疮，6个月后因真菌性肺炎死亡。尸检发现其胸腺发育不全。此患儿发生持续感染主要由于</div>
+                <div class="layui-input-block">
+
+                    <p>A.继发性免疫缺陷</p>
+
+                    <p>B.细胞免疫缺陷</p>
+
+                    <p>C.体液免疫缺陷</p>
+
+                    <p>D.吞噬细胞缺陷</p>
+
+                    <p>E.补体系统缺陷</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：B</p>
+                    <p>题目解析：先天性胸腺发育不全（DiGeorge综合征）是典型的原发性T细胞缺陷。患者胸腺、甲状旁腺、心脏及主动脉弓等多种器官发育障碍，主要免疫学异常包括外周血中无T细胞或T细胞数减少、缺乏T细胞应答，B细胞数正常，抗体水平正常或降低。该病患者对分枝杆菌、病毒和真菌的易感性增加。分析题干，患儿出生后不久就表现持续性鹅口疮真菌感染，后因真菌性肺炎死亡，说明患儿免疫力极为低下，对真菌易感性增加，尸检发现其胸腺发育不全，严重影响外周血中T细胞的数量，而T细胞主要介导细胞免疫，故选B。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

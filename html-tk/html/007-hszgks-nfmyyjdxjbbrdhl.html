@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>痛风病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/2. 患者男性，50岁，下班后与朋友聚餐，很晚回家休息。午夜突发左脚第1跖趾关节剧痛，约3小时后局部出现红、肿、热、痛和活动困难，遂来急诊就诊。检查血尿酸为500mol/L；X线提示：可见非特征性软组织肿胀。患者可能诊断是 【单选题】</p>
+        <p>A.痛风</p>
+        <p>B.假性痛风</p>
+        <p>C.风湿性关节炎</p>
+        <p>D.类风湿性关节炎</p>
+        <p>E.化脓性关节炎</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/2. 有关痛风的叙述下列错误的是： 【单选题】</p>
+        <p>A.急性关节炎为痛风的首发症状</p>
+        <p>B.痛风石是痛风的特征性临床表现。常见于耳轮、跖趾、指间和掌指关节。</p>
+        <p>C.受累关节局部皮肤不会出现脱屑和瘙痒。</p>
+        <p>D.多饮水，每天2000ml以上，增加尿酸的排泄</p>
+        <p>E.痛风是嘌呤代谢障碍引起的代谢性疾病</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+﻿/* 页面底色 */
+
+html,
+body {
+    background: #7FFFD4;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    background-color: #7FFFD4;
+    /* margin-top:50px; */
+}
+
+
+/* 显示答案 */
+
+div.divXSDA {
+    background: #8dc63f;
+    font-size: medium;
+    color: white;
+    /* display: inline-block; */
+    text-align: center;
+    border-radius: 3px;
+    line-height: 1.5em;
+    width: 8em;
+    cursor: pointer;
+}
+
+
+/* 答案内容 */
+
+div.datas {
+    color: blue;
+}
+
+div.form-label {
+    margin: 0 8px 30px 8px;
+    font-size: medium;
+}
+
+
+
+/* 二维码样式 */
+
+.bottom-qrcode {
+    background-color: white;
+    position: fixed;
+    color: blue;
+    bottom: calc(25% - 34px);
+    right: 0px;
+    font-size: medium;
+    line-height: 2em;
+    line-height: 0;
+    z-index: 100;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 28px;
+    border-radius: 8px;
+}
+
+.panel-body {
+    margin: 6px;
+}
+
+#showTopBack {
+    /* 返回与顶端*/
+    background-color: #fff;
+    position: fixed;
+    color: #008000;
+    bottom: 25%;
+    right: 0px;
+    font-size: medium;    
+    z-index: 100;
+    cursor: pointer;
+    width: 24px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid rgb(200, 200, 200);
+    text-decoration: none;
+    line-height: 1.8em;   
+}
+
+#showTopBack :visited{
+    /*点击后不改颜色*/
+    color: #008000;
+}
+
+.-myBorder- {   
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+
+/* 题目列表 */
+
+#tm-and-but {
+    /* background-color: #fff; */
+    position: fixed;
+    text-align: center;
+    color: blue;
+    bottom: 0px;
+    /* font-size:20px; */
+    line-height: 1.5em;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+
+/* 控制显示题表、上题、下题、答案等 */
+
+#div-but {
+    display: grid;
+    /* margin: 0px 4px 0px 4px; */
+    grid-template-columns: auto auto auto auto auto;
+    /* margin-bottom: 5px; */
+    width: 100%;
+    line-height: 2em;
+}
+
+
+/* 每一个But样式 */
+
+.butctrl {
+    border-radius: 3px;
+    color: white;
+    background: #4CAF50;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#numToClass {
+    /* 题表样式 */
+    background: moccasin;
+    border-radius: 3px;
+    margin-bottom: 0px;
+}
+
+#numToClass button {
+    width: auto;
+    margin: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>病毒感染的检查方法 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 不适用于培养病毒的方法是 【单选题】</p>
+        <p>A.适龄鸡胚接种</p>
+        <p>B.传代细胞培养</p>
+        <p>C.组织器官培养</p>
+        <p>D.易感动物接种</p>
+        <p>E.人工合成培基</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、病毒胞内寄生</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 不能用于检测抗病毒抗体的方法是 【单选题】</p>
+        <p>A.ELISA</p>
+        <p>B.中和试验</p>
+        <p>C.红细胞凝集试验</p>
+        <p>D.血凝抑制试验</p>
+        <p>E.补体结合试验</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、应该是血凝抑制试验</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 用活疫苗进行预防接种，可有效控制的病毒性疾病是 【单选题】</p>
+        <p>A.狂犬病</p>
+        <p>B.脊髓灰质炎</p>
+        <p>C.艾滋病(AIDS)</p>
+        <p>D.乙型肝炎</p>
+        <p>E.流行性乙型脑炎</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 检测病毒病进行微生物学检查时，不是标本采集原则的是 【单选题】</p>
+        <p>A.无菌操作</p>
+        <p>B.发病早期采集</p>
+        <p>C.采集病变部位标本</p>
+        <p>D.查抗体时，采早期血清即可</p>
+        <p>E.尽快送检，暂保存时放-70℃</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 目前，病毒分离培养最常用的方法是 【单选题】</p>
+        <p>A.肉汤培养基培养</p>
+        <p>B.鸡胚培养</p>
+        <p>C.细胞培养</p>
+        <p>D.动物接种</p>
+        <p>E.人体接种</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、p231 细胞培养法为病毒分离鉴定最常用的方法</p>
+            <p>2、病毒是寄生</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

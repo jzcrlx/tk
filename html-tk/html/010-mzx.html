@@ -1,0 +1,625 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>体液平衡的监控 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/47. 外科手术病人需注意补充液体，维持有效循环血容量的原因有 【单选题】</p>
+        <p>A.术前禁食水</p>
+        <p>B.胃肠道准备</p>
+        <p>C.术中开放胸．腹腔导致体液丢失</p>
+        <p>D.手术失血</p>
+        <p>E.以上都是</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/47. 高钠血症是指血清钠浓度高于多少 【单选题】</p>
+        <p>A.150mmol/L</p>
+        <p>B.145mmol/L</p>
+        <p>C.140mmol/L</p>
+        <p>D.135mmol/L</p>
+        <p>E.130mmol/L</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、高于145---高钠 低于135---低钠
+            </p>
+            <p>2、135_145</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/47. 低钾血症是指血清钾浓度低于多少 【单选题】</p>
+        <p>A.5.0mmol/L</p>
+        <p>B.4.5mmol/L</p>
+        <p>C.4.0mmol/L</p>
+        <p>D.3.5mmol/L</p>
+        <p>E.3.0mmol/L</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、是3.5到5.5吧</p>
+            <p>2、3.5/4.5</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/47. 血液高渗状态是指血浆渗透浓度大于 【单选题】</p>
+        <p>A.320mOsm/kg</p>
+        <p>B.310mOsm/kg</p>
+        <p>C.300mOsm/kg</p>
+        <p>D.290mOsm/kg</p>
+        <p>E.280mOsm/kg</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、血浆高渗状态的定义：指血浆渗透浓度大于320</p>
+            <p>2、280-310</p>
+            <p>3、应该是280~310，所以是大于310</p>
+            <p>4、麻醉学，第三版，146页 高于310为高渗
+            </p>
+            <p>5、正常范围280-310，高渗＞320</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/47. pH＜7.35，BE＜-3mmol/L或SB＜21mmol/L应诊断为 【单选题】</p>
+        <p>A.代谢性酸中毒</p>
+        <p>B.代谢性碱中毒</p>
+        <p>C.呼吸性酸中毒</p>
+        <p>D.呼吸性碱中毒</p>
+        <p>E.代谢性酸中毒合并呼吸性酸中毒</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、BE指标反映的是代谢性因素</p>
+            <p>2、ph值降低，sb降低</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/47. 低蛋白血症患者适合输注 【单选题】</p>
+        <p>A.全血</p>
+        <p>B.浓缩红细胞</p>
+        <p>C.白细胞</p>
+        <p>D.人血清白蛋白</p>
+        <p>E.免疫球蛋白</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/47. 下列哪项不是输血后溶血反应的临床表现 【单选题】</p>
+        <p>A.心前区压痛</p>
+        <p>B.肩部剧痛</p>
+        <p>C.呼吸困难</p>
+        <p>D.循环休克</p>
+        <p>E.血红蛋白尿</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/47. 低钠血症是指血清钠浓度低于多少 【单选题】</p>
+        <p>A.150mmol/L</p>
+        <p>B.145mmol/L</p>
+        <p>C.140mmol/L</p>
+        <p>D.135mmol/L</p>
+        <p>E.130mmol/L</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/47. 高钾血症是指血清钾浓度高于多少 【单选题】</p>
+        <p>A.6.0mmol/L</p>
+        <p>B.5.5mmol/L</p>
+        <p>C.5.0mmol/L</p>
+        <p>D.4.5mmol/L</p>
+        <p>E.4.0mmol/L</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、3.5-5.5</p>
+            <p>2、低钾--低于3.5 高钾--高于5.5
+            </p>
+            <p>3、3.5-5.5</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/47. 血液低渗状态是指血浆渗透浓度小于 【单选题】</p>
+        <p>A.320mOsm/kg</p>
+        <p>B.310mOsm/kg</p>
+        <p>C.300mOsm/kg</p>
+        <p>D.290mOsm/kg</p>
+        <p>E.280mOsm/kg</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、280-320</p>
+            <p>2、血液低渗状态p130 280</p>
+            <p>3、p128第四版麻醉 280-310
+            </p>
+            <p>4、不是290吗？
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/47. PCO2是指 【单选题】</p>
+        <p>A.血细胞所结合的二氧化碳</p>
+        <p>B.血浆中所溶解的二氧化碳</p>
+        <p>C.血浆中所溶解的二氧化碳总量</p>
+        <p>D.血浆中物理溶解的二氧化碳所产生的压力</p>
+        <p>E.血细胞结合的二氧化碳产生的压力</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、物理，压力</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/47. pH＞7.45，BE＞3mmol/L或SB＞27mmol/L应诊断为 【单选题】</p>
+        <p>A.代谢性酸中毒</p>
+        <p>B.代谢性碱中毒</p>
+        <p>C.呼吸性酸中毒</p>
+        <p>D.呼吸性碱中毒</p>
+        <p>E.代谢性酸中毒合并呼吸性酸中毒</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、be反应代谢因素</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/47. 大量输血的有出血倾向者适合输注 【单选题】</p>
+        <p>A.免疫球蛋白</p>
+        <p>B.洗涤红细胞</p>
+        <p>C.人血清白蛋白</p>
+        <p>D.白细胞</p>
+        <p>E.血小板</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、出血倾向</p>
+            <p>2、出血倾向 血小板</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/47. 下列哪项不是大量输血所引起的并发症 【单选题】</p>
+        <p>A.稀释性血小板减少症</p>
+        <p>B.高血钙</p>
+        <p>C.高血钾</p>
+        <p>D.低温</p>
+        <p>E.酸碱平衡失调</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、低钙血症，因为库存血中抗凝剂枸橼酸钠可与钙离子络合。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/47. 人体的细胞内液约占体重的 【单选题】</p>
+        <p>A.40％</p>
+        <p>B.2/3</p>
+        <p>C.30％</p>
+        <p>D.1/3</p>
+        <p>E.20％</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、总水量的2/3 体重的40%</p>
+            <p>2、细胞外液占20%</p>
+            <p>3、40% 20%</p>
+            <p>4、人体的细胞内液约占体重的40％，细胞外液占60%</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/47. 成年男性血管内液约占体重的％ 【单选题】</p>
+        <p>A.60</p>
+        <p>B.40</p>
+        <p>C.20</p>
+        <p>D.10</p>
+        <p>E.5</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第四版p123的图有</p>
+            <p>2、ICF 60 ISF 15 IVF 5</p>
+            <p>3、血管内液属于细胞外液，细胞外液占体重的20％，而且血管内液又占细胞外液的1/4，所以为体重的5％</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/47. 产生渗透和渗透压的必备条件 【单选题】</p>
+        <p>A.分子和溶液</p>
+        <p>B.溶液和细胞膜</p>
+        <p>C.蛋白分子和毛细血管</p>
+        <p>D.溶液和半透膜</p>
+        <p>E.半透膜和蛋白分子</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/47. 细胞内液（ICF）的主要渗透离子为 【单选题】</p>
+        <p>A.钠离子</p>
+        <p>B.钾离子</p>
+        <p>C.钙离子</p>
+        <p>D.镁离子</p>
+        <p>E.氯离子</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/47. 血液和组织液之间的有效渗透离子为 【单选题】</p>
+        <p>A.葡萄糖</p>
+        <p>B.尿素</p>
+        <p>C.二氧化碳</p>
+        <p>D.Na+</p>
+        <p>E.蛋白质</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、血管壁属于半透膜，蛋白质分子不易通过，其浓度变化可以影响血管血管内外水的移动而产生渗透现象，称之为有效渗透离子。</p>
+            <p>2、有效 能产生渗透现象 无效 自由通过膜</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/47. 正常生理条件下影响血管内外水分布的因素主要为 【单选题】</p>
+        <p>A.组织间隙静水压．血浆胶体渗透压</p>
+        <p>B.毛细血管静水压．组织间隙胶体渗透压</p>
+        <p>C.毛细血管静水压．组织间隙静水压</p>
+        <p>D.组织间隙静水压．组织间隙胶体渗透压</p>
+        <p>E.血浆胶体渗透压．组织间隙胶体渗透压</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/47. 临床常见的高渗状态为 【单选题】</p>
+        <p>A.高钠血症．高钙血症</p>
+        <p>B.高血糖．高钙血症</p>
+        <p>C.高钠血症．高氯血症</p>
+        <p>D.高血糖．高氯血症</p>
+        <p>E.高钠血症．高血糖</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、p130，第四版</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/47. 重度低渗性缺水已有休克，抢救时一般先输给 【单选题】</p>
+        <p>A.5％葡萄糖水200～300ml</p>
+        <p>B.0.45％氯化钠溶液200～300ml</p>
+        <p>C.10％葡萄糖水200～300ml</p>
+        <p>D.5％高渗盐水200～300ml</p>
+        <p>E.0.9％氯化钠溶液200～300ml</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/47. 下列哪项易导致低渗性脱水 【单选题】</p>
+        <p>A.大量出汗</p>
+        <p>B.急性肠梗阻</p>
+        <p>C.弥漫性腹膜炎</p>
+        <p>D.急性腹泻</p>
+        <p>E.应用大量噻嗪类利尿药．依他尼酸或呋塞米</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、腹泻也是鸭</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/47. 在血浆胶体渗透压中，下列哪项起主要作用 【单选题】</p>
+        <p>A.纤维蛋白原</p>
+        <p>B.白蛋白</p>
+        <p>C.球蛋白</p>
+        <p>D.组织胺</p>
+        <p>E.葡萄糖</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/47. 下列哪项心电图改变估计不是高钾血症的改变 【单选题】</p>
+        <p>A.T波高尖</p>
+        <p>B.QRS波延长</p>
+        <p>C.PR间期延长</p>
+        <p>D.U波出现</p>
+        <p>E.QT间期延长</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、低钾</p>
+            <p>2、低钾血症：出现U波，TU融合，出现ST段下移和T波倒置。高钾血症：T波高尖，P-R间期延长，QRS波增宽</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/47. 低渗性缺水的症状，下列哪项错误 【单选题】</p>
+        <p>A.疲乏．头晕</p>
+        <p>B.手足麻木</p>
+        <p>C.血压下降</p>
+        <p>D.直立性晕倒</p>
+        <p>E.常有口渴</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/47. 下列哪一种溶液不属于高渗性溶液 【单选题】</p>
+        <p>A.3％氯化钠溶液</p>
+        <p>B.10％葡萄糖溶液</p>
+        <p>C.20％甘露醇溶液</p>
+        <p>D.10％甘油溶液</p>
+        <p>E.Butler液</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、Butler液是等渗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/47. 患者因左下肢坏疽拟行截肢术。入院后昏迷，呼出气有“烂苹果”味昏迷的原因可能是 【单选题】</p>
+        <p>A.脑出血</p>
+        <p>B.高钠血症</p>
+        <p>C.低血糖血症</p>
+        <p>D.脑栓塞</p>
+        <p>E.高血糖血症</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、酮症酸中毒</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/47. 患者因左下肢坏疽拟行截肢术。入院后昏迷，呼出气有“烂苹果”味病史中可能有 【单选题】</p>
+        <p>A.高血压</p>
+        <p>B.冠心病</p>
+        <p>C.糖尿病</p>
+        <p>D.慢性肾炎</p>
+        <p>E.风湿性心脏病</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、酮症酸中毒</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/47. 患者因左下肢坏疽拟行截肢术。入院后昏迷，呼出气有“烂苹果”味下列哪项检查有助于确诊 【单选题】</p>
+        <p>A.血气分析．血电解质</p>
+        <p>B.血糖．酮体．尿糖</p>
+        <p>C.血尿常规</p>
+        <p>D.脑部CT．心电图</p>
+        <p>E.脑电图．心电图</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/47. 患者因左下肢坏疽拟行截肢术。入院后昏迷，呼出气有“烂苹果”味比较合适的治疗措施为 【单选题】</p>
+        <p>A.神经外科手术</p>
+        <p>B.给予碳酸氢钠</p>
+        <p>C.给予10％葡萄糖</p>
+        <p>D.给予胰岛素．碳酸氢钠及氯化钾</p>
+        <p>E.不做处理而行截肢手术</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/47. 患者因左下肢坏疽拟行截肢术。入院后昏迷，呼出气有“烂苹果”味治疗中应严密观察的项目为 【单选题】</p>
+        <p>A.心电图</p>
+        <p>B.脑电图</p>
+        <p>C.尿糖</p>
+        <p>D.血糖．血电解质及血pH</p>
+        <p>E.尿钠</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/47. 高钾血症的治疗措施有 【多选题】</p>
+        <p>A.应用钙剂</p>
+        <p>B.用25％～50％葡萄糖溶液50～100ml加胰岛素10U静滴</p>
+        <p>C.速尿静注</p>
+        <p>D.安体舒通静注</p>
+        <p>E.5％碳酸氢钠100～200ml静滴</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：ABCE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、安体舒通为保钾利尿剂</p>
+            <p>2、葡萄糖加胰岛素 促进糖原合成，有利于钾离子内流 高钾血症一般合并代谢性酸中毒，可合用碳酸氢钠维持ph稳定
+            </p>
+            <p>3、碳酸氢钠也可以促进钾向胞内转移</p>
+            <p>4、安体舒通就是螺内酯</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/47. 下列属于术中所需的液体量 【多选题】</p>
+        <p>A.基础生理需要量</p>
+        <p>B.术前累计丢失量</p>
+        <p>C.术中继续损失量</p>
+        <p>D.药物性血管扩张量</p>
+        <p>E.第三间隙缺失量</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/47. 下列属于第三间隙的有 【多选题】</p>
+        <p>A.组织间</p>
+        <p>B.血管内</p>
+        <p>C.脑脊液</p>
+        <p>D.胸腔液</p>
+        <p>E.关节液</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：CDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/47. 代谢性碱中毒的治疗原则有哪些 【多选题】</p>
+        <p>A.病因治疗</p>
+        <p>B.纠正电解质紊乱</p>
+        <p>C.过度换气</p>
+        <p>D.严重碱中毒者，可直接补充酸</p>
+        <p>E.一般可给予适量的平衡液</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：ABD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么不能给予适量平衡液</p>
+            <p>2、什么？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/47. 体液电解质平衡 </p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：体液电解质平衡是指细胞内外液中电解质组成及其量和分布保持在一定范围内的平衡状态。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/47. 渗透压 </p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：渗透压是需要抵消溶质移动所需施加的压力。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、透压（osmoticpressure）是溶液的一种基本特性。当用半透膜隔开两种不同浓度的同种溶液时，则水分子从浓度低的一侧通过半透膜向浓度高的一侧扩散，这种现象称渗透现象。产生这种渗透作用的力称渗透压：渗透压就是指溶液中的溶质颗粒通过半透膜吸引水分子的力量。渗透压的大小与溶液中溶质颗粒数目成正比；而与溶质的种类及颗粒的大小无关。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/47. 酸中毒 </p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：酸中毒是引起酸在体内潴留．可导致酸血症的病理生理过程。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、 酸中毒是指体内血液和组织中酸性物质的堆积，其本质是血液中氢离子浓度上升、pH值下降。在病理情况下，当体内[BHCO3]减少或[H2CO3]增多时，均可使[BHCO3]/[H2CO3]比值减少，引起血液的pH值降低，称为酸中毒。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/47. 酸血症 </p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：酸血症是指血液的pH＜7.35。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>41/47. 什么情况下第三间隙液会增多？ </p>
+        <div class="divXSDA" id="showAndHideButton41" onclick="showAndHideButton('data41','showAndHideButton41')">显示答案</div>
+        <div class="datas" id="data41" style="display: none;">
+            <p id='ptockda'>参考答案：在病理性情况下，多种原因可导致第三间隙体液大量积聚，如创伤．炎症所致的局部水肿；肠麻痹．肠梗阻时胃肠道内体液潴留；以及炎症等病理状态下的胸腔和腹腔积液则甚为可观，可导致体液平衡严重失常。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>42/47. 代谢性碱中毒的临床表现有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton42" onclick="showAndHideButton('data42','showAndHideButton42')">显示答案</div>
+        <div class="datas" id="data42" style="display: none;">
+            <p id='ptockda'>参考答案：代谢性碱中毒的临床表现为容量不足．低钾．低氯性碱中毒。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>43/47. 急性呼吸性酸中毒的治疗原则是什么？ </p>
+        <div class="divXSDA" id="showAndHideButton43" onclick="showAndHideButton('data43','showAndHideButton43')">显示答案</div>
+        <div class="datas" id="data43" style="display: none;">
+            <p id='ptockda'>参考答案：急性呼吸性酸中毒的治疗原则是使CO2迅速有效地排出和有效地给氧。积极处理原因，保持呼吸道通畅，确保通气功能，如面罩加压辅助通气．人工呼吸，必要时使用呼吸机；呼吸中枢抑制者可适当使用呼吸中枢兴奋剂；一般不主张使用碱性药物。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>44/47. 二氧化碳排出综合征的临床表现是什么？ </p>
+        <div class="divXSDA" id="showAndHideButton44" onclick="showAndHideButton('data44','showAndHideButton44')">显示答案</div>
+        <div class="datas" id="data44" style="display: none;">
+            <p id='ptockda'>参考答案：二氧化碳排出综合征的表现为血压下降，心动过缓，心律失常，甚至心跳停止。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>45/47. 论述高钾血症的治疗措施。 </p>
+        <div class="divXSDA" id="showAndHideButton45" onclick="showAndHideButton('data45','showAndHideButton45')">显示答案</div>
+        <div class="datas" id="data45" style="display: none;">
+            <p id='ptockda'>参考答案：治疗以去除病因为主，并停止钾的摄入，常见的治疗措施有：①应用钙剂，用5％氯化钙或10％葡萄糖酸钙10～20ml静注，必要时可重复使用；②用25％～50％葡萄糖溶液50～100ml加胰岛素10U静滴，约30分钟滴完；③5％碳酸氢钠静滴100～200ml，此法对代谢性酸中毒合并高血钾病人更为有效；④高渗盐水具有对抗高血钾的毒性作用，对伴有低钠脱水患者效果较好；⑤用排钾利尿剂，对肾功能不全病人则可用血液透析法；⑥适当营养支持，纠正负氮平衡。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>46/47. 论述液体治疗的实施方法。 </p>
+        <div class="divXSDA" id="showAndHideButton46" onclick="showAndHideButton('data46','showAndHideButton46')">显示答案</div>
+        <div class="datas" id="data46" style="display: none;">
+            <p id='ptockda'>参考答案：（1）确定输液的量和成分：①优先补充血容量：根据液体需要量与所失体液的性质确定补多少补什么，但应注意区别以下几种情况：a．当有效循环血容量不足时应优先予以纠正，以能为血流动力学的稳定奠定容量基础；b有效循环血容量已基本充足，但病人不能进食，则需补充其基础需要量和额外丢失量，结合电解质平衡情况选择适当的晶体液；②合理选择溶液制剂；（2）确定输液的顺序和速度：输液的顺序主要根据病情而定。如大量失血时应及早输血。输液的速度取决于：①体液缺失的程度；②输入液体的品种；③病情，特别是心．肺和肾脏功能；④监测结果；（3）输液过程中应进行监测与调整。应当强调的是在临床上对病人液体治疗的判断不可能完全精确。因此，加强动态观察，根据病人的具体情况不断调整输液方案，直至病人体液平衡失常纠正为止。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>47/47. 低钠血症的定义．分类及处理原则。 </p>
+        <div class="divXSDA" id="showAndHideButton47" onclick="showAndHideButton('data47','showAndHideButton47')">显示答案</div>
+        <div class="datas" id="data47" style="display: none;">
+            <p id='ptockda'>参考答案：低钠血症是指血清钠浓度＜135mmol/L，临床上常以下列三种状态存在：细胞外液容量减少性低钠血症．细胞外液容量正常性低钠血症和细胞外液容量增多性低钠血症。治疗应根据其不同类型．严重程度和临床具体情况等而定。对血清钠＞120mmol/L，无症状低钠血症的处理主要针对原发病因的治疗，但必须立即停止输入低张液体；当有严重水中毒症状或严重低钠血症（＜115mmol/L），有效渗透克分子浓度＜230mOsm/kg时，严格限制水摄入通常安全．有效。对病情严重者，可酌情采用3％氯化钠溶液250ml缓慢静脉滴注，然后在10小时后测血清钠。如测定值仍然太低，可酌情再给予相同氯化钠溶液剂量，并应控制血清钠升高＜10mmol/24小时。对低ECFV性低钠血症，应补充等渗盐溶液。对正常ECFV性低钠血症，一般可给含钠等渗液治疗，并根据病情应用利尿药。对高ECFV性低钠血症，可应用高渗氯化钠溶液和利尿治疗。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

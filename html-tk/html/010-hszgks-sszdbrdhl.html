@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>淹溺病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 溺水患者经抢救心跳呼吸复苏成功，下列生化监测结果，与病情不符合的是 【单选题】</p>
+        <p>A.低血钠</p>
+        <p>B.高血氯</p>
+        <p>C.高血钙</p>
+        <p>D.高血镁</p>
+        <p>E.高血钾</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、选A是对的，A是淡水淹溺，其余都是海水淹溺的电解质表现</p>
+            <p>2、海水：高钠 高钙 高镁 淡水：低钠 低氯 高钾 就是没有高氯，233333
+            </p>
+            <p>3、应该是B吧</p>
+            <p>4、选B吧</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 溺水急救首先应 【单选题】</p>
+        <p>A.保持呼吸道通畅</p>
+        <p>B.倒水处理</p>
+        <p>C.口对口人工呼吸</p>
+        <p>D.胸外心脏按压</p>
+        <p>E.给予强心药</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 治疗海水淹溺者不能输入的药物是： 【单选题】</p>
+        <p>A.5﹪葡萄糖</p>
+        <p>B.血浆液体</p>
+        <p>C.生理盐水</p>
+        <p>D.地塞米松</p>
+        <p>E.白蛋白</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 关于淡水淹溺的病理生理变化，下列不正确的是： 【单选题】</p>
+        <p>A.血容量增加</p>
+        <p>B.低钠血症</p>
+        <p>C.高氯血症</p>
+        <p>D.低蛋白血症</p>
+        <p>E.高钾血症</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、E是对的，吸入淡水较多时，可能出现红细胞破裂、血钾升高，血与尿中可出现游离的血红蛋白。</p>
+            <p>2、E是不是也不对？</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

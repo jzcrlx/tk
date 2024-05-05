@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>新生儿窒息的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 新生儿窒息的抢救首先应该是 【单选题】</p>
+        <p>A.清理呼吸道</p>
+        <p>B.人工呼吸</p>
+        <p>C.使用呼吸兴奋剂</p>
+        <p>D.胸外心脏按压</p>
+        <p>E.使用肾上腺素</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 新生儿窒息的处理下列哪项是错误的() 【单选题】</p>
+        <p>A.整个复苏过程必须保温</p>
+        <p>B.胎头娩出后立即清除呼吸道内黏液和羊水</p>
+        <p>C.在呼吸道通畅的基础上行人工呼吸</p>
+        <p>D.纠正酸中毒</p>
+        <p>E.倒提双足，拍打背部，使口中黏液和羊水排出</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、错了吧答案</p>
+            <p>2、拍打足底和触摸背部可以诱发患儿自主呼吸</p>
+            <p>3、应该是先清理呼吸道再倒提双足，拍打胸部吧</p>
+            <p>4、E错了？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 关于新生儿轻度窒息，下列选项错误的是： 【单选题】</p>
+        <p>A.出生后1分钟Apgar评分4～7分。</p>
+        <p>B.对外界刺激有反应</p>
+        <p>C.心跳不规则</p>
+        <p>D.面部与全身皮肤呈青紫色</p>
+        <p>E.喉反射存在；肌张力好</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 关于新生儿重度窒息，下列选项错误的是： 【单选题】</p>
+        <p>A.Apgar评分0～3分</p>
+        <p>B.新生儿皮肤苍白</p>
+        <p>C.无呼吸或仅有喘息样微弱呼吸</p>
+        <p>D.心跳不规则</p>
+        <p>E.对外界刺激有反应</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

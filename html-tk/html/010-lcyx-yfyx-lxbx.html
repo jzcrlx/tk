@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>病因与因果推断 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+
+    
+    <div class='form-label'>
+        <p>1/37. 对病因含义最确切的表达是 【单选题】</p>
+        <p>A.病原微生物</p>
+        <p>B.物理因素</p>
+        <p>C.化学因素</p>
+        <p>D.凡能使人们发病概率增加的因素</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、九版25页</p>
+            <p>2、p30</p>
+            <p>3、在流行病学中</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/37. 疾病发生的基本条件是 【单选题】</p>
+        <p>A.机体抵抗力下降</p>
+        <p>B.环境中有大量的病原体存在</p>
+        <p>C.致病因素、宿主和环境相互作用失去平衡</p>
+        <p>D.致病因素与宿主同时存在</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、p30</p>
+            <p>2、三角关系</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/37. 在病因研究的轮状模型中，强调宿主与下列哪种因素的关系 【单选题】</p>
+        <p>A.生物因素</p>
+        <p>B.环境因素</p>
+        <p>C.物理因素</p>
+        <p>D.精神因素</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、8版26页：轮状模型也称车轮模型，该模型强调宿主与环境的密切关系。</p>
+            <p>2、生物环境、理化环境、社会环境
+            </p>
+            <p>3、人卫7版91页 该模型强调了机体和环境的密切关系</p>
+            <p>4、你们用的书是叫预防医学还是叫流行病学</p>
+            <p>5、p31</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/37. 证明某因素是某病的病因须经历的步骤是 【单选题】</p>
+        <p>A.调查各病例，寻找其共同因素，并用此因素作实验，实验成功则病因成立</p>
+        <p>B.从疾病的频率和分布中形成假设，经分析验证再进行病因推断</p>
+        <p>C.先对各病例进行检验，找出可疑病因，再作实验证实</p>
+        <p>D.从病理资料提出病因假设，再通过实验证实</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、人卫第八版教材28页，先依靠描述性研究探索发病的影响因素，再运用逻辑推理建立初步病因假设，后通过分析性研究和实验性研究进行检验和验证。</p>
+            <p>2、病因推断不应该是在分析性研究以前吗？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/37. 从疾病生态学的角度来看，与疾病发生有关的三大因素是 【单选题】</p>
+        <p>A.病人、病原携带者、非病人</p>
+        <p>B.理化因素、生物学因素、社会经济因素</p>
+        <p>C.易感性、传播途径、传染源</p>
+        <p>D.宿主、环境、病原物</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、宿主，环境和病因</p>
+            <p>2、选D 见过原题</p>
+            <p>3、生态学模式 就是病因宿主环境 答案错了吧</p>
+            <p>4、选D</p>
+            <p>5、答案是d</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/37. 验证病因假设最可靠的方法是 【单选题】</p>
+        <p>A.病例对照研究</p>
+        <p>B.现况调查</p>
+        <p>C.队列研究</p>
+        <p>D.实验研究</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、验证是实验 检验是病例对照和队列</p>
+            <p>2、社区干预是实验性研究的一种</p>
+            <p>3、干预是实验的一种吧
+            </p>
+            <p>4、？？？</p>
+            <p>5、社区干预就是实验研究吧
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/37. 判断因果联系时的必要条件是 【单选题】</p>
+        <p>A.联系的合理性</p>
+        <p>B.联系的强度</p>
+        <p>C.联系的一致性</p>
+        <p>D.时间顺序，即先“因”后“果”</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、只能是前因后果，而其它选项所说的可以不一定！</p>
+            <p>2、必要性应该是必要不充分，先因后果不一定是有因果联系，但因果联系一定是先因后果</p>
+            <p>3、9版34页</p>
+            <p>4、必要条件</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/37. 夏季因气温高，雨量多，蚊媒密度升高而引起的蚊媒传染病的流行属于 【单选题】</p>
+        <p>A.在流行病学三角模型中环境因素不变，病因比重增加</p>
+        <p>B.宿主因素发生变化，宿主比重增加</p>
+        <p>C.环境因素发生变化，导致宿主比重增加</p>
+        <p>D.环境因素发生变化，导致病因比重增加</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、夏季高温多雨是环境，导致了蚊子多（病因）</p>
+            <p>2、蚊子不是宿主,是媒介</p>
+            <p>3、蚊子是病因还是宿主啊，不应该是宿主吗</p>
+            <p>4、我怎么不懂</p>
+            <p>5、什么意思？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/37. 下列哪些说法是不正确的 【单选题】</p>
+        <p>A.宿主因素决定人们对疾病的易感性</p>
+        <p>B.宿主、环境病、因三要素保持平衡则人们呈健康状态</p>
+        <p>C.病因作用于宿主即可发生疾病</p>
+        <p>D.环境因素影响人们对疾病的暴露程度</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、八版教材P26页原话:正常情况下，三者通过相互作用保持动态平衡，人们呈健康状态。</p>
+            <p>2、？？？</p>
+            <p>3、病因作用于宿主如果没打破三角平衡就不会生病吧</p>
+            <p>4、9版26页</p>
+            <p>5、B是不对的，三者保持动态平衡可以使人群疾病的发病率维持一个常态，一旦平衡破坏，发病率会上升或下降</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/37. 1988年，上海市发生甲型肝炎大流行，病毒主要通过生食毛蚶而侵入人体，毛蚶为病因的工作假设是通过下列哪种方法找出的 【单选题】</p>
+        <p>A.共变法</p>
+        <p>B.排除法</p>
+        <p>C.求同法</p>
+        <p>D.求异法</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、很多人吃了统一种食物。</p>
+            <p>2、食物中毒基本都是求同，不同事件中寻求相同因素</p>
+            <p>3、书上是求异法 这是书上的原例子</p>
+            <p>4、求异法是某族吃那里的特产,求同是生病的人包括不同工种（老师学生工人）吃了同种食物。</p>
+            <p>5、第九版30页 同中求异 食物</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/37. 宿主状态是遗传因素与下列哪种因素相互作用的结果 【单选题】</p>
+        <p>A.生物因素</p>
+        <p>B.物理因素</p>
+        <p>C.环境因素</p>
+        <p>D.化学因素</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、生物因素是什么意思？</p>
+            <p>2、我记得书上排除法也是用的这个例子@_@</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/37. 下列哪一项不是病因推断的标准 【单选题】</p>
+        <p>A.生物学上言之成理</p>
+        <p>B.因先于果</p>
+        <p>C.致病因素与疾病一一对应</p>
+        <p>D.因素的分布与疾病的分布一致</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、因为病因与疾病是多因对多果</p>
+            <p>2、1、关联的强度 2、关联的特异性 3、关联的时间顺序4、关联的可重复性 5、剂量与反映的关系 6、因素与疾病分布的一致性 7、关联的生物学合理性 8、实验证据 9、相似性</p>
+            <p>3、多因多果，不是一一对应</p>
+            <p>4、9版33页下边</p>
+            <p>5、病因和疾病是多原因多结婚</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/37. 在病因推断过程中，反映某个因素与疾病的关联强度最常用下列哪个指标 【单选题】</p>
+        <p>A.特异危险度</p>
+        <p>B.相对危险度</p>
+        <p>C.归因危险度</p>
+        <p>D.病因分值</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、相对危险度 RR或者比值比OR</p>
+            <p>2、9版P59</p>
+            <p>3、9版59页</p>
+            <p>4、8版34页</p>
+            <p>5、？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/37. 在建立病因假设的时候，所用的逻辑思维法则通常不包括下列哪一项 【单选题】</p>
+        <p>A.求同法</p>
+        <p>B.求异法</p>
+        <p>C.共变法</p>
+        <p>D.演绎法</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、演绎是拿来假设的</p>
+            <p>2、还有“类推法、排除法”</p>
+            <p>3、9版p30</p>
+            <p>4、共变法是什么？</p>
+            <p>5、演绎法不用</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/37. 疾病发生的三角模型存在的缺陷是 【单选题】</p>
+        <p>A.强调病原物、宿主和环境同等重要</p>
+        <p>B.强调环境</p>
+        <p>C.强调宿主</p>
+        <p>D.强调遗传因素</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、强调一个肯定缺陷</p>
+            <p>2、他认为三个因素保持动态平衡时人体呈健康状态，差不多即三者同等重要的意思</p>
+            <p>3、为什么？</p>
+            <p>4、9版91</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/37. 在病因学上，轮状模型与三角模型相比，其主要的不同点是 【单选题】</p>
+        <p>A.更强调影响疾病发生的三要素</p>
+        <p>B.有差别地看待疾病的三要素</p>
+        <p>C.强调环境及环境与机体的密切关系</p>
+        <p>D.更强调特异性病原学说</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、轮状模型个部分具有伸缩性，其大小随不同的疾病而变化。即有差别的看待疾病三要素。课本26页。</p>
+            <p>2、c虽然是他的特点，但并不是不同点</p>
+            <p>3、选C吧</p>
+            <p>4、9版 26 页。轮状模型构成的各部分具有伸缩性，其大小随不同的疾病而变化</p>
+            <p>5、C，轮状模型强调环境与机体的密切关系</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/37. 下列哪项说法是错误的 【单选题】</p>
+        <p>A.轮状模型用于疾病的多因素研究而不强调疾病单一致病因子的作用</p>
+        <p>B.病因网用于疾病多因素研究而不强调疾病单一致病因子的作用</p>
+        <p>C.轮状模型的生物，物理化学和社会环境三个组成部分的比重随宿主的遗传因素的不同而异</p>
+        <p>D.轮状模型中的生物，物理化学和社会环境三个组成部分的比重因病种的变化而异</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、应选C,答案D是正确的.轮状模型各部分的相对大小可随不同疾病而有所变化.</p>
+            <p>2、课本P26，轮状模型构成的各部分具有伸缩性，其大小随不同疾病而变化，所以D是对的</p>
+            <p>3、选c</p>
+            <p>4、讲道理的话应该选C，课本p26页上轮状模型随疾病变化。
+            </p>
+            <p>5、随疾病变化</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/37. 确定暴露于某因素与某病发生因果关系时，下列哪一条可不加考虑 【单选题】</p>
+        <p>A.联系的强度和特异性</p>
+        <p>B.剂量反应关系与现代科学知识协调</p>
+        <p>C.时间顺序即暴露于疾病发生之前</p>
+        <p>D.对联系进行统计学检验所得P值大小</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、Hill准则：关联的时间顺序（因在果前）；关联的强度（RR、OR）；关联的一致性或可重复性；关联的特异性（在传染病中常见，但对于多因素的非传染性疾病则为非必需条件）；剂量反应关系；关联的合理性（能用现有知识进行合理解释）；实验证据</p>
+            <p>2、这题应该不选D吧，D应该是要考虑的吧</p>
+            <p>3、是希尔准则，题目中说确定有因果联系所以不用考虑p值了吧</p>
+            <p>4、考hill准则，但是首先p值应该有统计学意义，所以D？？？</p>
+            <p>5、题出的不好</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/37. 病因研究中要获得工作假设，有一种方法是求异法，例如 【单选题】</p>
+        <p>A.某学校发生食物中毒，患者均为进食学生午餐盒饭者，不进食者不发生，因而盒饭为可疑病因</p>
+        <p>B.某市发生散发食物中毒多起，经调查患者均有进食某熟食店某食品史，该食品为可疑病因</p>
+        <p>C.某厂供应的学生午餐饭盒，供应若干学校，各校用餐人数不等，用餐多的学校食物中毒发生人数多，该厂盒饭为可疑病因</p>
+        <p>D.某厂供应相同的午餐饭盒给若干学校，仅一个学校发生食物中毒，经调查食物中毒发生在该校自供午餐的班级，因而该厂盒饭并非病因</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、a求异法 b求同法 c共变法 d排除法 谢谢
+            </p>
+            <p>2、答案没有错，关键在进食者发生，不进食者不发生，是暴露因素与不暴露因素的差异</p>
+            <p>3、D？</p>
+            <p>4、都是一些不看书的吗</p>
+            <p>5、求同求异就纯坑人，答案想怎么说怎么说</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/37. 形成病因假设的一种方法是“求同法”，例如 【单选题】</p>
+        <p>A.某学校发生食物中毒，患者均为进食某项食品者，不进该食品者不发病，因而该项食品为可疑病因</p>
+        <p>B.某市发生散发食物中毒多起，经调查患者均有进食某熟食店某熟食史，因而该熟食为可疑病因</p>
+        <p>C.某厂供应的学生午餐饭盒，供应若干学校，各校用餐人数不等，用餐多的学校食物中毒发生人数多，该厂盒饭为可疑病因</p>
+        <p>D.某厂供应相同的午餐饭盒给若干学校，仅一个学校发生食物中毒，经调查食物中毒发生在该校自供午餐的班级，因而该厂盒饭并非病因</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、a求异b求同c共变d排除</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/37. 流行病学探讨病因的一般程序是 【单选题】</p>
+        <p>A.从人为联系到统计学联系</p>
+        <p>B.从间接联系到统计学联系</p>
+        <p>C.从间接联系到因果联系</p>
+        <p>D.从统计学联系到因果联系</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、统计学关联是判定因果关联的基础和前提</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/37. 某因素与某病有统计学上的关联，特别是RR或OR较大时，要确定该因素为某病的病因尚需 【单选题】</p>
+        <p>A.排除该因素与疾病的联系为虚假联系和间接关联</p>
+        <p>B.排除选择偏性</p>
+        <p>C.排除信息偏性</p>
+        <p>D.排除混杂</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、排除了虚假关联和继发关联之后，两事件间的关联才有可能是因果关联</p>
+            <p>2、三短一长选最长</p>
+            <p>3、A才是对的</p>
+            <p>4、A是对的 去除虚假和继发，才可能是因果</p>
+            <p>5、?</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/37. 推断某因素与某病有因果关系，此因素应与该病关联且有一定强度，在不同研究中此关联不断出现，可疑的病因出现在前，且在医学和生物学上言之成理，还需要 【单选题】</p>
+        <p>A.关联必须特异，即某因素仅与某病有联系</p>
+        <p>B.因素与疾病必须是真联系不是假关联或间接关联</p>
+        <p>C.排除选择偏性或信息偏性</p>
+        <p>D.因素与疾病的分布相符，并有剂量反应关系</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、P35页，，时间顺序，关联强度，关联特异性（可不考虑），关联可重复性及计量反应关系。。嗯，，在下头很硬(*^_^*)</p>
+            <p>2、在排除虚假关联和继发关联后才能对两件事件的因果关联进行判断。</p>
+            <p>3、Hill准则</p>
+            <p>4、因为是考察hill准则，所以bc排除了，特异性这个必须得是传染病，大部分传染病是没有的</p>
+            <p>5、？？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/37. 关于因果联系的叙述，下列哪项是错误的 【单选题】</p>
+        <p>A.无剂量-反应关系表明不存在因果联系</p>
+        <p>B.联系的强度越大，存在因果联系的可能性越大</p>
+        <p>C.联系的一致性好，说明存在因果联系的可能性大</p>
+        <p>D.先因后果是判断因果联系的必要条件</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、没有发现剂量反应关系并不能否定因果关联，因为可能剂量没有达到发生反应的阈值，或者已达到饱和。一般仅在一定的剂量范围才发生剂量反应关系</p>
+            <p>2、错误的</p>
+            <p>3、A项是对的吧 第八版160页最下面，存在关联（包括剂量反应关系）以及关联等我时间特征是判断因果关系的必要条件。必要的意思是它们必须存在，如果不存在就可以否定因果关系的存在 那无剂量反应关系不就可以否定因果关系?
+            </p>
+            <p>4、前一题讲“证明因果需要剂量反应关系”，也就是必要条件的意思，然后这一题“无剂量反应关系则不存在因果联系”又是错的？求解</p>
+            <p>5、对的</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/37. 下列哪项不是判断因果联系的标准 【单选题】</p>
+        <p>A.时间顺序</p>
+        <p>B.联系的合理性</p>
+        <p>C.样本大小</p>
+        <p>D.联系的强度</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、关联的强度，关联的时间顺序，特异性，可重复性，剂量反应关系，因素与疾病分布的一致性，生物合理性，实验证据，相似性</p>
+            <p>2、ABD都是9条原则里的</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/37. 病因 </p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：指那些能使人群发病概率升高的因素，其中一个或多个不存在时，疾病发生的频率就下降。本考题的要点是流行病学病因定义中的三方面内容：①病因作用机体后所致的结局是发病。②病因是相对频率事件。③还要考虑病因是多种的。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/37. 充分病因 </p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：是指必然会导致疾病发生的最低限度的条件和事件；最低限度是指任一条件或事件都是必不可少的。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、指有该病因存在时，相应疾病就一定会发生，是引起疾病发生的所有因素的集合。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/37. 求同法 </p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：设研究的事件特征为A，B，C，D，E等，研究的因素（暴露）为a,b,c,d,e；研究事件具有共同的特征A（特定疾病），而这些相同疾病A的病例均有的研究因素（暴露）a，因些因素a是疾病A的影响因素。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、患病的有相同暴露，那么暴露是患病的因素</p>
+            <p>2、相同的暴露，没有暴露的不发病</p>
+            <p>3、患病的有相同的暴露，那么该暴露可能是病因。</p>
+            <p>4、在发生相同事件的不同群体之间找共同点</p>
+            <p>5、指在不同事件中寻求其共同点</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/37. 求异法 </p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：设研究的事件特征为A，B，C，D，E等，研究的因素（暴露）为a,b,c,d,e；研究事件均无特征A（特定疾病），而这些对象也没有研究因素（暴露）a, 因此因素a是疾病A的影响因素。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、没有患病的没有暴露，那暴露就是患病的因素</p>
+            <p>2、相同事件寻求不同点</p>
+            <p>3、发生事件的同一区域内，不同群体之间，找不同点</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/37. 同异并用法 </p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：是指求同法和求异法并用，相当于同一研究中设有比较组，可以控制干扰因素。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/37. 共变法 </p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：当有关（暴露）因素不是定性的，而是等级或定量的，并与事件（疾病）效应成量变关系时，设A1，A2，A3等是事件（疾病）效应不同数量的状态，a1 ,a2, a3 是研究因素（暴露）不同数量的状态，两者之间有共同变动的关系，因此因素a是疾病A的影响因素。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、某因素出现的频率或强度发生变化时，某事件发生的频率和强度也随之变化(剂量反应关系)</p>
+            <p>2、暴露效应关系</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/37. 剩余法 </p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：对某复合结局事件（A，B，C），已知它的有关（暴露）因素在特定的范围内（a,b,c），通过先前的归纳又知道b说明B，c说明C，那么剩余的a必定说明A。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、若某事件发生由多种因素造成时，把已知关联因素去除后，仍不能排除的因素可能为病因</p>
+            <p>2、排除法</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/37. 试述充分病因和必要病因的局限性。 </p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：充分病因几乎是不存在的，牵强的例子导致病因和疾病成了一回事，失去了因果关系的意义。多个病因的组合也不能成为充分病因。概率论因果观抛弃的正是充分病因。所谓的必要病因一定同相应疾病的分类依据有关，即按某病因进行分类的疾病，该病因就是它的必要病因，而正因为有该病因存在才被分类为该疾病。因此，必要病因并不是一个实证问题。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、充分病因几乎不存在，不太理解啊</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/37. 假设演绎法中推出的经验证据不成立，为什么不一定能否定假设?试举例说明。 </p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：假设演绎法中推出的经验证据不成立，还不能简单否定假设。因为经验证据不成立，有三种可能的结论：①假设不成立；②先行条件不成立③假设和先行条件均不成立。在第二种可能的结论成立时，假设并未被否定。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/37. 比较传统因果观与现代因果观的差异。 </p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：传统因果观主要指决定论因果观，认为一定的原因必定导致一定的结果，所以有充分原因的观念。现代因果观主要指概率论因果观，认为一定的原因只是可能导致一定的结果，原因就是使结果发生概率升高的事件或特征，从而抛弃了充分原因的观念。现代流行病学的病因定义是符合概率论因果观的。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、决定论因果关 概率论因果关
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/37. 如何认识Mill准则的应用? </p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：如果病因假设清单没有包括真实的病因，Mill准则就无法确证病因，而且Mill准则本身并不能对列出包括真实病因在内的清单提供指导。另外，Mill准则原本是用于实验研究类型，并且假定原因为充分或必要条件，因此对于流行病学的观察性研究，须注意控制干扰的条件较差，以及需要做统计学处理。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/37. 论述病因判定的标准。 </p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：(1)关联的时间顺序：指怀疑病因与疾病的前因后果时间关系。前瞻性设计(队列或实验研究)在确定前因后果时间顺序上最佳，回顾性设计(病例对照研究)次之，横断面设计较差。(2)关联的强度：指怀疑病因与疾病的统计学关联越大，是因果关系的可能性就越大，是偏倚所致的可能性就越小。一般指分类资料的相关。(3)剂量—反应关系：可以看成是针对等级或连续性变量资料的关联强度。(4)暴露与疾病的分布一致性：可以看成是针对集团资料的关联强度(生态学相关)。(5)关联的可重复性：研究的关联能在其他研究中得到重复，则为因果关联的可能性增加。(6)关联的合理性：客观上同现有的理论知识不矛盾，主观上能为评价者的信念所接受。(7)终止效应：怀疑病因自然或人为去除(下降)，引起疾病发生率下降。终止效应对因果论证的强度较高。(8)关联的“特异性”：从多因多果的观点看，特异性是错误的；从病因必要性含义看，特异性优势是多余的。因此，特异性不符合现代流行病学的观点，应当放弃。一个病因研究本身必须要达到或部分达到第1，2(或3、4)条标准(前因后果、广义关联强度)，如果符合第7条标准(终止效应)则更好；第5，6条标准(重复性、合理性)是对该研究的外部评价，如果不吻合则因果关联的可信度降低。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、关联的强度，关联的时间性，一致性，合理性，特异性，相似性，剂量效应，实验证据</p>
+            <p>2、强度时序性，特异合理可重复，剂量反应有证据才一致。</p>
+            <p>3、1关联的时间顺序2关联的强度3关联的特异性4关联的可重复性5剂量反应关系6生物学的合理性7分布的1一致性8终止效应</p>
+            <p>4、因果时间顺序 强度 可重复性合理性因果论证强度</p>
+            <p>5、再加一条：相似性</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

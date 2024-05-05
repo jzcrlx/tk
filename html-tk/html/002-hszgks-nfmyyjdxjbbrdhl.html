@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>单纯性甲状腺肿病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 引起地方性甲状腺肿的最常见原因是 【单选题】</p>
+        <p>A.碘缺乏</p>
+        <p>B.碘过多</p>
+        <p>C.TH合成障碍</p>
+        <p>D.致甲状腺肿物质</p>
+        <p>E.TH需要量增加</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 单纯性甲状腺肿甲状腺摄<sup>131</sup>I率 【单选题】</p>
+        <p>A.大多增高，高峰提前，不被T3抑制</p>
+        <p>B.大多增高，高峰不提前，可被T3抑制</p>
+        <p>C.大多正常，高峰提前，可被T3抑制</p>
+        <p>D.大多正常，高峰不提前，不被T3抑制</p>
+        <p>E.大多降低，无高峰，不被T3抑制</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 年轻人的单纯性甲状腺肿，如无其他症状，治疗应首先考虑 【单选题】</p>
+        <p>A.甲状腺次全切除术</p>
+        <p>B.多食含碘丰富的海带、紫菜</p>
+        <p>C.小量甲状腺素</p>
+        <p>D.碘治疗</p>
+        <p>E.无需治疗，门诊观察</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 患者女性，18岁，因双侧甲状腺肿大住院。甲状腺扫描可见弥漫性甲状腺肿，均匀分布。医生诊断为单纯性甲状腺肿，支持这一诊断的实验室检查结果是 【单选题】</p>
+        <p>A.T3、T4升高，TSH降低</p>
+        <p>B.T3、T4降低，TSH升高</p>
+        <p>C.T3、T4升高，TSH正常</p>
+        <p>D.T3、T4降低，TSH正常</p>
+        <p>E.T3、T4正常，TSH正常</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、单纯性甲状腺肿是机体缺碘、存在致甲状腺肿物质，以及甲状激素合成酶缺陷而引起代偿性甲状腺增生肿大，一般无甲状腺功能异常。T3</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 患者女性，19岁，因甲状腺肿大就诊，查甲状腺Ⅱ度肿大，无结节，TSH在正常范围，甲状腺功能正常，可能的诊断是 【单选题】</p>
+        <p>A.甲亢</p>
+        <p>B.单纯性甲状腺肿</p>
+        <p>C.慢性甲状腺炎</p>
+        <p>D.甲减</p>
+        <p>E.亚急性甲状腺炎</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

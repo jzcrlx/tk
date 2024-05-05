@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>氧供需平衡的监控 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/35. 当PaO2低于（）mmHg时，即可判断为低氧血症 【单选题】</p>
+        <p>A.90</p>
+        <p>B.80</p>
+        <p>C.70</p>
+        <p>D.60</p>
+        <p>E.50</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、低于80就是低氧血症，60-79轻度，40-59中度，小于40重度</p>
+            <p>2、吸空气时，氧分压小于60mmhg，吸纯氧时，氧分压低于90mmhg可诊断为低氧血症，第三版麻醉学，56页</p>
+            <p>3、不应该是80？</p>
+            <p>4、低氧血症诊断标准是小于60</p>
+            <p>5、是六十</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/35. 当PaO2低于多少时能够导致组织缺氧 【单选题】</p>
+        <p>A.70mmHg</p>
+        <p>B.60mmHg</p>
+        <p>C.50mmHg</p>
+        <p>D.40mmHg</p>
+        <p>E.30mmHg</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、人类可耐受的最低PaO2为60mmHg</p>
+            <p>2、？到底50还是60</p>
+            <p>3、不理解</p>
+            <p>4、为什么是50不是60</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/35. 成年人呼吸频率超过多少时提示有潜在的呼吸功能不全 【单选题】</p>
+        <p>A.16次/分</p>
+        <p>B.18次/分</p>
+        <p>C.20次/分</p>
+        <p>D.30次/分</p>
+        <p>E.40次/分</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、20次。4版教材91页。</p>
+            <p>2、三版教材91页写的是20</p>
+            <p>3、20 潜在呼吸不全 30 呼吸窘迫 35 长时间 呼衰</p>
+            <p>4、第四版书上写的20</p>
+            <p>5、20，4版91页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/35. 最大呼气末仍存留于肺内不能再呼出的气量是 【单选题】</p>
+        <p>A.补呼气量</p>
+        <p>B.深呼气量</p>
+        <p>C.功能残气量</p>
+        <p>D.残气量</p>
+        <p>E.补吸气量</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/35. 氧供是指 【单选题】</p>
+        <p>A.单位时间内循环系统向全身组织输送氧的总量</p>
+        <p>B.单位时间内以肺吸入的氧的总量</p>
+        <p>C.单位时间内麻醉机输入的氧的总量</p>
+        <p>D.单位时间内循环系统向脑输送氧的总量</p>
+        <p>E.单位时间内全身组织所需氧的总量</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/35. 下列哪项不是缺氧的处理原则 【单选题】</p>
+        <p>A.消除缺氧的原因，积极治疗原发疾病</p>
+        <p>B.对各种类型的缺氧均可给予氧治疗</p>
+        <p>C.对于氧疗改善低氧血症不明显者，应行呼吸机机械通气治疗</p>
+        <p>D.维持血流动力学稳定和水．电解质及酸碱平衡。降低机体耗氧量。</p>
+        <p>E.提升心率，加快氧的输送</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、e是心率加快，心脏做工更多，增大氧耗。</p>
+            <p>2、组织性缺氧氧疗没啥用吧
+            </p>
+            <p>3、感觉b也有点问题，如果下呼吸道堵塞怎么给予氧治疗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/35. 氧疗的适应证有 【单选题】</p>
+        <p>A.支气管哮喘发作</p>
+        <p>B.ARDS</p>
+        <p>C.急性心肌梗死</p>
+        <p>D.一氧化碳中毒</p>
+        <p>E.以上都是</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、ARDS 急性呼吸窘迫综合征氧疗也不能纠正</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/35. 在麻醉中不会导致PaO2下降的是 【单选题】</p>
+        <p>A.氧化亚氮麻醉所致弥散性缺氧</p>
+        <p>B.麻醉药导致呼吸抑制</p>
+        <p>C.椎管内麻醉所致血压下降</p>
+        <p>D.各种原因导致的功能残气量降低</p>
+        <p>E.各种原因导致的VA/Q下降</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、椎管麻醉，阻滞交感神经，从而扩张血管，血压降低，但是po2，不会降低。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/35. 动脉血氧分压正常值为（）mmHg 【单选题】</p>
+        <p>A.50～60</p>
+        <p>B.60～80</p>
+        <p>C.80～100</p>
+        <p>D.100～110</p>
+        <p>E.110～120</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/35. 下列哪种情况可以导致氧解离曲线左移 【单选题】</p>
+        <p>A.pH降低</p>
+        <p>B.温度升高</p>
+        <p>C.2,3－DPG增加</p>
+        <p>D.输注大量库存血</p>
+        <p>E.PCO2升高</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、4版95页，底部</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/35. 下列哪种情况可以导致氧解离曲线右移 【单选题】</p>
+        <p>A.pH升高</p>
+        <p>B.温度降低</p>
+        <p>C.2,3－DPG增加</p>
+        <p>D.输注大量库存血</p>
+        <p>E.PCO2降低</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、I</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/35. 当机体血乳酸水平超过（）mmol/L时即为组织氧合不足。 【单选题】</p>
+        <p>A.0.5</p>
+        <p>B.1</p>
+        <p>C.1.5</p>
+        <p>D.1.5～2</p>
+        <p>E.2～2.5</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、1.5-2</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/35. 下列哪项不会引起循环性缺氧 【单选题】</p>
+        <p>A.输入大量库存血</p>
+        <p>B.心排出量减少</p>
+        <p>C.心力衰竭</p>
+        <p>D.急性心肌梗死</p>
+        <p>E.各种原因引起的休克</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、是循环性缺氧</p>
+            <p>2、使得氧解离曲线向左移动，释氧能力下降</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/35. 对患者行经鼻导管吸氧时，当氧流量超过（）L/min时，应对吸入气予以湿化 【单选题】</p>
+        <p>A.1</p>
+        <p>B.2</p>
+        <p>C.3</p>
+        <p>D.4</p>
+        <p>E.5</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、60是气体量吧。可能氧气量是这个？</p>
+            <p>2、第四版，188页</p>
+            <p>3、不是60吗？？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/35. 下列哪项是影响氧耗的因素 【多选题】</p>
+        <p>A.温度</p>
+        <p>B.烧伤．创伤或手术</p>
+        <p>C.感染或全身炎症反应综合征</p>
+        <p>D.高代谢状态或摄入高糖饮食</p>
+        <p>E.疼痛刺激</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/35. 下列哪种情况可以导致氧解离曲线右移 【多选题】</p>
+        <p>A.pH降低</p>
+        <p>B.温度升高</p>
+        <p>C.2,3－DPG增加</p>
+        <p>D.输注大量库存血</p>
+        <p>E.PCO2升高</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：ABCE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、右移除了温度都是增加 输入大量库存血会引起2，3-DPG减少</p>
+            <p>2、右移是除了pH 都是增加，大哥</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/35. 下列哪种情况可以导致氧解离曲线左移 【多选题】</p>
+        <p>A.pH升高</p>
+        <p>B.温度降低</p>
+        <p>C.2,3－DPG下降</p>
+        <p>D.输注大量库存血</p>
+        <p>E.PCO2降低</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/35. 下列哪项可能引起循环性缺氧 【多选题】</p>
+        <p>A.输入大量库存血</p>
+        <p>B.心排出量减少</p>
+        <p>C.心力衰竭</p>
+        <p>D.急性心肌梗死</p>
+        <p>E.各种原因引起的休克</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：BCDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/35. 氧代谢 </p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：氧气从肺部进入循环系统，再由循环系统输送至组织器官，并最终被细胞所利用的过程。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/35. 氧输送 </p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：空气中的氧被循环系统输送到利用氧的部位－线粒体的过程称为氧输送<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/35. 氧供 </p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：又称总体氧供，是指单位时间内循环系统向全身组织输送氧的总量。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/35. 氧耗 </p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：又称为总体氧耗，是指全身组织单位时间内消耗氧的总量。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/35. P50 </p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：血氧饱和度为50％时的氧分压称为P50，是反映Hb与O2亲和力的指标，正常情况下为26.5mmHg。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/35. 低氧血症 </p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：低氧血症是指循环系统中的氧分压低于正常。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/35. 缺氧 </p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：缺氧是指单一器官或组织氧供不足。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/35. 氧需求 </p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：氧需求是指机体组织维持有氧代谢所需氧的总量。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/35. 氧治疗 </p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：氧治疗是指提高吸入气中的氧浓度或吸入氧的氧分压以改善低氧血症或组织缺氧的治疗方法。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/35. 哪些因素可以影响氧解离曲线？ </p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：影响氧解离曲线左移的因素包括pH降低．PCO2升高．温度升高和2,3-二磷酸甘油酸（2,3-DPG）增加；氧解离曲线左移的因素包括pH升高．PCO2降低．温度降低和2,3-DPG下降等。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、不对不对，前者是使氧解离曲线右移的</p>
+            <p>2、许严牛逼</p>
+            <p>3、写错啦～～后面那些是使氧解离曲线右移的因素</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/35. 缺氧的处理原则有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：缺氧的处理原则如下：①消除缺氧的原因，积极治疗原发病；②对各种类型的缺氧均可给予氧治疗。氧治疗对低张性缺氧的效果最好，CO中毒应采用高压氧治疗；③对于氧疗改善低氧血症不明显者，应行呼吸机机械通气治疗；④降低机体氧耗量；⑤维持血流动力学稳定和水．电解质及酸碱平衡。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、①消除缺氧的原因，积极治疗原发病；②对各种类型的缺氧均可给予氧治疗。氧治疗对低张性缺氧的效果最好，CO中毒应采用高压氧治疗；③对于氧疗改善低氧血症不明显者，应行呼吸机机械通气治疗；④降低机体氧耗量；⑤维持血流动力学稳定和水．电解质及酸碱平衡。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/35. 影响氧耗的因素有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：细胞代谢率决定整体氧耗。以下因素可使氧耗增加：①温度升高，体温每升高1℃，氧耗增加10％～15％；②感染或全身炎症反应综合征；③烧伤．创伤或手术；④交感神经兴奋．疼痛．寒战或癫痫发作等，如寒战可使氧耗增加100％；⑤β2-受体激动剂．苯丙胺和三环类抗抑郁药等；⑥护理（吸痰．叩背等）或理疗；⑦高代谢状态或摄入高糖饮食等。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/35. 氧疗的适应证有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：氧疗可用于：①支气管哮喘发作．哮喘持续状态．慢性阻塞性肺疾病（COPD）患者发生呼吸衰竭等；②急性呼吸窘迫综合征（ARDS）．肺水肿．肺栓塞等；③急性心肌梗死．心力衰竭等；④肝脏疾病晚期合并肝肺综合征；⑤空气栓塞．气胸等；⑥一氧化碳中毒；⑦贫血．镰状细胞贫血危象等；⑧全身麻醉术后．麻醉后恢复室（PACU）．术后低氧血症等。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/35. 哪些因素可以干扰血乳酸浓度的测定和对病情的判断？ </p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：①肝功能不良：肝硬化患者血乳酸浓度可维持在正常水平，但合并循环衰竭时可出现血乳酸浓度升高；②“洗出”现象：低血容量休克初期，组织灌注不足，导致大量乳酸聚集在局部组织中。当血流动力学恢复正常．组织灌注得以改善时，大量乳酸进入循环可引起乳酸浓度升高；③血乳酸浓度：可反映全身组织氧合，但无法反映局部组织的灌注和氧合情况；④细胞代谢障碍。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/35. 哪些因素可以引起血液性缺氧？ </p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：①各种原因引起的贫血；②一氧化碳中毒；③亚硝酸盐等氧化剂中毒时，体内生成高铁血红蛋白 ，Hb丧失携氧能力，并使氧解离曲线左移，影响O2的解离重缺氧；④血红蛋白 与氧结合力异常增强。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/35. 论述低张性缺氧的影响因素有哪些。 </p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：低张性缺氧的影响因素包括：①吸入氧分压过低，如高原．高空．手术麻醉时麻醉机呼吸回路接头脱开．氧化亚氮吸入浓度过大等；②肺泡通气不足，如各种阻塞性或限制性呼吸系统疾病．麻醉药物或镇静药物抑制呼吸．气管导管或支气管导管扭曲打折或被分泌物阻塞．严重肺纤维化．胸廓畸形．肌松药物的残余作用．气胸或胸腔积液以及手术体位使肺及胸壁顺应性下降等均可引起肺通气功能障碍，导致肺泡通气不足；③弥散功能障碍，如肺不张．肺切除等使参与换气的肺泡表面积减少．发生肺水肿或肺纤维化时肺泡膜厚度增加，弥散距离增宽，弥散速度减慢等；④肺泡通气与血流比值失调，影响因素有支气管哮喘．慢性支气管炎．COPD．肺栓塞．肺水肿．肺纤维化或ARDS等，这些因素由于病变轻重及分布不均匀，使各部分肺的通气和血流比值不一，导致通气与血流比值失调；⑤右向左分流，见于先天性心脏病，如室间隔缺损伴肺动脉高压时出现右向左分流，另外见支气管麻醉中的单肺通气时。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/35. 论述有哪些措施可以增加氧供。 </p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：①增加心排出量：纠正低血容量，静脉输注多巴酚丁胺等血管活性药物增强心肌收缩力，以提高心排出量；②提高红细胞数量和血红蛋白浓度，可输浓缩红细胞等；③提高动脉血氧饱和度：提高吸入气中的氧浓度．应用机械通气及呼气末正压通气（PEEP）等。对于心源性肺水肿的患者，可通过利尿减轻水肿，有利于改善弥散障碍。此外，应用抗生素控制肺部炎症．应用化痰药物．支气管扩张药物或体位疗法等均有助于改善肺换气，从而提高SaO2。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

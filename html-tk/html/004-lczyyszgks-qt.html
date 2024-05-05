@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>创伤和火器伤 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 属于闭合伤的是 【单选题】</p>
+        <p>A.擦伤</p>
+        <p>B.火器伤</p>
+        <p>C.刺伤</p>
+        <p>D.关节脱位</p>
+        <p>E.撕脱伤</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 患者，男，2007年10月8日因车祸被抬入急诊室。CT检查显示颅内有血肿，量约30ml，合并下颌骨开放性骨折。并有舌后坠，抢救原则首先是 【单选题】</p>
+        <p>A.降低颅内压</p>
+        <p>B.下颌骨结扎固定</p>
+        <p>C.积极扩容</p>
+        <p>D.保持呼吸道通畅</p>
+        <p>E.开颅手术</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 患者，男，40岁。因塌方左腰及下肢被压8小时后入院。诉口渴，尿少，呈暗红色。检查，脉搏120次／分，血压95/70mmHg，左下肢明显肿胀，皮肤有散在淤血斑及水疱，足背动脉搏动较健侧弱，趾端凉，无骨折征。诊断首先考虑 【单选题】</p>
+        <p>A.感染性休克</p>
+        <p>B.肾挫伤</p>
+        <p>C.左下肢挫伤</p>
+        <p>D.左下肢血栓形成</p>
+        <p>E.挤压伤综合征</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 患者，男，40岁。因塌方左腰及下肢被压8小时后入院。诉口渴，尿少，呈暗红色。检查，脉搏120次／分，血压95/70mmHg，左下肢明显肿胀，皮肤有散在淤血斑及水疱，足背动脉搏动较健侧弱，趾端凉，无骨折征。静脉输液宜首选 【单选题】</p>
+        <p>A.全血</p>
+        <p>B.血浆</p>
+        <p>C.右旋糖酐</p>
+        <p>D.等渗盐水加入1.25%碳酸氢钠溶液</p>
+        <p>E.5010葡萄糖溶液</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 患者，男，40岁。因塌方左腰及下肢被压8小时后入院。诉口渴，尿少，呈暗红色。检查，脉搏120次／分，血压95/70mmHg，左下肢明显肿胀，皮肤有散在淤血斑及水疱，足背动脉搏动较健侧弱，趾端凉，无骨折征。首先应采取的处理是 【单选题】</p>
+        <p>A.止痛</p>
+        <p>B.左下肢固定</p>
+        <p>C.血液透析</p>
+        <p>D.利尿</p>
+        <p>E.吸氧</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

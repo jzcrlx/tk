@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>焦虑症病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 患者男性，46岁，上班乘坐公交车时总是担心会出现危险，尤其是车厢内人员拥挤的时候，症状加重，出现心悸、头晕、出汗、发抖、胸闷、好像透不过气来。该症状为 【单选题】</p>
+        <p>A.症状为外部力量强加的</p>
+        <p>B.症状产生无明确客观对象</p>
+        <p>C.症状产生于某一客观对象</p>
+        <p>D.症状源于自己的主观体验</p>
+        <p>E.症状不受自己主观意愿控制</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 患者女性，41岁，诊断为焦虑症，整日处于惶恐不安中感觉“太难受了”，有自杀企图，服药苯二氮卓类类药物治疗。该患者的主要护理问题是 【单选题】</p>
+        <p>A.焦虑</p>
+        <p>B.社交障碍</p>
+        <p>C.预感性悲哀</p>
+        <p>D.自杀的危险</p>
+        <p>E.思维过程的改变</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、主要问题应该是最先要考虑的问题，该患者有自杀行为，行为主要问题是D</p>
+            <p>2、A</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 患者女性，41岁，诊断为焦虑症，整日处于惶恐不安中感觉“太难受了”，有自杀企图，服药苯二氮卓类类药物治疗。护士在给患者做药物指导时应提示患者 【单选题】</p>
+        <p>A.长期服用</p>
+        <p>B.小剂量服用</p>
+        <p>C.易出现依赖</p>
+        <p>D.症状控制后停药</p>
+        <p>E.症状控制后服6～8周</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、d</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 患者女，30岁，已婚，教师。10个月前行诊断性刮宫，术后有阴道出血。当听到同事说有癌症的可能时，感到紧张、心慌、气促。之后反复出现紧张、烦躁、坐立不安、心悸、气急、怕疯、怕死，且间歇期逐渐缩短。家族史、既往史、体检、实验室检查无特殊。病前性格多疑多虑、易急躁。自知力存在。该患者最可能的诊断是 【单选题】</p>
+        <p>A.强迫症</p>
+        <p>B.焦虑症</p>
+        <p>C.恐惧症</p>
+        <p>D.疑病症</p>
+        <p>E.心因性精神障碍</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

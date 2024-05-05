@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>医学统计学方法 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/67. 统计学数据具有的特性是 【单选题】</p>
+        <p>A.稳定性</p>
+        <p>B.可加性</p>
+        <p>C.主观性</p>
+        <p>D.变异性</p>
+        <p>E.可靠性</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、个体变异</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/67. 统计工作的步骤不包括 【单选题】</p>
+        <p>A.统计设计</p>
+        <p>B.搜集资料</p>
+        <p>C.分析资料</p>
+        <p>D.整理资料</p>
+        <p>E.题目的制定</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、实验设计(专业设计和统计设计)，搜集资料，整理资料，分析资料</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/67. 用某种新疗法治疗某病患者41人，治疗结果如下治疗结果治愈显效好转恶化死亡治疗人数8；23；6；3；1该资料的类型是： 【单选题】</p>
+        <p>A.等级资料</p>
+        <p>B.圆形资料</p>
+        <p>C.计数资料</p>
+        <p>D.计量资料</p>
+        <p>E.数据资料</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、药物的治疗效果是等级资料</p>
+            <p>2、等级资料得有明显的等级划分</p>
+            <p>3、等级资料是指具有一定级别的数据</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/67. 相对数的使用注意事项中，以下错误的是 【单选题】</p>
+        <p>A.不要混淆构成比和率</p>
+        <p>B.分母不宜过小</p>
+        <p>C.关于率的比较均需做标准化</p>
+        <p>D.注意资料的可比性</p>
+        <p>E.需考虑抽样误差</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、课本p33页</p>
+            <p>2、九版课本334</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/67. Ⅰ类错误的大小可以用哪种指标表示 【单选题】</p>
+        <p>A.β</p>
+        <p>B.检验水准α</p>
+        <p>C.概率值P</p>
+        <p>D.1-α</p>
+        <p>E.1-β</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/67. 同一批资料对回归系数β和相关系数r作假设检验，其结论是 【单选题】</p>
+        <p>A.是相同的</p>
+        <p>B.是不同的</p>
+        <p>C.不一定相同</p>
+        <p>D.肯定不同</p>
+        <p>E.r为负β为正</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、都可以证明是否有线性相关关系</p>
+            <p>2、同一批资料样本回归系数b和相关系数r相同，但是β是总体回归系数，应该跟r不一样吧</p>
+            <p>3、不考虑抽样误差吗？还是说默认这批资料的全部统计数据用于分析回归性？</p>
+            <p>4、为什么呢</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/67. 已知Y～N(μ·σ<sup>2</sup>)，则Y在区间［μ-1.96σ，μ+1.96σ］的概率为 【单选题】</p>
+        <p>A.0.95</p>
+        <p>B.0.05</p>
+        <p>C.0.01</p>
+        <p>D.0.99</p>
+        <p>E.0.90</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/67. 两样本均数比较，需检验H<sub>0</sub>:μ<sub>1</sub>=μ<sub>2</sub>是否成立，可考虑用 【单选题】</p>
+        <p>A.方差分析</p>
+        <p>B.t检验</p>
+        <p>C.Z检验</p>
+        <p>D.X<sup>2</sup>检验</p>
+        <p>E.A．B．C．三种均可</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、z检验不是针对率以及构成比的检验吗？？？为什么也可以用来做均数的检验</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/67. 在随机区组设计的方差分析中，通常不考虑 【单选题】</p>
+        <p>A.区组因素的作用</p>
+        <p>B.研究因素与区组因素的交互作用</p>
+        <p>C.变异的分解</p>
+        <p>D.研究因素的作用</p>
+        <p>E.以上都不对</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、b选项是析因分析需要考虑的</p>
+            <p>2、啥意思</p>
+            <p>3、怎么理解的？</p>
+            <p>4、？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/67. 多组资料的秩和检验，哪种情况下H值近似X<sup>2</sup>分布 【单选题】</p>
+        <p>A.组数≥3，同时例数≥5</p>
+        <p>B.组数≥3，同时例数≥6</p>
+        <p>C.组数≥5，同时例数≥5</p>
+        <p>D.组数≥3，例数无限制</p>
+        <p>E.以上均不对</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、当组数k=2，n>10或当组数k>=3，n>5时，H分布近似服从于v=k-1的X^2分布，不要问我为啥，我们老师这样教的</p>
+            <p>2、书上完全随机设计多个样本比较的秩和检验中写了：当组数或其含量超出H界值表范围时，H分布近似于自由度为组数减一的卡方分布，可查卡方界值表，得P值。</p>
+            <p>3、？？？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/67. 成组设计的方差分析中，若处理因素无作用，则理论上 【单选题】</p>
+        <p>A.F>1</p>
+        <p>B.F
+            <1</p>
+                <p>C.F=0</p>
+                <p>D.F=1</p>
+                <p>E.以上均正确</p>
+                <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+                <div class="datas" id="data11" style="display: none;">
+                    <p id='ptockda'>参考答案：D</p>
+                    <p id='ptopl'>解释与评论:</p>
+                    <p>1、书中原话，若F值接近1，可认为处理因素无作用</p>
+                    <p>2、？</p>
+                </div>
+    </div>
+    <div class='form-label'>
+        <p>12/67. 直线回归与相关可用于研究变量间是否存在 【单选题】</p>
+        <p>A.函数关系</p>
+        <p>B.因果关系</p>
+        <p>C.线性关系</p>
+        <p>D.曲线关系</p>
+        <p>E.伴随关系</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/67. 进行直线回归分析时首先应 【单选题】</p>
+        <p>A.计算截距</p>
+        <p>B.计算回归系数</p>
+        <p>C.绘制散点图</p>
+        <p>D.对回归系数进行假设检验</p>
+        <p>E.判断回归系数的正、负</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/67. 成组设计两样本比较的秩和检验中，描述不正确的是 【单选题】</p>
+        <p>A.将两组数据统一由小到大编秩</p>
+        <p>B.遇有相同数据，若在同一组，按顺序编秩</p>
+        <p>C.遇有相同数据，若在不同组，按顺序编秩</p>
+        <p>D.遇有相同数据，若在不同组，取其平均秩次</p>
+        <p>E.以样本例数较小组的秩和查T界值表</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、？不是按数的绝对值吗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/67. 秩和检验的优点是 【单选题】</p>
+        <p>A.犯判断错误概率小</p>
+        <p>B.不拘于分布类型</p>
+        <p>C.适用于两组均数的比较</p>
+        <p>D.适用于两个率的比较</p>
+        <p>E.充分利用样本信息</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/67. 四组等级资料比较宜采用 【单选题】</p>
+        <p>A.t检验</p>
+        <p>B.X<sup>2</sup>检验</p>
+        <p>C.秩和检验</p>
+        <p>D.Z检验</p>
+        <p>E.t’检验</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、统计都忘光了</p>
+            <p>2、错了好几次啦这题</p>
+            <p>3、等级资料，只能选秩和</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/67. 配对比较的秩和检验，若检验假设零假设成立，则 【单选题】</p>
+        <p>A.正秩和与负秩和相差不会很大</p>
+        <p>B.正秩和与负秩和可能相差很大</p>
+        <p>C.正秩和的绝对值大于负秩和的绝对值</p>
+        <p>D.正秩和的绝对值小于负秩和的绝对值</p>
+        <p>E.差值为正的秩和与差值为负的秩和肯定相等</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、芭比Q了，兄弟们</p>
+            <p>2、啥玩意 兄弟们
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/67. 两样本秩和检验的零假设是 【单选题】</p>
+        <p>A.两样本秩和相等</p>
+        <p>B.两总体分布相同</p>
+        <p>C.两样本分布相同</p>
+        <p>D.两总体秩和相等</p>
+        <p>E.两总体分布无关</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、两样本为成组设计</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/67. 对10名25岁以上的山区健康男子测量脉搏次数(次／分)，用t检验与全国正常男子资料进行比较，按α=0.05的检验水准，自由度为 【单选题】</p>
+        <p>A.ν=9</p>
+        <p>B.ν=19</p>
+        <p>C.ν=8</p>
+        <p>D.ν=20</p>
+        <p>E.ν=18</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/67. 某医院用国产呋喃硝胺治疗十二指肠球部溃疡，用西咪替丁为对照，观察6周有如下结论：呋喃硝胺治疗62人，治愈44人，西咪替丁治疗78人，治愈38人。用什么样方法得出两种药物疗效相同或不同的结论 【单选题】</p>
+        <p>A.计算两药物的治愈率直接比较</p>
+        <p>B.进行率的标准化处理</p>
+        <p>C.用四格表的X<sup>2</sup>检验</p>
+        <p>D.用四格表的校正X<sup>2</sup>检验</p>
+        <p>E.用配对资料的检验</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、比照课本86页例题理解</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/67. 收集资料是 【单选题】</p>
+        <p>A.获得原始资料</p>
+        <p>B.统计设计</p>
+        <p>C.统计归纳，进行分组和汇总</p>
+        <p>D.撰写文章</p>
+        <p>E.计算统计指标，选择合适的检验方法并做出恰当的结论</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、对的</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/67. 整理资料是 【单选题】</p>
+        <p>A.获得原始资料</p>
+        <p>B.统计设计</p>
+        <p>C.统计归纳，进行分组和汇总</p>
+        <p>D.撰写文章</p>
+        <p>E.计算统计指标，选择合适的检验方法并做出恰当的结论</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/67. 分析资料是 【单选题】</p>
+        <p>A.获得原始资料</p>
+        <p>B.统计设计</p>
+        <p>C.统计归纳，进行分组和汇总</p>
+        <p>D.撰写文章</p>
+        <p>E.计算统计指标，选择合适的检验方法并做出恰当的结论</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/67. 血清抗体滴度资料最常以 【单选题】</p>
+        <p>A.算术均数表示其平均水平</p>
+        <p>B.中位数表示其平均水平</p>
+        <p>C.几何均数表示其平均水平</p>
+        <p>D.众数表示其平均水平</p>
+        <p>E.百分位数表示其平均水平</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、血清抗体滴度是等比资料，等比资料的平均数要用几何均数表示</p>
+            <p>2、为什么？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/67. 血红蛋白含量最常以 【单选题】</p>
+        <p>A.算术均数表示其平均水平</p>
+        <p>B.中位数表示其平均水平</p>
+        <p>C.几何均数表示其平均水平</p>
+        <p>D.众数表示其平均水平</p>
+        <p>E.百分位数表示其平均水平</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/67. 食物中毒的潜伏期最常以 【单选题】</p>
+        <p>A.算术均数表示其平均水平</p>
+        <p>B.中位数表示其平均水平</p>
+        <p>C.几何均数表示其平均水平</p>
+        <p>D.众数表示其平均水平</p>
+        <p>E.百分位数表示其平均水平</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、中位数适用于偏态分布</p>
+            <p>2、不太理解</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/67. 发病率 【单选题】</p>
+        <p>A.表示某病发生严重程度</p>
+        <p>B.反映两个指标的相对关系</p>
+        <p>C.反映某病在各疾病中所占的位次</p>
+        <p>D.反映同种病不同时间动态变化情况</p>
+        <p>E.反映同种病不同地区的严重情况</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、发病率是发病危险的直接指标，可用于探讨疾病的危险因素，评价疾病防治效果</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/67. 构成比 【单选题】</p>
+        <p>A.表示某病发生严重程度</p>
+        <p>B.反映两个指标的相对关系</p>
+        <p>C.反映某病在各疾病中所占的位次</p>
+        <p>D.反映同种病不同时间动态变化情况</p>
+        <p>E.反映同种病不同地区的严重情况</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、构成比是指若一个事物由若干成分构成，则其中某一成分在整个事物中所占的比例或比重</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/67. 相对比 【单选题】</p>
+        <p>A.表示某病发生严重程度</p>
+        <p>B.反映两个指标的相对关系</p>
+        <p>C.反映某病在各疾病中所占的位次</p>
+        <p>D.反映同种病不同时间动态变化情况</p>
+        <p>E.反映同种病不同地区的严重情况</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/67. 在科研工作过程中，从统计学角度不属于搜集资料过程的是 【单选题】</p>
+        <p>A.数据录入</p>
+        <p>B.实验</p>
+        <p>C.专题调查</p>
+        <p>D.统计报表</p>
+        <p>E.医生的工作记录</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、数据录入是资料整理，实验、专题报告、统计报表、医生的工作记录是收集资料的来源</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/67. 在科研工作过程中，从统计学角度分析资料包括 【单选题】</p>
+        <p>A.可比性，可靠性</p>
+        <p>B.设计、分析</p>
+        <p>C.随机、均衡</p>
+        <p>D.讨论</p>
+        <p>E.数据整理和分析</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/67. 分析四格表资料时，通常在什么情况下需用连续性校正公式 【单选题】</p>
+        <p>A.1＜T＜5和n＞40</p>
+        <p>B.T＜5</p>
+        <p>C.T＜1或n＜40</p>
+        <p>D.T≤1或n≤100</p>
+        <p>E.T＞5和n＞40</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/67. 在两样本均数推断两总体均数差别的检验中，检验假设(无效假设)是 【单选题】</p>
+        <p>A.两样本均数差异无统计学意义</p>
+        <p>B.两总体均数差异无统计学意义</p>
+        <p>C.两样本均数相等</p>
+        <p>D.两总体均数相等</p>
+        <p>E.两总体均数不等</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、无效假设即H0</p>
+            <p>2、无效假设为什么是这个</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/67. 百分条图表示各组成部分各百分构成，其作用用于 【单选题】</p>
+        <p>A.直条图</p>
+        <p>B.线图</p>
+        <p>C.圆图</p>
+        <p>D.直方图</p>
+        <p>E.散点图</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、wghy
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/67. 已知某病患者8人的潜伏期(天)分别为：6、8、8、10、12、15、16、＞17，其平均潜伏期(天)为 【单选题】</p>
+        <p>A.8</p>
+        <p>B.10</p>
+        <p>C.11</p>
+        <p>D.12</p>
+        <p>E.15</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、中位数</p>
+            <p>2、一端数据不明确，集中趋势无法用均数来描述，可用中位数</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/67. 下列说法正确的是 【单选题】</p>
+        <p>A.测定60名正常成年女性血小板数所得资料只能是计量资料</p>
+        <p>B.统计工作步骤中最重要的是分析资料</p>
+        <p>C.概率是描述某随机事件发生可能性大小的指标</p>
+        <p>D.样本一定具有随机性</p>
+        <p>E.样本的指标称为参数</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、随机抽样样本具有随机性和独立性，样本不一定具有随机性</p>
+            <p>2、随机但不能随便</p>
+            <p>3、统计工作步骤中最重要的是设计</p>
+            <p>4、样本具有随机性为何不对？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/67. 为说明某医院夏、秋季肠道传染病在门诊病例中的比重大小，应选用的指标是 【单选题】</p>
+        <p>A.率</p>
+        <p>B.构成比</p>
+        <p>C.相对比</p>
+        <p>D.均数</p>
+        <p>E.中位数</p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/67. 统计推断的内容是 【单选题】</p>
+        <p>A.计算标准化率</p>
+        <p>B.计算样本率</p>
+        <p>C.计算样本均值</p>
+        <p>D.检验统计上的“假设“</p>
+        <p>E.估汁参考值范围</p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/67. 用两种不同剂量的电离辐射照射小鼠，第一种剂量照射25只，在照射后14天内死亡4只；第二种剂量照射18只，同时期内死亡5只。问这两种剂量对小鼠致死作用是否相同？呵选用的适当方法是 【单选题】</p>
+        <p>A.卡方检验</p>
+        <p>B.校正卡方检验</p>
+        <p>C.u检验</p>
+        <p>D.直接计算概率法</p>
+        <p>E.两种剂量死亡率分别为56%和27.8%，可认为作用不同</p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、理论频算出来刚好大于5，上面骂的太难听了吧</p>
+            <p>2、一群煞笔</p>
+            <p>3、这个题错了吧 应该是B吧 因为最小T为2 在1和5之间 需要用校正公式 </p>
+            <p>4、应该选b吧，第二次死亡T值小于5</p>
+            <p>5、理论频数T等于行合计乘列合计除以总例数</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/67. 观察各种死亡原因所占的比重大小，最好绘制的图形为 【单选题】</p>
+        <p>A.直条图</p>
+        <p>B.直方图</p>
+        <p>C.圆形图</p>
+        <p>D.线图</p>
+        <p>E.半对数线图</p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>41/67. 表示某地1990-1994年肝炎病例的年龄分布，宜采用 【单选题】</p>
+        <p>A.直方图</p>
+        <p>B.直条图</p>
+        <p>C.线图</p>
+        <p>D.圆形图</p>
+        <p>E.散点图</p>
+        <div class="divXSDA" id="showAndHideButton41" onclick="showAndHideButton('data41','showAndHideButton41')">显示答案</div>
+        <div class="datas" id="data41" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、直方图是频率</p>
+            <p>2、复试直条图也可以</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>42/67. 表示某地1995年5种不同类型病毒性肝炎发患者数占病毒性肝炎发病总人数的比重，宜采用 【单选题】</p>
+        <p>A.直方图</p>
+        <p>B.直条图</p>
+        <p>C.线图</p>
+        <p>D.圆形图</p>
+        <p>E.散点图</p>
+        <div class="divXSDA" id="showAndHideButton42" onclick="showAndHideButton('data42','showAndHideButton42')">显示答案</div>
+        <div class="datas" id="data42" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>43/67. 进行，甲乙两地2000年5种不同类型病毒性肝炎发病率的比较，宜采用 【单选题】</p>
+        <p>A.直方图</p>
+        <p>B.直条图</p>
+        <p>C.线图</p>
+        <p>D.圆形图</p>
+        <p>E.散点图</p>
+        <div class="divXSDA" id="showAndHideButton43" onclick="showAndHideButton('data43','showAndHideButton43')">显示答案</div>
+        <div class="datas" id="data43" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>44/67. 描述偏态分布的计量资料集中趋势的指标是 【单选题】</p>
+        <p>A.均数</p>
+        <p>B.几何均数</p>
+        <p>C.中位数</p>
+        <p>D.标准差</p>
+        <p>E.方差</p>
+        <div class="divXSDA" id="showAndHideButton44" onclick="showAndHideButton('data44','showAndHideButton44')">显示答案</div>
+        <div class="datas" id="data44" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、几何均数呢</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>45/67. 平均数是用于表示一组同质观察值的 【单选题】</p>
+        <p>A.分布情况</p>
+        <p>B.离散趋势</p>
+        <p>C.集中趋势</p>
+        <p>D.抽样误差</p>
+        <p>E.个体间变化水平</p>
+        <div class="divXSDA" id="showAndHideButton45" onclick="showAndHideButton('data45','showAndHideButton45')">显示答案</div>
+        <div class="datas" id="data45" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>46/67. 描述一组偏态分布计量资料的变异度，宜选择 【单选题】</p>
+        <p>A.全距(R)</p>
+        <p>B.中位数(M)</p>
+        <p>C.标准差(S)</p>
+        <p>D.变异系数(CV)</p>
+        <p>E.四分位数间距</p>
+        <div class="divXSDA" id="showAndHideButton46" onclick="showAndHideButton('data46','showAndHideButton46')">显示答案</div>
+        <div class="datas" id="data46" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、中位数描述集中趋势</p>
+            <p>2、E</p>
+            <p>3、选E 偏态分布用中位数与四分位数</p>
+            <p>4、E是错的，选d</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>47/67. 对计数资料进行描述的主要指标是 【单选题】</p>
+        <p>A.均数</p>
+        <p>B.相对数</p>
+        <p>C.标准差</p>
+        <p>D.中位数</p>
+        <p>E.四分位数间距</p>
+        <div class="divXSDA" id="showAndHideButton47" onclick="showAndHideButton('data47','showAndHideButton47')">显示答案</div>
+        <div class="datas" id="data47" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、. 对计数资料进行描述的主要指标是相对数</p>
+            <p>2、定量变量资料又称计量资料，定性变量资料又称计数资料 由于定性变量资料无法直接获取总体参数，研究者必须从中随机抽取一定数量的个体构成样本进行研究。 由样本数据所算得的反映定性变量资料分布特征点估计量，称为相对数
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>48/67. 用样本均数估计总体均数的可靠性大小时所使用的指标是 【单选题】</p>
+        <p>A.标准差</p>
+        <p>B.标准误</p>
+        <p>C.变异系数</p>
+        <p>D.算术均数</p>
+        <p>E.全距</p>
+        <div class="divXSDA" id="showAndHideButton48" onclick="showAndHideButton('data48','showAndHideButton48')">显示答案</div>
+        <div class="datas" id="data48" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>49/67. 描述抽样误差大小的指标是 【单选题】</p>
+        <p>A.中位数</p>
+        <p>B.变异系数</p>
+        <p>C.标准差</p>
+        <p>D.算术均数</p>
+        <p>E.标准误</p>
+        <div class="divXSDA" id="showAndHideButton49" onclick="showAndHideButton('data49','showAndHideButton49')">显示答案</div>
+        <div class="datas" id="data49" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、用样本均数估计总体均数的可靠性大小时所使用的指标是标准误，反应了抽样误差</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>50/67. 某市检查健康女性144人的血红蛋白的含量。得均数为122g／L，标准差为10g／L。那么该地健康女性血红蛋白的含量医学参考值范围为 【单选题】</p>
+        <p>A.＜138.5g／L</p>
+        <p>B.96.2～147.8g／L</p>
+        <p>C.102.4～141.6g／L</p>
+        <p>D.＞105.6g／L</p>
+        <p>E.120.4～123.6g／L</p>
+        <div class="divXSDA" id="showAndHideButton50" onclick="showAndHideButton('data50','showAndHideButton50')">显示答案</div>
+        <div class="datas" id="data50" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、均数加减1.96倍的标准差</p>
+            <p>2、122+-1.96的标准误</p>
+            <p>3、医学参考值范围怎么求？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>51/67. 那么该地健康女性血红蛋白的含量均数95%的范围为(某市检查健康女性144人的血红蛋白的含量。得均数为122g／L，标准差为10g／L。) 【单选题】</p>
+        <p>A.＜138.5g／L</p>
+        <p>B.96.2～147.8g／L</p>
+        <p>C.102.4～141.6g／L</p>
+        <p>D.＞105.6g／L</p>
+        <p>E.120.4～123.6g／L</p>
+        <div class="divXSDA" id="showAndHideButton51" onclick="showAndHideButton('data51','showAndHideButton51')">显示答案</div>
+        <div class="datas" id="data51" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、上一题是算参考值范围，这一题算置信区间，要用均数加减1.96*标准误，就是1.96*标准差/根号n</p>
+            <p>2、不是选C么</p>
+            <p>3、均数+（-）t0.05/2,143*S/根号n</p>
+            <p>4、要用标准误算，总体均数范围和医学参考值范围不一样，一个对象是总体均数，一个对象是样本均数</p>
+            <p>5、要考虑抽样误差</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>52/67. (2013)在一项研究某药疗效的临床试验中，服用该药后治疗效果的指标表示为无效、好转，显效和痊愈。则此变量类型为 【单选题】</p>
+        <p>A.无序分类变量</p>
+        <p>B.等级变量</p>
+        <p>C.名义变量</p>
+        <p>D.定量变量</p>
+        <p>E.定性变量</p>
+        <div class="divXSDA" id="showAndHideButton52" onclick="showAndHideButton('data52','showAndHideButton52')">显示答案</div>
+        <div class="datas" id="data52" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>53/67. (2005)下列有关概率与频率，说法正确的是 【单选题】</p>
+        <p>A.概率常用符号M表示</p>
+        <p>B.频率常用符号P表示</p>
+        <p>C.概率就是频率</p>
+        <p>D.概率的取值范围介于-1和+1之间</p>
+        <p>E.概率是描述某随机事件发生可能性大小的指标</p>
+        <div class="divXSDA" id="showAndHideButton53" onclick="showAndHideButton('data53','showAndHideButton53')">显示答案</div>
+        <div class="datas" id="data53" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>54/67. (2003)为了保证研究结果能够回答研究目的中提出的问题，使用的人、财、物、时间较少，结果可靠，应该作好的首要工作是 【单选题】</p>
+        <p>A.资料收集</p>
+        <p>B.科研设计</p>
+        <p>C.资料整理</p>
+        <p>D.资料分析</p>
+        <p>E.结果的表达</p>
+        <div class="divXSDA" id="showAndHideButton54" onclick="showAndHideButton('data54','showAndHideButton54')">显示答案</div>
+        <div class="datas" id="data54" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、设计为核心内容</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>55/67. (2013)某幼儿园大班11名6岁儿童接受百日咳疫苗注射后，做血清抗体测定，其抗体滴度分别为：1:20，1:20，1:20，1:40，1:40，1:80，1:80，1:160，1:160，1:320，1:640。描述抗体滴度集中趋势的指标应选用 【单选题】</p>
+        <p>A.标准差</p>
+        <p>B.极差</p>
+        <p>C.算术平均数</p>
+        <p>D.几何平均数</p>
+        <p>E.四分位间距</p>
+        <div class="divXSDA" id="showAndHideButton55" onclick="showAndHideButton('data55','showAndHideButton55')">显示答案</div>
+        <div class="datas" id="data55" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、这道题有大神可以解释一下嘛</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>56/67. (2003)对10名25岁以上的山区健康男子测量脉搏次数(次／分)，用t检验与全国正常男子治疗进行比较，按α＝0.05的检验水准，自由度为 【单选题】</p>
+        <p>A.v＝9</p>
+        <p>B.v＝19</p>
+        <p>C.v＝8</p>
+        <p>D.v＝20</p>
+        <p>E.v＝18</p>
+        <div class="divXSDA" id="showAndHideButton56" onclick="showAndHideButton('data56','showAndHideButton56')">显示答案</div>
+        <div class="datas" id="data56" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、v=n-1</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>57/67. (2002)两组呈正态分布的数值变量资料，但均数相差悬殊，若比较离散趋势，最好选用的指标为 【单选题】</p>
+        <p>A.全距</p>
+        <p>B.四分位数间距</p>
+        <p>C.方差</p>
+        <p>D.标准差</p>
+        <p>E.变异系数</p>
+        <div class="divXSDA" id="showAndHideButton57" onclick="showAndHideButton('data57','showAndHideButton57')">显示答案</div>
+        <div class="datas" id="data57" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、均数差别大用变异系数</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>58/67. (2012)标准正态分布的两个参数值分别是 【单选题】</p>
+        <p>A.μ＝0，σ＝0</p>
+        <p>B.μ＝1，σ＝O</p>
+        <p>C.μ＝1，σ＝-1</p>
+        <p>D.μ＝-1，σ＝1</p>
+        <p>E.μ＝0，σ＝1</p>
+        <div class="divXSDA" id="showAndHideButton58" onclick="showAndHideButton('data58','showAndHideButton58')">显示答案</div>
+        <div class="datas" id="data58" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>59/67. (2003)从一个呈正态分布的总体中随机抽样，X≠μ，该差别被称为 【单选题】</p>
+        <p>A.系统误差</p>
+        <p>B.个体误差</p>
+        <p>C.过失误差</p>
+        <p>D.抽样误差</p>
+        <p>E.测量误差</p>
+        <div class="divXSDA" id="showAndHideButton59" onclick="showAndHideButton('data59','showAndHideButton59')">显示答案</div>
+        <div class="datas" id="data59" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>60/67. (2013)某医院抽样调查得100名健康人血清胆固醇数值(mmol／L)，资料呈正态分布。经计算平均数为4.8000，标准差为0.7920，则标准误为 【单选题】</p>
+        <p>A.0.0792</p>
+        <p>B.0.7920</p>
+        <p>C.0.0079</p>
+        <p>D.0.0480</p>
+        <p>E.7.920</p>
+        <div class="divXSDA" id="showAndHideButton60" onclick="showAndHideButton('data60','showAndHideButton60')">显示答案</div>
+        <div class="datas" id="data60" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、标准误=标准差除以样本量的平方根</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>61/67. (2011)在抽样研究中，当样本例数逐渐增多时 【单选题】</p>
+        <p>A.标准差逐渐减小</p>
+        <p>B.标准差逐渐加大</p>
+        <p>C.标准差趋近于0</p>
+        <p>D.标准误逐渐减小</p>
+        <p>E.标准误逐渐加大</p>
+        <div class="divXSDA" id="showAndHideButton61" onclick="showAndHideButton('data61','showAndHideButton61')">显示答案</div>
+        <div class="datas" id="data61" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、标准误与n成反比，标准差是总体的特征</p>
+            <p>2、标准差逐渐趋于稳定</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>62/67. (2013)上世纪50年代，发现某省部分地区的居民因长期饮用深井高碘水导致高碘性甲状腺肿，随即抽查得到该地区甲、乙两村常住居民的高碘性甲状腺肿患病率，甲村为20.6%，乙村为25.3%，则甲乙两村该病的合计患病率应为 【单选题】</p>
+        <p>A.甲乙两村调查人群中患该病总人数除以调查总人数</p>
+        <p>B.两患病率的几何平均数，得29.11%</p>
+        <p>C.两患病率相加，得45.9%</p>
+        <p>D.两个患病率相乘，得5.21%</p>
+        <p>E.两患病率的平均数，为22.95%</p>
+        <div class="divXSDA" id="showAndHideButton62" onclick="showAndHideButton('data62','showAndHideButton62')">显示答案</div>
+        <div class="datas" id="data62" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>63/67. (2004)在病例对照研究中，估计某因素与疾病的联系程度，应计算 【单选题】</p>
+        <p>A.RR</p>
+        <p>B.RR-1</p>
+        <p>C.OR</p>
+        <p>D.OR-1</p>
+        <p>E.P<sub>1</sub>-P<sub>0</sub></p>
+        <div class="divXSDA" id="showAndHideButton63" onclick="showAndHideButton('data63','showAndHideButton63')">显示答案</div>
+        <div class="datas" id="data63" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、病例对照研究中无暴露与非暴露人群的观察人数，不能计算发病率和死亡率，因而不能算RR，可以算OR</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>64/67. 统计学检验的检验假设(无效假设)和选择假设分别是 【单选题】</p>
+        <p>A.H<sub>0</sub>:P<sub>1</sub>＝P<sub>2</sub>,H<sub>1</sub>:P<sub>1</sub>≠P<sub>2</sub></p>
+        <p>B.H<sub>0</sub>:P<sub>1</sub>＝P<sub>2</sub>,H<sub>1</sub>:P<sub>1</sub>＜P<sub>2</sub></p>
+        <p>C.H<sub>0</sub>:π<sub>1</sub>＝π<sub>2</sub>，H<sub>1</sub>:π<sub>1</sub>≠π<sub>2</sub></p>
+        <p>D.H<sub>0</sub>:π<sub>1</sub>＝π<sub>2</sub>,H<sub>1</sub>:π<sub>1</sub>＜π<sub>2</sub></p>
+        <p>E.H<sub>0</sub>:π<sub>1</sub>＝π<sub>2</sub>,H<sub>1</sub>:π<sub>1</sub>＞π<sub>2</sub></p>
+        <div class="divXSDA" id="showAndHideButton64" onclick="showAndHideButton('data64','showAndHideButton64')">显示答案</div>
+        <div class="datas" id="data64" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么不选c</p>
+            <p>2、应该选c</p>
+            <p>3、假设检验这个符号什么意思呀</p>
+            <p>4、这符号是啥意思</p>
+            <p>5、答案错了！</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>65/67. (2005)经u检验，若u值等于2.95，则P 【单选题】</p>
+        <p>A.＞0.05</p>
+        <p>B.＞0.03</p>
+        <p>C.＞0.02</p>
+        <p>D.＞0.01</p>
+        <p>E.＜0.01</p>
+        <div class="divXSDA" id="showAndHideButton65" onclick="showAndHideButton('data65','showAndHideButton65')">显示答案</div>
+        <div class="datas" id="data65" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、经u检验，若u值等于2.95，则P＜0.01</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>66/67. (2012)某医师拟比较四组人群血型分布(A、B、AB和O型)的差别，适宜的统计分析方法为 【单选题】</p>
+        <p>A.u检验</p>
+        <p>B.回归分析</p>
+        <p>C.秩和检验</p>
+        <p>D.t检验</p>
+        <p>E.卡方检验</p>
+        <div class="divXSDA" id="showAndHideButton66" onclick="showAndHideButton('data66','showAndHideButton66')">显示答案</div>
+        <div class="datas" id="data66" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、等级资料用秩和，无序资料和二分类变量用卡方>
+                <p>>>
+                    <p>2、这个与顺序无关>
+                        <p>3、技术资料</p>
+                        <p>4、？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>67/67. (2004)两个正态双变量资料，自变量记为X，因变量记为Y，进行回归分析，回归系数为0.2，经统计学检验，P＝0.05，则 【单选题】</p>
+        <p>A.X增大一个单位，Y增大0.2个单位</p>
+        <p>B.X增大一个单位，Y减小0.05个单位</p>
+        <p>C.X增大一个单位，Y增大0.05个单位</p>
+        <p>D.X增大一个单位，Y减小0.2个单位</p>
+        <p>E.X增大一个单位，Y减少或增大0.2个单位都有可能</p>
+        <div class="divXSDA" id="showAndHideButton67" onclick="showAndHideButton('data67','showAndHideButton67')">显示答案</div>
+        <div class="datas" id="data67" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、Y=0.2X</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

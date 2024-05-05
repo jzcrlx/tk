@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>噬菌体(共3题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">毒性噬菌体的概念</div>
+                <div class="layui-input-block">
+
+                    <p>A.在宿主菌体内复制增殖</p>
+
+                    <p>B.产生许多子代噬菌体，并最终裂解细菌</p>
+
+                    <p>C.毒性噬菌体的增殖方式是复制</p>
+
+                    <p>D.增殖过程经吸附、穿入与脱壳、生物合成和成熟释放四个阶段</p>
+
+                    <p>E.以上均正确</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：E</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">噬菌体在分类上属于</div>
+                <div class="layui-input-block">
+
+                    <p>A.细菌</p>
+
+                    <p>B.病毒</p>
+
+                    <p>C.原虫</p>
+
+                    <p>D.支原体</p>
+
+                    <p>E.真菌</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：B</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o3">
+            <div class="sttk-top">
+                <span>3、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">关于噬菌体生物性状叙述错误的是</div>
+                <div class="layui-input-block">
+
+                    <p>A.能通过细菌滤器</p>
+
+                    <p>B.不具有抗原性</p>
+
+                    <p>C.主要成分是核酸和蛋白质</p>
+
+                    <p>D.必须在活菌内寄生</p>
+
+                    <p>E.具有严格的宿主特异性</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('dats3','showAndHideButton3')">显示答案</div>
+                <div class="datas" id="dats3" style="display: none;">
+                    <p>参考答案：B</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

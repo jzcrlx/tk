@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>分枝杆菌属(共3题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">结核分枝杆菌化学组成最显著的特点是含有大量的</div>
+                <div class="layui-input-block">
+
+                    <p>A.RNA</p>
+
+                    <p>B.脂类</p>
+
+                    <p>C.多糖</p>
+
+                    <p>D.蛋白质</p>
+
+                    <p>E.磷壁酸</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：B</p>
+                    <p>题目解析：结核分枝杆菌化学组成最显著的特点是细胞壁含有大量脂质，与其染色特性、培养特性、抵抗力、致病性等密切相关。故选B。A、C、D、E都不是结核分枝杆菌化学组成最显著的特点。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">结核分枝杆菌形态学诊断最常用的染色方法是</div>
+                <div class="layui-input-block">
+
+                    <p>A.革兰染色</p>
+
+                    <p>B.抗酸染色</p>
+
+                    <p>C.亚甲蓝染色</p>
+
+                    <p>D.镀银染色</p>
+
+                    <p>E.棉蓝染色</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：B</p>
+                    <p>题目解析：结核分枝杆菌是典型的抗酸杆菌，难以着色，在加温条件下经苯胺染料染色后不易被3%盐酸酒精脱色，是分枝杆菌最明显的特征，故选B。其他选项都不是结核分枝杆菌形态学诊断常用的染色方法，都不正确。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o3">
+            <div class="sttk-top">
+                <span>3、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">用抗酸染色法染色后，结核杆菌在光学显微镜下的典型形态是</div>
+                <div class="layui-input-block">
+
+                    <p>A.为紫色的栅栏状排列杆菌</p>
+
+                    <p>B.为红色的粗大杆菌</p>
+
+                    <p>C.为紫色的略带弯曲的细长杆菌</p>
+
+                    <p>D.为红色的竹节状排列杆菌</p>
+
+                    <p>E.为红色的略带弯曲的细长杆菌</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('dats3','showAndHideButton3')">显示答案</div>
+                <div class="datas" id="dats3" style="display: none;">
+                    <p>参考答案：E</p>
+                    <p>题目解析：结核杆菌菌体细长略弯，有时呈分枝状，齐-尼抗酸染色阳性，呈红色。细胞壁脂质含量较高，影响营养物质吸收，故生长缓慢。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>局部麻醉药 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 局麻药引起局麻作用的电生理学机制是 【单选题】</p>
+        <p>A.促进Na<sup>+</sup>内流</p>
+        <p>B.阻止Na<sup>+</sup>内流</p>
+        <p>C.促进Ca<sup>2+</sup>内流</p>
+        <p>D.阻止Ca<sup>2+</sup>内流</p>
+        <p>E.阻止K<sup>+</sup>外流</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、膜电位变化首先就有钠离子内流</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 毒性最大的局麻药是 【单选题】</p>
+        <p>A.普鲁卡因</p>
+        <p>B.利多卡因</p>
+        <p>C.丁卡因</p>
+        <p>D.布比卡因</p>
+        <p>E.依替卡因</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、丁卡因毒性最大，利多卡因应用最多</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 局麻作用起效快、作用强维持时间长且安全范围大的药物是 【单选题】</p>
+        <p>A.普鲁卡因</p>
+        <p>B.利多卡因</p>
+        <p>C.丁卡因</p>
+        <p>D.布比卡因</p>
+        <p>E.依替卡因</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 普鲁卡因不宜用于哪种麻醉 【单选题】</p>
+        <p>A.表面麻醉</p>
+        <p>B.浸润麻醉</p>
+        <p>C.传导麻醉</p>
+        <p>D.硬膜外麻醉</p>
+        <p>E.蛛网膜下腔麻醉</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、丁卡因用于表面麻醉</p>
+            <p>2、因为普鲁卡因皮肤粘膜吸收差</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 丁卡因的作用为 【单选题】</p>
+        <p>A.可用于浸润麻醉</p>
+        <p>B.脂溶性低</p>
+        <p>C.穿透力弱</p>
+        <p>D.作用较普鲁卡因弱</p>
+        <p>E.可用于表面麻醉</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、丁卡因可用于表面麻醉，利多卡因应用广泛，普鲁卡因不用于表面麻醉</p>
+            <p>2、毒性最大</p>
+            <p>3、细心</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

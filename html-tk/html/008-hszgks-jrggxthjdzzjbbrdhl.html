@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>骨质疏松症病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/3. 下列有关骨质疏松症的说法，错误的是 【单选题】</p>
+        <p>A.原发性骨质疏松症是自然衰老过程中，骨骼系统的退行性改变</p>
+        <p>B.特发性骨质疏松症是由于疾病或药物损害所诱发的骨质疏松</p>
+        <p>C.骨质疏松会导致病理性骨折</p>
+        <p>D.男女约在40岁时便开始出现与年龄有关的骨持续性丢失</p>
+        <p>E.骨重建中，骨破坏多于骨新建，则导致骨质疏松</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、继发性骨质疏松症是由于疾病或药物损害所诱发的骨质疏松。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 诱发骨质疏松的病因不包括 【单选题】</p>
+        <p>A.膳食结构中缺乏钙、磷或维生素D等物质</p>
+        <p>B.妇女在停经后缺乏雌激素的分泌</p>
+        <p>C.妊娠或哺乳期妇女会大量流失钙</p>
+        <p>D.长期大量的饮酒、咖啡、吸烟</p>
+        <p>E.长期服用补充维生素的药物</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 下列有关骨质疏松症病人的说法，错误的是 【单选题】</p>
+        <p>A.疼痛是骨质疏松症最常见、最主要的症状，以腰背痛多见。</p>
+        <p>B.身长缩短、驼背是继腰背痛后出现的重要体征之一。</p>
+        <p>C.应进食高蛋白、高能量、高纤维素、高维生素饮食，摄入足够的钙</p>
+        <p>D.在日常活动中，即使没有较大的外力作用也可发生骨折。</p>
+        <p>E.呼吸困难是原发性骨质疏松最常见和最严重的并发症。</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、骨质疏松症的临床表现有：1.疼痛　是骨质疏松症最常见、最主要的症状。以腰背痛多见，占疼痛病人的70%～80%。疼痛沿脊柱向两侧扩散。2.身长缩短、驼背　是继腰背痛后出现的重要体征之一。随着年龄增长骨质疏松加重，驼背曲度加大，致使膝关节挛缩显著。老年人骨质疏松时，每椎体缩短2mm左右，身长平均缩短3～6cm。3.骨折　骨质疏松症骨折发生的特点：在扭转身体、持物、开窗等室内日常活动中，即使没有较大的外力作用也可发生骨折。骨折是原发性骨质疏松最常见和最严重的并发症。4.呼吸系统障碍　胸腰椎压缩性骨折导致脊椎后弯、胸廓畸形，可使肺活量和最大换气量显著减少，病人往往可出现胸闷、气短、呼吸困难等症状。</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

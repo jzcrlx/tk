@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>毒蛇咬伤病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 毒蛇咬伤现场急救首先应 【单选题】</p>
+        <p>A.过氧化氢溶液冲洗伤口</p>
+        <p>B.普鲁卡因局部封闭</p>
+        <p>C.伤口近端绑扎</p>
+        <p>D.服用蛇药</p>
+        <p>E.迅速奔跑</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 患者男性，42岁，在树丛中割草，不慎被蛇咬伤，现场急救时以下哪项有错 【单选题】</p>
+        <p>A.抬高伤肢</p>
+        <p>B.立即呼救</p>
+        <p>C.就地取材，绑扎</p>
+        <p>D.伤口排毒</p>
+        <p>E.切勿奔跑</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 患者男性，26岁。在树丛行走时被蛇咬伤后，局部皮肤留下一对大而深的齿痕，伤口出血不止，周围皮肤迅速出现瘀斑、血疱。应优先采取下列何种急救措施 【单选题】</p>
+        <p>A.伤口排毒</p>
+        <p>B.首先呼救</p>
+        <p>C.早期绑扎伤处近心端的肢体</p>
+        <p>D.立即奔跑到医院</p>
+        <p>E.反复挤压伤口</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 患者男性，26岁。在树丛行走时被蛇咬伤后，局部皮肤留下一对大而深的齿痕，伤口出血不止，周围皮肤迅速出现瘀斑、血疱。为减慢毒素吸收，伤肢应 【单选题】</p>
+        <p>A.限动并下垂</p>
+        <p>B.抬高</p>
+        <p>C.局部热敷</p>
+        <p>D.与心脏置于同一高度</p>
+        <p>E.局部按摩</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 患者男性，26岁。在树丛行走时被蛇咬伤后，局部皮肤留下一对大而深的齿痕，伤口出血不止，周围皮肤迅速出现瘀斑、血疱。为降解伤口内蛇毒，可用于伤口外周封闭的是 【单选题】</p>
+        <p>A.糜蛋白酶</p>
+        <p>B.胰蛋白酶</p>
+        <p>C.淀粉酶</p>
+        <p>D.脂肪酶</p>
+        <p>E.地塞米松</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、胰蛋白酶有直接分解蛇毒作用，可取2000U加入0.05%普鲁卡因20ml，在伤口四周做局部浸润或在伤口上方作环状封闭</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

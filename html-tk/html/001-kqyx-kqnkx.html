@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>绪论 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 口腔内科学 </p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：是口腔医学主要专业课程之一，包括龋病、牙体硬组织非龋性疾病、牙髓病和根尖周病、牙周病、儿童牙病、老年牙病及口腔黏膜病等；主要研究上述疾病的病因、临床病理、临床表现、诊断、治疗和预防。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第五版：牙体牙髓病学是研究牙体硬组织和牙髓组织疾病的发病机制、病理变化、病理生理、临床表现、诊断、治疗及转归的一门学科。主要有龋病学、牙体硬组织非龋性疾病等。</p>
+            <p>2、是口腔医学主要专业课程之一，包括龋病、牙体硬组织非龋性疾病、牙髓病和根尖周病、牙周病、儿童牙病、老年牙病及口腔黏膜病等；主要研究上述疾病的病因、临床病理、临床表现、诊断、治疗和预防。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 口腔内科学的内容包括哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：主要研究龋病、牙体硬组织非龋性疾病、牙髓病和根尖周病、牙周病、儿童牙病、老年牙病及口腔黏膜病等疾病的病因、临床病理、临床表现、诊断、治疗和预防。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第五版内容包括：龋病学、牙体硬组织非龋性疾病、牙髓病学、牙体修复治疗学</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 口腔内科学重点研究的口腔病有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：有龋病、牙体硬组织非龋性疾病、牙髓病和根尖周病、牙周病、儿童牙病、老年牙病及口腔黏膜病。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 举例说明口腔内科学研究的内容有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：口腔内科学主要研究龋病、牙体硬组织非龋性疾病、牙髓病和根尖周病、牙周病、儿童牙病、老年牙病及口腔黏膜病等疾病的病因、临床病理、临床表现、诊断、治疗和预防。如龋病的病因为“四联因素学说”，即包括细菌、食物、宿主和时间；龋病的临床病理本质是无机物脱矿和有机物分解；龋病的临床表现为发生牙体硬组织的色、形、质三方面的病变；龋病的临床诊断分为浅龋、中龋和深龋；龋病的治疗主要是充填修复治疗；龋病的预防主要是采用三级预防理念。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

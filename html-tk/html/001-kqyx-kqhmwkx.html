@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>绪论 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/2. 口腔颌面外科学的主要研究内容包括： 【单选题】</p>
+        <p>A．口腔器官、面部软组织、颌面诸骨</p>
+        <p>B．口腔器官、面部软组织、颈部疾病</p>
+        <p>C．口腔器官、面部软组织、颌面诸骨、颞下颌关节、唾液腺及某些颈部疾病</p>
+        <p>D．口腔器官、面部软组织、颌面诸骨及某些颈部疾病的防治</p>
+        <p>E．口腔器官、面部软组织、颌面诸骨、唾液腺、颞下颌关节疾病的防治</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、口腔颌面部即口腔与颌面部的统称，分面上部，面中部，面下部。</p>
+            <p>2、选C呀</p>
+            <p>3、口腔器官、面部软组织、颌面诸骨、颞下颌关节、唾液腺及某些颈部疾病的防治。（第八版）</p>
+            <p>4、害我用的是七版</p>
+            <p>5、颈部</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/2. 在学习口腔颌面外科学时，应处理好以下几个关系： 【多选题】</p>
+        <p>A．作为医学的分支，须处理好局部与整体的关系，具备全身观点。</p>
+        <p>B．善于透过现象看本质，从临床主诉和体征中探寻疾病的本质。</p>
+        <p>C．具备扎实的普通医学基础和临床医学基础知识，并将其应用到口腔颌面外科学中。</p>
+        <p>D．加强相关理论的学习</p>
+        <p>E．加强临床实践</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、怎么回事</p>
+            <p>2、还不错</p>
+            <p>3、挺好</p>
+            <p>4、怎么就两个</p>
+            <p>5、全选，</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

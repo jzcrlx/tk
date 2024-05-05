@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>颅内肿瘤病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 成人颅内肿瘤最好发的部位是 【单选题】</p>
+        <p>A.大脑半球</p>
+        <p>B.鞍区</p>
+        <p>C.小脑</p>
+        <p>D.脑干</p>
+        <p>E.小脑脑桥角</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 患者女性，50岁，发热、头痛、呕吐18天，左侧肢体无力6天，发病初有皮肤感染史。实验室检查：周围血白细胞12×10<sup>9</sup>/L，中性粒细胞比例0.76。为明确诊断必做的检查是 【单选题】</p>
+        <p>A.头颅X线平片</p>
+        <p>B.头颅MRI</p>
+        <p>C.头颅CT</p>
+        <p>D.脑血管造影</p>
+        <p>E.脑脊液检查</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 患者男性，69岁。因头痛、头晕、右半身麻木无力2个月，呕吐2日入院。体检：神清，血压正常，眼底视盘模糊不清，视乳头水肿。右面部感觉减退，右侧肢体不全瘫，右侧病理反射阳性。头部CT检查发现有颅内占位性病变。应首先考虑的诊断为 【单选题】</p>
+        <p>A.慢性硬脑膜下血肿</p>
+        <p>B.脑出血</p>
+        <p>C.颅内肿瘤</p>
+        <p>D.脑脓肿</p>
+        <p>E.急性硬脑膜下血肿</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 患者男性，69岁。因头痛、头晕、右半身麻木无力2个月，呕吐2日入院。体检：神清，血压正常，眼底视盘模糊不清，视乳头水肿。右面部感觉减退，右侧肢体不全瘫，右侧病理反射阳性。头部CT检查发现有颅内占位性病变。此时最有效的处理措施是 【单选题】</p>
+        <p>A.持续腰穿引流</p>
+        <p>B.使用脱水药</p>
+        <p>C.开颅病灶切除</p>
+        <p>D.过度换气</p>
+        <p>E.去骨片减压术</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

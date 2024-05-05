@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>绪论 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/3. 关于外科护理学下列叙述不正确的是 【单选题】</p>
+        <p>A．外科疾病不是都需要手术</p>
+        <p>B．现代外科学奠基于19世纪40年代</p>
+        <p>C．外科学与内科学范畴是相对的</p>
+        <p>D．评估及满足病人的基本需要是外科护士的全部工作</p>
+        <p>E．人具有应急与适应的能力，护理的功能之一是增进人的适应能力</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、我不信</p>
+            <p>2、莫开黄腔</p>
+            <p>3、是选D</p>
+            <p>4、题目说的是错误的选项是哪一项，D选项说的太片面和绝对了，就是选这个</p>
+            <p>5、我也不信</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 下列哪种疾病不是以外科治疗为主 【单选题】</p>
+        <p>A．胰腺炎</p>
+        <p>B．肝破裂</p>
+        <p>C．胃溃疡</p>
+        <p>D．下肢静脉曲张</p>
+        <p>E．急性梗阻性化脓性胆管炎</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、下肢静脉曲张最好的治疗方法是手术治疗</p>
+            <p>2、胃溃疡主药物治疗</p>
+            <p>3、楼上正解
+            </p>
+            <p>4、下肢静脉曲张为啥不是？</p>
+            <p>5、胃溃疡难道不是内科疾病吗？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 下列哪项不是外科护理的特点 【单选题】</p>
+        <p>A．发病急</p>
+        <p>B．抢救多</p>
+        <p>C．病情变化快</p>
+        <p>D．老年病人最多</p>
+        <p>E．多数病人存在躯体移动受限</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、相较而言，内科老人多</p>
+            <p>2、老年多是内科特点</p>
+            <p>3、不一定老年最多</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>护理学题库（副高） - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="shortcut icon " type="images/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/mycss.css">
+    <link rel="stylesheet" href="../css/pageHtmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script>
+        // 百度网站统计
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0d411b9725ceefe0ae062f5cf8f77b6a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+
+
+        function w3_open() {
+            if (document.getElementById("mySidebar").style.display == "block") {
+                document.getElementById("main").style.marginLeft = "0%";
+                document.getElementById("mySidebar").style.display = "none";
+            } else {
+                document.getElementById("main").style.marginLeft = "180px";
+                document.getElementById("mySidebar").style.width = "180px";
+                document.getElementById("mySidebar").style.display = "block";
+            }
+        }
+
+        function iframeHeight() {
+            document.getElementById('iframeId').height = "100%";
+        }
+
+
+        function changeSrc(strurl, strTextChan) {
+            document.getElementById("iframeId").src = strurl;
+            document.getElementById("topTextId").innerHTML = "☰　目录 - 【" + strTextChan + "】 - 急诊超人老谢";
+            w3_open();
+        }
+
+
+        function showAndHideButton(strid) {
+            var traget = document.getElementById(strid);
+            if (traget.style.display == "none") {
+                traget.style.display = "";
+            } else {
+                traget.style.display = "none"
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-medium" style="display:block;width: 180px;overflow-x: hidden;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-medium w3-green" style="color:white;" onclick="w3_open()">关闭目录
+      &times;</button>
+        <a class="w3-bar-item" style="text-align:center;font-weight: bold;">护理学题库（副高）</a>
+        <a href="#" id="aJCZSXL" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divJCZSXL')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>基础知识练习</a>
+        <div id='divJCZSXL' style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-jczsxl-hlxzl.html','护理学总论')">护理学总论</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-jczslx-zkhlx.html','专科护理学')">专科护理学</a>
+        </div>
+
+        <a href="#" id="aZKZS" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divZKZS')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>专科知识练习</a>
+        <div id="divZKZS" style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-zkzslx-nkhlx.html','内科护理学')">内科护理学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-zkzslx-wkhlx.html','外科护理学')">外科护理学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-zkzslx-fckhlx.html','妇产科护理学')">妇产科护理学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-zkzslx-ekhlx.html','儿科护理学')">儿科护理学</a>
+        </div>
+
+        <a href="#" id="aZHZSLX" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divZHZSLX')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>综合知识练习</a>
+        <div id="divZHZSLX" style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-zhzslx-zhlx.html','综合练习')">综合练习</a>
+        </div>
+
+
+        <a href="#" id="aLNKDXT" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divLNKDXT')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>历年考点习题</a>
+        <div id="divLNKDXT" style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-lnkdxt-lnkdxthb.html','历年考点习题汇编')">历年考点习题汇编</a>
+        </div>
+
+        <a href="#" id="aKQCC" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divKQCC')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>考前冲刺</a>
+        <div id="divKQCC" style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx1.html','考点练习一')">考点练习一</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx2.html','考点练习二')">考点练习二</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx3.html','考点练习三')">考点练习三</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx4.html','考点练习四')">考点练习四</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx5.html','考点练习五')">考点练习五</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx6.html','考点练习六')">考点练习六</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx7.html','考点练习七')">考点练习七</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx8.html','考点练习八')">考点练习八</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx9.html','考点练习九')">考点练习九</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-kqcc-kdlx10.html','考点练习十')">考点练习十</a>
+        </div>
+
+        <a href="#" id="aJKZSD" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divJKZSD')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>加考知识点</a>
+        <div id="divJKZSD" style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-jkkd-zyx.html','中医学')">中医学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-jkkd-zdx.html','诊断学基础')">诊断学基础</a>
+        </div>
+
+
+        <a href="#" id="aYXJC" class="w3-bar-item w3-button w3-medium" onclick="showAndHideButton('divYXJC')"><i
+        style="font-size:20px;color:red;" class="fa">&#xf101</i>医学基础</a>
+        <div id="divYXJC" style="display:none;margin-left: 5px;">
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-swhx.html','生物化学')">生物化学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-blx.html','病理学')">病理学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-ylx.html','药理学')">药理学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-wswx.html','医学微生物学')"> 医学微生物学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-myx.html','医学免疫学')">医学免疫学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-jpx.html','解剖学')">解剖学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-slx.html','生理学')">生理学</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-crbfzzs.html','传染病防治知识')">传染病防治知识</a>
+            <a href="#" id="aJCYX" class="w3-bar-item w3-button w3-medium" onclick="changeSrc('pageHtml-yxjc-ylfgzc.html','医疗法规政策')">医疗法规政策</a>
+        </div>
+
+
+
+        <p style="text-align:center;margin-top: 15px;">
+            <img style="text-align:center;" src="../img/imgJZCRLX.jpg" width="70%" height="70%" />
+        </p>
+        <p style="text-align:center; color:blue;">
+            急诊超人老谢<br /> 微信扫码关注
+            <br /> 获取更多医学资料
+        </p>
+        </p>
+        <p style="text-align:center;margin-top: 15px;">
+            <img style="text-align:center;" src="../img/logoView.gif" width="90%" height="90%" />
+        </p>
+    </div>
+
+    <!-- Page Content -->
+    <div id="main" style="height:93%;margin-left: 180px;">
+        <div class="w3-teal" style="font-size:small;">
+            <div id="topTextId" class="w3-button w3-teal w3-medium" style="width: 100%; text-align: left;" onclick="w3_open()">
+                ☰　目录 - 【护理学题库(副高)】 - 急诊超人老谢
+            </div>
+        </div>
+        <iframe src="pageHtml-jczsxl-hlxzl.html" id="iframeId" frameborder='0' scrolling='yes' onclick="w3_open()">
+        <!-- 显示对应页面的容器 -->
+      </iframe>
+    </div>
+</body>
+
+</html>

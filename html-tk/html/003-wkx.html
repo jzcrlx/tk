@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>输血 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/29. 小儿输血速度一般为： 【单选题】</p>
+        <p>A.1ml/分</p>
+        <p>B.5ml/分</p>
+        <p>C.10滴/分</p>
+        <p>D.20滴/分</p>
+        <p>E.5滴/分</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、成人:4～6ml/min 年老或心功能较差者:1ml/min 小儿:10滴/min 一次输血不应超过4h,每次200-400ml为宜</p>
+            <p>2、八版书没有，但是老师有补充说。 输血技术: 途径:①外周静脉穿刺②中心静脉置管③动脉输注 输注速度:①成人:5-10ml/min②老年、心衰:1ml/min③小儿:10滴/min 一次输血不应超过200-400ml/4h
+            </p>
+            <p>3、老人输血1ml每分钟，小儿输血10滴每分钟</p>
+            <p>4、九版没找到</p>
+            <p>5、成人5-10ml/min;老年人或者心脏病人1ml/min;小儿10滴/min;失血性休克则应快速输入所需血量</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/29. 健康人一次失血量不超过多少毫升可不输血： 【单选题】</p>
+        <p>A.500ml</p>
+        <p>B.800ml</p>
+        <p>C.1000ml</p>
+        <p>D.1200ml</p>
+        <p>E.1500ml</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、健康人一次失血量不超过多少毫升可不输血：500</p>
+            <p>2、（第九版外科书）:凡一次失血量低于总血容量10% (500ml)者,可通过机体自身代偿而无需输血。当失血量达总血容量的10% ~ 20% (500 ~1000ml)时,应根据有无血容量不足的临床症状及其严重程度,同时参照血红蛋白和血细胞比容(hematocrit,HCT)的变化选择治疗方案。病人可表现为活动时心率增快，出现体位性低血压,但HCT常无改变。此时可输人适量晶体液、胶体液或少量血浆代用品。若失血量超过总血容量20%(1000ml)时,除有较明显的血容量不足、血压不稳定外,还可出现HCT下降。此时,除输人晶体液或胶体液补充血容量外,还应适当输入浓缩红细胞(
+                concentated red blood cells , CRBC)以提高携氧能力。原则上，失血量在30%以下时,不输全血;超过30%时,可输全血与CRBC各半,再配合晶体和胶体液及血浆以补充血容量。</p>
+            <p>3、不是1000ml吗 ？外科输血： 急性失血少于血容量的20%（相当于失血800~1000ml），经晶体液扩容后，如果循环血容量稳定、HCT≥0.30，则不必输血。急性失血超过血容量的20%~30%往往需要输血，部分病人可能需要大量输血（24小时内输血量≥血容量）。
+            </p>
+            <p>4、书上是500ml</p>
+            <p>5、不是少于20%吗？即800左右？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/29. 一卵巢癌患者，输血儿毫升后，疑发生变态反应和过敏反应，其处理是： 【单选题】</p>
+        <p>A.减慢输血速度+肌注异丙嗪</p>
+        <p>B.中止输血，静推糖皮质激素</p>
+        <p>C.停止输血口服阿斯匹林</p>
+        <p>D.停止输血应用肝素</p>
+        <p>E.停止输血吸氧，改半坐卧位</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、过敏反应是指已免疫的机体在再次接受相同物质的刺激时所发生的反应。 变态反应也叫超敏反应，是指机体对某些抗原初次应答后，再次接受相同抗原刺激时，发生的一种以机体生理功能紊乱或组织细胞损伤为主的特异性免疫应,一般分四型 其中过敏反应属于一型变态，即速发型（Ⅰ型变态反应），又称过敏反应，是临床最常见的一种，其特点是：由IgE介导，肥大细胞和嗜碱粒细胞等效应细胞以释放生物活性介质的方式参与反应。。。变态反应挺严重的，所以应该停止输血，皮下注射肾上腺素或B答案
+            </p>
+            <p>2、糖皮质激素抗休克。对过敏性休克是次选药，可与首选药肾上腺素合用</p>
+            <p>3、。。。它说疑发生变态反应和过敏反应，可能是说不能确定是变态反应中的哪一型，可能比较严重</p>
+            <p>4、明明说的静脉注射糖皮质激素或者皮下注射肾上腺素，我读书少，别骗我</p>
+            <p>5、A选项因为肌注异丙嗪，但是书p22是口服抗组胺药（异丙嗪，苯海拉明）</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/29. 一脾破裂患者，术中输血20ml后，突然出现血压急剧下降，手术切口大量渗血，酱油色尿，应考虑： 【单选题】</p>
+        <p>A.过敏反应</p>
+        <p>B.发热反应</p>
+        <p>C.细菌污染反应</p>
+        <p>D.溶血反应</p>
+        <p>E.血液凝集反应</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、溶血反应最早的征象是不明原因的血压下降和手术视野渗血</p>
+            <p>2、酱油色尿，溶血</p>
+            <p>3、血液凝集反应一般是不同血型，而输血一般输同型血</p>
+            <p>4、溶血反应的范围更广一些，不单单指血液凝集，还包括细菌感染等引起的红细胞破坏，我是这样理解的</p>
+            <p>5、酱油色即血红蛋白尿</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/29. 一患者，输血1-2小时后，突起寒战，高热头痛，血压16/12kpa，应考虑为； 【单选题】</p>
+        <p>A.溶血反应</p>
+        <p>B.发热反应</p>
+        <p>C.疟疾感染</p>
+        <p>D.体温中枢受损</p>
+        <p>E.过敏反应</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、立即出现是溶血，15-2h内是发热～get</p>
+            <p>2、输血后一到两小时发生的发热反应</p>
+            <p>3、溶血反应…典型的症状为病人输入十几毫升血型不合的血后，立即出现沿输血静脉的红肿及疼痛，寒战、高热、呼吸困难、腰背酸痛、头痛、胸闷、心率加快乃至血压下降、休克，随之出现血红蛋白尿和溶血性黄疸。</p>
+            <p>4、立即溶血，1-2小时发热</p>
+            <p>5、15分钟到2小时内发生</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/29. 急性失血输血合理的是： 【单选题】</p>
+        <p>A.失血量达到总血容量的20%，输浓缩红细胞及全血</p>
+        <p>B.失血量达到总血容量的35%，只输浓缩红细胞</p>
+        <p>C.失血量达到总血容量的15%，输浓缩红细胞</p>
+        <p>D.失血量低于总血容量的20%可考虑不输血</p>
+        <p>E.失血量达到总血容量的55%只输浓缩红细胞及全血</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、＞20％输浓缩红细胞，＞30％输全血跟浓缩红细胞各半，＞50％输大量库存血</p>
+            <p>2、失血量低于总血容量10%，不用输血，失血量达10%-20%，可考虑适量晶体液，胶体液，少量血浆代用品。失血量超过总血容量20%，除了输入晶体溶液或胶体溶液补充血容量外，适当输入浓缩红细胞，提高携氧能力。失血量低于30%，不输全血。超过30%，输全血与浓缩红细胞各半，再配合晶体胶体溶液补充血容量。</p>
+            <p>3、当失血量达总血容量的10%～20%（500～1000ml）时，应根据有无血容量不足的临床症状及其严重程度，同时参照血红蛋白和血细胞比容的变化选择治疗方案</p>
+            <p>4、失血在10～20％（500～1000ml）：先输入晶体液或血浆代用品。（第9版P21）低于20％是输液不是输血。</p>
+            <p>5、只是不输血，又没说不输液</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/29. 在输血过程中错误的是： 【单选题】</p>
+        <p>A.新生儿输血时要注意预热</p>
+        <p>B.可以在血中加入抗菌素</p>
+        <p>C.输血前后用生理盐水冲洗输血管道</p>
+        <p>D.输血后血袋要里保留24小时</p>
+        <p>E.输血前注意仔细核对</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、B：除生理盐水外，血液中不能加入任何药物，以防血液凝固或溶血。C：输血前后用生理盐水冲洗输血管道。连续输用不同供血者的血液时，前一袋血输尽后，用静脉汪射用生理盐水冲洗输血器，再接下一袋血继续输注。 因为一般病人需要输血的时候都是在输液，那么输液里面有药物，所以必须拿生理盐水冲管把药物冲进去，要不管里的药物浓度高和血液突然混合容易凝固或溶血。另外还有就是现在输血都是成分血，也应该用生理盐水来保持血液的浓度，减少反应。D：保留一天。</p>
+            <p>2、24小时不是一天？？？？？你们在逗我？？？</p>
+            <p>3、第九版22页
+            </p>
+            <p>4、书上说输血后血袋应保留1天！！</p>
+            <p>5、预热因为新生儿体温调节中枢还不成熟不能调节自己体温需要特别保暖，总血量本来就少还大量冷的很麻烦诶</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/29. 自身输血的术中失血回输一般不超过： 【单选题】</p>
+        <p>A.2000ml</p>
+        <p>B.3000ml</p>
+        <p>C.4000ml</p>
+        <p>D.2500ml</p>
+        <p>E.1500ml</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、自身输血的术中失血回输一般不超过：3000ml</p>
+            <p>2、5+3版27页：自体失血回输的总量最好限制在3500ml以内，大量回输时适当补充新鲜冷冻血浆</p>
+            <p>3、@jyn211 在这里学习了那么久，终于看到有一个用5＋3版了(ಥ_ಥ)</p>
+            <p>4、第九版没有吧</p>
+            <p>5、题目不是很理解</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/29. 大量出血出现HCT下降时，失血量超过： 【单选题】</p>
+        <p>A.20%</p>
+        <p>B.15%</p>
+        <p>C.30%</p>
+        <p>D.25%</p>
+        <p>E.40%</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、失血量超过总血量20%(1000ml)时，HCT(血红蛋白和血细胞比容)下降。</p>
+            <p>2、第九版21页</p>
+            <p>3、失血量超过百分之20，血容量不足，血压下降，hct下降，输晶体液，胶体液，浓缩红细胞</p>
+            <p>4、失血超过20％时HCT下降，失血量不超过20％可以考虑不输血，当失血量不超过30％时不用输全血。</p>
+            <p>5、p23
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/29. 原则上，不输全血时，失血量低于全身血量的： 【单选题】</p>
+        <p>A.20%</p>
+        <p>B.15%</p>
+        <p>C.30%</p>
+        <p>D.25%</p>
+        <p>E.40%</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、低于百分之三十不熟全血</p>
+            <p>2、书本23页，超过30％输入全血与浓缩红细胞各半，在配合晶体与胶体及血浆补充血容量</p>
+            <p>3、＜10不输液体，＜20不输血，输晶体胶体，＜30不输全血，输晶胶+浓红</p>
+            <p>4、九版书21页</p>
+            <p>5、补充复习以上:＜10不输液体，＜20输液不输血，晶胶体/少量血浆代用，＜30不输全血，输晶胶+浓红</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/29. 从200ml全血分离的1单位浓缩红细胞可提高70kg成年人的HCT 【单选题】</p>
+        <p>A.2%~3%</p>
+        <p>B.1%~2%</p>
+        <p>C.3%~4%</p>
+        <p>D.4%~5%</p>
+        <p>E.0.5%~1%</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、(200mL×70％ )÷(70÷5)L=1％</p>
+            <p>2、浓缩红细胞每袋HCT70％~80％，血浆量占体重5％，正常HCT40％~54％</p>
+            <p>3、 刚刚那个写错了 再来一遍！浓缩红细胞hct为70-80％，正常男性hct为40-50％。 则输入的200ml血液中hct为“200×70％①”___男性血液中hct为“70×5％×40％×1000②”____所以输入的hct占正常血液中hct的①／②。 （②式中的1000是单位换算，L变mL）</p>
+            <p>4、讲了也不懂系列
+            </p>
+            <p>5、好难我要离开了 下一题见</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/29. 血液保存时间如用CPD和ACD抗凝为 【单选题】</p>
+        <p>A.21天</p>
+        <p>B.35天</p>
+        <p>C.60天</p>
+        <p>D.28天</p>
+        <p>E.30天</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、ACD溶液,酸—枸橼酸盐—葡萄糖溶液 CPD溶液，枸缘酸盐-磷酸盐-葡萄糖
+            </p>
+            <p>2、ACD 和 CPD 正常是21天，加了腺苷才是35天吧</p>
+            <p>3、现在的保存液中主要成分有枸橼酸盐、葡萄糖、磷酸盐和腺嘌呤.根据配方不同分为ACD与CPD两大类，两者判别是CPD中加有腺嘌呤及磷酸盐，因此可延长红细胞的保存期达到35天，并使红细胞放氧功能增强</p>
+            <p>4、（百度查的一个好评回答）:ACD和CPD是血液抗凝剂配方的英文缩写。ACD的主要成分是无水葡萄糖，枸橼酸和枸橼酸钠，溶液的pH为5.03。枸橼酸及其盐可与血液中Ca2+螯合生成可溶性螯合物使血液防止凝固。   葡萄糖在红细胞内通过代谢不断产生ATP，以维持红细胞功能完整。ACD抗凝血在4℃条件保存可减慢血细胞的代谢速率，保存21天。    CPD保存液是在ACD配方的基础上，添加磷酸盐，pH为5.63。加入磷酸盐保养液的pH值有所提高，使得2，3-二磷酸甘油酸（2，3-DPG）的下降速度减缓，有利于红细胞功能稳定，保存期由21天可延长至28天。目前，血站皆用增加腺嘌呤的CPD-A保存液，可使血液保存期延长至35天。
+            </p>
+            <p>5、第九版？？？阿巴阿巴</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/29. 下列溶液中不是血浆增量剂的是： 【单选题】</p>
+        <p>A.6%右旋糖苷等渗盐溶液</p>
+        <p>B.中分子右旋糖苷</p>
+        <p>C.羟乙基淀粉</p>
+        <p>D.林格氏液</p>
+        <p>E.明胶代血浆</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、林格氏液(Ringer's Solution)也称复方氯化钠</p>
+            <p>2、血浆代用品是胶体溶液，林格氏液（复方氯化钠）是晶体溶液。</p>
+            <p>3、林格氏液比生理盐水成分完全，可代替生理盐水使用，以调节体液、电解质及酸碱平衡</p>
+            <p>4、九版26页
+            </p>
+            <p>5、(⊙o⊙)哦</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/29. 最严重的早期输血并发症是 【单选题】</p>
+        <p>A.溶血反应</p>
+        <p>B.发热反应</p>
+        <p>C.过敏反应</p>
+        <p>D.循环超负荷</p>
+        <p>E.细菌污染反应</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、最常见：发热反应 最严重：溶血反应
+            </p>
+            <p>2、溶血:输入十几毫升后，少数7一14天。 发热:开始输血后15min一2h。 过敏:开始输血几分钟后。 超循环负荷:输血中或后。 细菌污染反应:开始输血几分钟，输血中或后。
+            </p>
+            <p>3、早热重溶
+            </p>
+            <p>4、我确定的说，非溶血性发热反应是最严重的早期输血并发症，溶血反应是最严重的并发症</p>
+            <p>5、发热反应是最常见的早期输血不良反应之一。溶血反应是最严重的输血并发症，虽然很少见，但后果严重，死亡率高。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/29. 输血速度老年人一般为 【单选题】</p>
+        <p>A.1ml/分</p>
+        <p>B.5ml/分</p>
+        <p>C.10滴/分</p>
+        <p>D.20滴/分</p>
+        <p>E.5滴/分</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、成人一般5ml/min，老年人或心、肺病患者1ml/min，小儿约10滴/min</p>
+            <p>2、成人40~50滴每分，老人15~20滴每分，儿童5~10滴每分。这题库不知道几百年没更新了，我都无语了</p>
+            <p>3、书上没有系列</p>
+            <p>4、1ml不是就20滴吗？</p>
+            <p>5、成人5，老人1，小儿10</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/29. 男，35岁，有12指肠球部溃汤病史，今晨突起头晕、心慌、呕血2次、黑便1次，来院查：面色苍白、出冷汗、P120次/分,BP80/50mmHg,HCT28%。估计失血量为： 【单选题】</p>
+        <p>A.200ml</p>
+        <p>B.300ml</p>
+        <p>C.500ml</p>
+        <p>D.700ml</p>
+        <p>E.1000ml</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、正常男性的HCT值约为40％～54％，病例中的患者HCT已经出现了降低，仅有28％，因此可判断为失血量超过总血容量的20％，故为1000ml</p>
+            <p>2、p23，说失血量超过总容血量的20％（1000ml）时，除了明显的容血量不足，血压不稳定外，还出现hct下降</p>
+            <p>3、算休克指数啊。休克指数＝脉搏/收缩压，表示血容量正常 0.5为正常 ＝1为轻度休克，失血20％－30％ >1为休克 >1.5为严重休克，失血30％－50％ >2为重度休克，失血>50%
+            </p>
+            <p>4、血壓在中度休克範圍 失血量800-1600</p>
+            <p>5、第九版30页表格</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/29. 男，35岁，有12指肠球部溃汤病史，今晨突起头晕、心慌、呕血2次、黑便1次，来院查：面色苍白、出冷汗、P120次/分,BP80/50mmHg,HCT28%。此时最合适的处理方法是: 【单选题】</p>
+        <p>A.输血浆增量剂</p>
+        <p>B.输全血及输液</p>
+        <p>C.输晶体液</p>
+        <p>D.紧急手术</p>
+        <p>E.升压药物应用</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、正常男性的HCT数值为40％～54％，案例中的患者HCT只有28％，因此相当于失去了大约54-28=26％的HCT，26％÷54％≈48％，失血量约为48％，超过了30％，故可输全血加CRBC各半</p>
+            <p>2、和上一个题不一样吗？上一个是失血1000，那也不用输全血呀？</p>
+            <p>3、这题太可怕了，跟着上一题走的话就掉坑里了</p>
+            <p>4、按照书上应该是失血量有达20％.应该输晶体胶体和浓缩红细胞，我个人认为没有答案（</p>
+            <p>5、救救孩子吧 ！！！走过的大佬能不能留一个赞</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/29. 抢救输血后的溶血反应包括以下哪些措施： 【多选题】</p>
+        <p>A.晶胶体及血浆扩容</p>
+        <p>B.血浆量换</p>
+        <p>C.5%NaHCO3碱化尿液</p>
+        <p>D.滴注糖皮质激素</p>
+        <p>E.利尿剂</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、救救孩子吧 ！！！走过的大佬能不能留一个赞，还剩下3个积分了</p>
+            <p>2、溶血反应是机体免疫反应的体现，糖皮质激素有抑制机体的免疫反应，为了能缓解溶血，故要输注糖皮质激素</p>
+            <p>3、利尿加快游离血红蛋白的排除出</p>
+            <p>4、我需要积分</p>
+            <p>5、血浆量换应该是血浆交换治疗，以彻底清除病人体内的异性红细胞及有害的抗原抗体复合物</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/29. 下列哪些情况可行自体回收输血： 【多选题】</p>
+        <p>A.脾破裂</p>
+        <p>B.宫外妊</p>
+        <p>C.腹主动瘤破裂</p>
+        <p>D.胃肠道破裂出血</p>
+        <p>E.肝破裂出血</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：ABC</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、救救孩子吧 ！！！走过的大佬能不能留一个赞，还剩下3个积分了</p>
+            <p>2、自体输血的禁忌症包括～ 1.血液受胃肠道内容物、消化液、或尿液等污染。2.血液受肿瘤细胞污染。3.肝，肾功能不全患者。4.已有严重贫血的患者。5.脓毒症或菌血症的患者。6.血液在体腔存留过久者
+            </p>
+            <p>3、正 传统观念认为肝血不能回输,其理由为一是门静脉中代谢产物多,输入后易发生中毒反应;二是肝破裂后胆汁随血液外流,输入后胆盐破坏红细胞或因细菌生长</p>
+            <p>4、上面那位好逗，腹主动脉瘤又不是真正的瘤</p>
+            <p>5、动脉瘤是血管内皮突起形成的啊哥</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/29. 一中年男性，因脾破裂失血输全血，输血后30分钟，患者出现全身搔痒、咳嗽、呼吸困难，血压下降达60/30mmHg，HR130bpm，双肺闻及喘鸣音，下列叙述正确的是： 【多选题】</p>
+        <p>A.诊断考虑为过敏反应</p>
+        <p>B.可能是ABO血量不合所致</p>
+        <p>C.可能是Rh血型不合引起</p>
+        <p>D.应停止输血</p>
+        <p>E.可给予肾上腺素或糖皮质激素</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：ADE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、救救孩子吧 ！！！走过的大佬能不能留一个赞，还剩下3个积分了</p>
+            <p>2、溶血反应一般在输血的第一时间就会出现严重反应</p>
+            <p>3、bc导致的是溶血反应</p>
+            <p>4、不是治疗而是抢救，药理学提过糖皮质激素对抗过敏很强大～</p>
+            <p>5、不严重时用抗组胺药</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/29. 下列为输血并发症的是： 【多选题】</p>
+        <p>A.发热</p>
+        <p>B.循环超负荷</p>
+        <p>C.缺氧</p>
+        <p>D.梅毒</p>
+        <p>E.肠炎</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：ABD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、p24 发热反应、过敏反应、溶血反应、细菌污染反应、循环超负荷、急性肺损伤、输血相关移植物抗宿主病、疾病传播、免疫抑制</p>
+            <p>2、输血并发症：过敏，发热，溶血，和输血有关反应，其他</p>
+            <p>3、梅毒，疾病传播</p>
+            <p>4、梅毒？</p>
+            <p>5、缺氧应该是继发症</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/29. 输血的适应症有： 【多选题】</p>
+        <p>A.急性出血</p>
+        <p>B.贫血</p>
+        <p>C.低蛋白血症</p>
+        <p>D.重症感染</p>
+        <p>E.凝血机制障碍</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、重症感染输入浓缩粒细胞，凝血异常输入凝血因子</p>
+            <p>2、不是急性大出血吗？只是急性出血没有说多少很迷啊</p>
+            <p>3、第九版书21页，适应症：大量失血、贫血或低蛋白血症、重症感染、凝血异常</p>
+            <p>4、急性大量出血，看出题者意图是想考这个，大家下次记住就好了</p>
+            <p>5、甲型血友病凝血异常需输八因子</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/29. 血细胞制剂有: 【多选题】</p>
+        <p>A.CRRBC</p>
+        <p>B.LPRBC</p>
+        <p>C.WRBC</p>
+        <p>D.PC-1</p>
+        <p>E.PC-2</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、浓缩红细胞(CRRBC) 洗涤红细胞(WRBC) 冰冻红细胞（FTRBC） 去白细胞的红细胞（LPRBC） 手工分离浓缩血小板（PC-1） 机器单采浓缩血小板（PC-2） 详情参照搜狗百科，网址如下_(:з」∠)_ http://baike.sogou.com/m/fullLemma?lid=8486596&fromTitle=临床输血技术规范
+            </p>
+            <p>2、卧槽</p>
+            <p>3、讲真的LPRBC我是记成L（裸）P（屁）RBC（红细胞），就是去了皮的红细胞。</p>
+            <p>4、楼上的都好搞笑</p>
+            <p>5、ABC.都是和红细胞相关的如浓缩红细胞DE不认识</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/29. 输血可能导致的疾病传播有: 【多选题】</p>
+        <p>A.艾滋病</p>
+        <p>B.梅毒</p>
+        <p>C.乙肝</p>
+        <p>D.EB病毒肝炎</p>
+        <p>E.疟疾</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、疟疾肯定可以啊，没学过寄生虫吗？疟疾发育经过肝细胞期和红细胞期，你说能不能</p>
+            <p>2、EB病毒 肝炎？？？？不是鼻咽癌？？</p>
+            <p>3、第9版P24疾病传播</p>
+            <p>4、病毒:EB，巨细胞，肝炎，HIV，人类T细胞白血病病毒 细菌性:梅毒，疟疾，布氏杆菌
+            </p>
+            <p>5、最后一个都可以？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/29. 溶血反应的临床表现有: 【多选题】</p>
+        <p>A.高热</p>
+        <p>B.头痛</p>
+        <p>C.贫血</p>
+        <p>D.呼吸困难</p>
+        <p>E.伤口出血</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、典型的症状有:沿输血静脉的红肿及疼痛，寒战、高热、呼吸困难、腰背酸痛、头痛、胸闷、心率加快等</p>
+            <p>2、第九版23页第4行:最早征象是:不明原因的“血压下降和手术野渗血”</p>
+            <p>3、溶血反应不是有手术野渗血吗？所以出血了。</p>
+            <p>4、临床表现有贫血吗</p>
+            <p>5、伤口出血是为什么</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/29. 自体输血的禁忌症包括： 【多选题】</p>
+        <p>A.血液已受污染</p>
+        <p>B.肿瘤细胞沾污血液</p>
+        <p>C.脓毒症病人</p>
+        <p>D.肝肾功能不全病人</p>
+        <p>E.严重贫血病人</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、贫血的病人自身造血功能就异常，血液中缺乏一些因子，所以即使输了自己的血液，仍然起不到什么作用，不能达到血液的活性，我是这样理解的</p>
+            <p>2、自体输血的禁忌症包括～ 1.血液受胃肠道内容物、消化液、或尿液等污染。2.血液受肿瘤细胞污染。3.肝，肾功能不全患者。4.已有严重贫血的患者。5.脓毒症或菌血症的患者。6.血液在体腔存留过久者</p>
+            <p>3、为什么严重贫血的血不能回输</p>
+            <p>4、另外由于自身本就贫血，如果再预存自身血液，对健康影响很大</p>
+            <p>5、书上说是后两种方式的自体输血不能用，</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/29. 大量输血后可出现： 【多选题】</p>
+        <p>A.高血钾</p>
+        <p>B.低血钾</p>
+        <p>C.低血钙</p>
+        <p>D.高血钠</p>
+        <p>E.低体温</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：ACE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、24小时内用库存血细胞置换患者全部血容量或数小时内输入血量大于4k毫升。大量输血可出现低体温 碱中毒 暂时性低钙血症 高钾血症</p>
+            <p>2、1低体温：因输入大量冷藏血 2碱中毒：枸橼酸钠在肝转化成碳酸氢钠 3低钙血症：大量含枸橼酸钠的血制品 4高钾血症：一次输入大量库存血 5凝血异常：凝血因子被稀释和低体温。</p>
+            <p>3、低体温因为血冷⊙▽⊙</p>
+            <p>4、低钾是引起碱中毒好不。。。</p>
+            <p>5、库存血的抗凝剂代谢之后会导致高血钾(´-ι_-｀)</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/29. 自身输血 </p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：指收集病人自身的血液或术中失血，然后再回输本人的方法。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、收集病人自身血液，并在需要的时候回输</p>
+            <p>2、自体输血:指预先收集患者的血液暂时储存，待需要时再回输给本人的方法。</p>
+            <p>3、自体输血又称自身输血是收集病人自身血液后在需要时进行回输。</p>
+            <p>4、优点，节约库存血，减少输血反应和疾病传播，不需检测血型和交叉配合实验</p>
+            <p>5、在一定条件下采集患者自身的血液或血液成分，经保存和处理后，当患者手术或紧急情况需要时回输给患者的一种输血</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/29. 血浆增量剂 </p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：是经天然加工或合成技术制成的血浆替代物，如右旋糖酐。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、天热加工或合成的高分子胶体溶液，可代替血浆扩充血容量。右旋糖酐，羟乙基淀粉，明胶</p>
+            <p>2、血浆增量剂又称血浆代用品，是经天然加工或合成的高分子物质制成的胶体溶液，可以代替血浆以扩充血容量。临床常用的包括右旋糖酐，羟乙基淀粉和明胶制剂。</p>
+            <p>3、血浆代用品又称血浆增量剂，是经天然合成或加工的高分子物质制成的胶体溶液，可以代替血浆以扩充血容量。包括右旋糖酐、羟乙基淀粉、明胶类代血浆</p>
+            <p>4、经天然加工或合成的高分子物质制成的胶体溶液，可以代替血浆以扩充血容量，如右旋糖酐，羟乙基淀粉和明胶类代血浆</p>
+            <p>5、经天然加工或则合成技术制成的血浆替代物</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

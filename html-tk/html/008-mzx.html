@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>呼吸功能的监控 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/34. 通气功能正常者其FVC应在（）秒内呼完。 【单选题】</p>
+        <p>A.1</p>
+        <p>B.2</p>
+        <p>C.3</p>
+        <p>D.4</p>
+        <p>E.5</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、正常者FVC在三秒内呼完，如在1、2秒呼完，提示存在限制性通气障碍</p>
+            <p>2、时间延长（&gt;3s），阻塞性通气障碍</p>
+            <p>3、第四版书上p92，中间第一句，写的就是第三秒</p>
+            <p>4、FVC 用力肺活量</p>
+            <p>5、第三版课本92页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/34. 临床上监测SpO2时以SpO2＜（）为缺氧危险界限。 【单选题】</p>
+        <p>A.100</p>
+        <p>B.95</p>
+        <p>C.93</p>
+        <p>D.90</p>
+        <p>E.88</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第三版书94页，SpO2＜90%为低氧血症</p>
+            <p>2、第四版，p95
+            </p>
+            <p>3、不是92％嘛</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/34. 气道平台压是指 【单选题】</p>
+        <p>A.呼吸周期中气道内达到的最高压力</p>
+        <p>B.呼吸周期中气道内的最低压力</p>
+        <p>C.呼气末至吸气开始前肺内平均压力值</p>
+        <p>D.呼气末至吸气开始前肺的最高压</p>
+        <p>E.吸气末到呼气开始前气道内压力</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第三版麻醉学98页</p>
+            <p>2、第四版P98</p>
+            <p>3、吸气末，呼气开始</p>
+            <p>4、对哒</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/34. 下列机械通气的吸呼比，哪项属于反比通气 【单选题】</p>
+        <p>A.I：E＝4：1</p>
+        <p>B.I：E＝1：1</p>
+        <p>C.I：E＝1：1.5</p>
+        <p>D.I：E＝1：2</p>
+        <p>E.I：E＝1：4</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、这个在第三版麻醉学哪一页啊？</p>
+            <p>2、麻醉生理学第4版P60：延长吸气时间，在较低吸气峰压保持较高的平均气道压，增加功能残气，防止肺泡萎陷，吸／呼时间比＞1，可达2:1，甚至3:1</p>
+            <p>3、真找不见啊
+            </p>
+            <p>4、这都要考啊，找不见</p>
+            <p>5、反比通气是啥？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/34. 下列哪项不是机械通气的适应证 【单选题】</p>
+        <p>A.ARDS</p>
+        <p>B.气胸尚未建立胸腔引流者</p>
+        <p>C.重症肌无力</p>
+        <p>D.颅脑外伤所致中枢性呼吸抑制</p>
+        <p>E.围术期应用</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、在4版192页倒数第二段第一句，肺大疱和气胸病人使用机械通气有较大风险，可能因气道压力明显增高，气胸加重。</p>
+            <p>2、？？没有懂</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/34. 下列哪项是机械通气时产生的并发症 【单选题】</p>
+        <p>A.通气机相关肺损伤</p>
+        <p>B.通气机相关性肺炎</p>
+        <p>C.低血压．急性左心衰．心律失常</p>
+        <p>D.肾功能损害</p>
+        <p>E.以上都是</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、在第四版，p198页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/34. PEEP是指借助于装在呼气端的限制气流活瓣使 【单选题】</p>
+        <p>A.呼气末时气道压力高于大气压</p>
+        <p>B.吸气末时气道压力高于大气压</p>
+        <p>C.呼气末时气道压力低于大气压</p>
+        <p>D.吸气末时气道压力低于大气压</p>
+        <p>E.整个呼吸周期气道压力均高于大气压</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、人卫第四版p197</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/34. 正常人呼吸频率大于（）次/min即提示有潜在的呼吸功能不全。 【单选题】</p>
+        <p>A.40</p>
+        <p>B.30</p>
+        <p>C.25</p>
+        <p>D.20</p>
+        <p>E.18</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一般10~16次，>20次潜在呼吸障碍，>30呼吸窘迫，>35 可导致呼吸衰竭</p>
+            <p>2、第三版91
+            </p>
+            <p>3、第四版91</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/34. 胸外科患者术前对肺功能评估时，当MVV＜（）％预计值时，提示患者不能耐受肺切除术 【单选题】</p>
+        <p>A.70</p>
+        <p>B.65</p>
+        <p>C.60</p>
+        <p>D.55</p>
+        <p>E.50</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、MVV最大自主通气量，占预计值的50%-60%作为手术安全指标，＜50%肺功能较差，＜30%手术禁忌</p>
+            <p>2、人卫第四版p92</p>
+            <p>3、>93%正常，</p>
+            <p>4、第3版麻醉学p92</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/34. 机械通气所致肾功能损害是由于 【单选题】</p>
+        <p>A.高血压</p>
+        <p>B.急性右心衰</p>
+        <p>C.肾血管收缩</p>
+        <p>D.心排出量下降．肾灌注不足．缺氧</p>
+        <p>E.肺内感染</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/34. 麻醉中可以导致PaO2降低的原因有 【多选题】</p>
+        <p>A.肺泡气氧浓度降低</p>
+        <p>B.麻醉药抑制呼吸导致肺泡通气量锐减或通气机通气量设置过低</p>
+        <p>C.各种原因导致的功能残气量降低</p>
+        <p>D.各种原因导致的VA/Q失调</p>
+        <p>E.某些原因所致的心排出量降低伴或不伴全身氧耗量增加</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、在哪呀？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/34. 下列哪些情况需要机械通气 【多选题】</p>
+        <p>A.体外循环心内直视手术术后</p>
+        <p>B.重症肺炎</p>
+        <p>C.格林－巴利综合征</p>
+        <p>D.颅脑外伤致中枢性呼吸抑制</p>
+        <p>E.腹腔镜胆囊切除术后</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：ABCD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第四版P191</p>
+            <p>2、ok</p>
+            <p>3、E是正确的</p>
+            <p>4、之前那个题又说颅脑外伤所致的中枢性呼吸抑制不是适应证？？</p>
+            <p>5、答案有E</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/34. 在麻醉中PaCO2＞45mmHg见于 【多选题】</p>
+        <p>A.高热．寒战</p>
+        <p>B.术后全身麻醉药的残余作用</p>
+        <p>C.椎管内麻醉平面过高</p>
+        <p>D.二氧化碳气腹</p>
+        <p>E.机械通气时通气量设置过低</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第3版p93</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/34. 对于术前患者肺功能的评估，下列哪些说法是正确的 【多选题】</p>
+        <p>A.对有长期吸烟史者应常规行肺功能检查</p>
+        <p>B.对55岁以上患者应常规行肺功能检查</p>
+        <p>C.开胸术后肺活量可下降至术前值的60％～70％</p>
+        <p>D.PaCO2高于50mmHg时术后可能发生严重肺部并发症</p>
+        <p>E.术前戒烟8周可降低围术期并发症的发生率</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：ACDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、65岁</p>
+            <p>2、四版11页</p>
+            <p>3、三版麻醉15页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/34. 动脉血氧分压（PaO2） </p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：动脉血氧分压指动脉血中物理溶解的O2所产生的压力。正常值为80～100mmHg。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/34. 血氧饱和度（SaO2） </p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：血氧饱和度指血液标本中血红蛋白实际结合的氧量与最大结合氧量的百分比，正常值为92％～99％。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、是血液中血氧的浓度，是血液中被氧结合的氧合血红蛋白的容量占全部可结合的血红蛋白容量的百分比</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/34. 闭合气量 </p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：闭合气量是指从肺总量位一次呼气过程中，肺低垂部位小气道开始闭合时所能继续呼出的气量</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一次呼气过程中，肺低垂部位小气道开始闭合时所能继续呼出的气量</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/34. 闭合容量 </p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：闭合容量是指小气道开始闭合时肺内留存的气量，即闭合气量与残气量之和。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/34. PEEP </p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：PEEP是指借助于装在呼气端的限制气流活瓣使呼气末时气道压力高于大气夺。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、高于大气压</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/34. CPAP </p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：CPAP是在自主呼吸条件下整个呼吸周期气道内压力均保持在高于大气压力。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/34. 通气机相关性肺炎 </p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：通气机相关性肺炎是指开始机械通气48小时后出现的肺实质感染。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/34. 吸气峰压 </p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：吸气峰压指呼吸周期中气道内达到的最高压力。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/34. 气道平台压 </p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：气道平台压为吸气末到呼气开始前气道内压力。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/34. 呼气末压 </p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：呼气末压为呼气末至吸气开始前肺内平均压力值，自主呼吸情况下应为零。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/34. 胸肺顺应性 </p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：呼吸系统在单位压力变化下的容积改变称为顺应性，是表示胸廓和肺脏可扩张程度的指标。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/34. 哪些患者术前应行肺功能检查？ </p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：对于下列患者应行术前肺功能检查：年龄大于65岁；病态肥胖；胸部手术；上腹部手术；长期吸烟史；心肺疾病史。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、四版P13</p>
+            <p>2、三版p15</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/34. 术前改善呼吸功能的措施有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：术前改善呼吸功能的措施有：①停止吸烟；②治疗COPD等肺部疾病；③有效的术前呼吸功能锻炼和胸部理疗；④择期手术前强化营养治疗。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/34. 机械通气的适应证有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：机械通气的适应症有：①围术期应用；②肺部疾病；③通气活动障碍；④中枢神经系统疾病。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/34. 什么情况下可能对机械通气的患者撤离呼吸机？ </p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：撤离指征：①循环稳定．营养状况改善．感染控制；②自主呼吸增强，频率小于25次/min，VT＞250ml，最大吸气压力＞20cmH2O，VC＞10ml/kg。出现人机对抗，咳嗽有力，吸痰时短暂脱机患者可自主呼吸代偿；③在一段时间内血气稳定；④酸碱失衡得到纠正，水电解质平衡；⑤各重要器官功能得到较大改善。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/34. 机械通气可能产生哪些并发症？ </p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：①通气机相关肺损伤；②通气机相关性肺炎；③循环系统并发症；④消化系统并发症；⑤肾功能损害。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/34. 麻醉过程中PaO2降低见于哪些情况？ </p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：麻醉中PaO2降低见于：①肺泡气氧浓度降低；②麻醉药抑制呼吸导致肺泡通气量锐减或通气机通气量设置过低；③各种原因导致的功能残气量降低；④各种原因导致的VA/Q失调；⑤某些原因所致的心排出量降低伴或不伴全身氧耗量增加。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/34. 监测气道压力的意义有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：监测气道压力的意义在于：①为实施肺保护通气策略，及时．合理调节通气机工作参数提供依据； ②根据气道压力变化趋势判断病情进展和治疗效果；③有助于及时发现呼吸回路连接脱落．气管导管打折．分泌物阻塞等异常情况。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/34. 在机械通气中什么情况下应用叹气模式？ </p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：在机械通气中应用叹气的临床指征包括吸痰前后．胸部理疗时．气管镜检查过程中或检查后．拔管过程中．小潮气量机械通气及肺复张时。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/34. 论述PETCO2监测在临床麻醉中的意义。 </p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：PETCO2增高：①在波形不变的情况下，PETCO2逐渐升高可能与分钟通气量不足．二氧化碳产量增加或腹腔镜检查时行二氧化碳气腹CO2吸收有关；②如同时伴有基线抬高提示有二氧化碳重复吸入，见于麻醉呼吸环路中活瓣失灵．CO2吸收剂耗竭。在应用麦氏系统时表示新鲜气流量不足；③PETCO2突然增高可能由于静脉注射碳酸氢钠或松解肢体止血带引起。PETCO2降低：①突然降低为0，见于呼吸环路断开．气管导管脱出或误入食管．采样管阻塞等气道相关事件；②PETCO2呈指数形式降低，见于短时间内循环血容量快速减少致血压下降．肺栓塞及心搏骤停等；③突然降低但不为0，可由气管导管扭折．通气回路部分脱连接引起。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、灼</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

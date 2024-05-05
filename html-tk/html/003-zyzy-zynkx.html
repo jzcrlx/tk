@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>中医内科临证方法及病历书写 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/4. 临证方法 </p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：临证方法就是运用中医药学理论知识，对疾病进行诊断和治疗的方法。包括诊察、辨证、论治三个方面。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、应当突出辨证论治与整体观念</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 论治 </p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：论治是根据诊断研讨确定治疗方案、治则、主方或基础方、药味组成、剂量、煎法、服法、调养宜忌的过程。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 简述诊察的基本内容。 </p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：（1）了解患者的一般情况：包括姓名、性别、年龄、籍贯、职业、工作单位、婚姻、性格、爱好、信仰、居住条件等。（2）了解患者的发病情况、最痛苦的症状、诊治过程及疗效、患者就诊时的全部病证等，并通过询问病史确定主诉内容。（3）了解患者的既往史、家庭成员疾病或死亡情况、个人史、妇女的经带胎产史及药物过敏史等。（4）通过中医的望、闻、切诊和现代医学技术进行查体以发现阳性体征。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 试述中医内科的临证方法。 </p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：中医内科的临证方法是运用中医药学理论知识对内科疾病进行诊断和治疗的方法。包括诊察、辨证、论治三个方面。诊察主要是通过四诊获得辨证所需的全部资料；辨证是运用中医理论，对四诊所获得的资料，进行分析、综合、推理、判断，从而确定疾病的病位、病性、病机转化，最后得出病证的名称和证候的名称；论治是根据诊断的结果研讨确定治疗方案、治则、主方、药物组成、剂量、煎法、服法、调养宜忌等过程。临证的要求是诊治正确而迅速，理论方剂的丝丝入扣，以求获得好的疗效。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>早产儿的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 为预防新生儿出血，维生素K<sub>1</sub>的正确使用方法是 【单选题】</p>
+        <p>A.口服，连用3天</p>
+        <p>B.口服，连用5天</p>
+        <p>C.肌注，连用3天</p>
+        <p>D.肌注，连用5天</p>
+        <p>E.肌注，连用7天</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 早产儿有缺氧症状者，常用的氧气浓度是 【单选题】</p>
+        <p>A.10%～20%</p>
+        <p>B.20%～30%</p>
+        <p>C.30%～40%</p>
+        <p>D.40%～50%</p>
+        <p>E.50%～60%</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 早产儿护理中哪项不妥 【单选题】</p>
+        <p>A.预防窒息</p>
+        <p>B.及早输液输血</p>
+        <p>C.预防感染</p>
+        <p>D.合理营养</p>
+        <p>E.注意保暖</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 早产儿， 男， 胎龄 35 周，出生体重 1600g，无青紫，合理的喂养措施是 【单选题】</p>
+        <p>A.生后半小时喂奶</p>
+        <p>B.生后半小时喂 10%糖水2ml/kg</p>
+        <p>C.生后2～ 4小时喂10% 糖水2ml/kg</p>
+        <p>D.生后2～4小时喂奶</p>
+        <p>E.生后 8 小时喂 10% 糖水 2ml/kg</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 患儿女，15天，早产儿，母乳喂养，每天8～10次，体重3.2kg，家长询问小儿室内应保持的温度，护士告知正确的是 【单选题】</p>
+        <p>A.16～18℃</p>
+        <p>B.20～22℃</p>
+        <p>C.22～24℃</p>
+        <p>D.24～26℃</p>
+        <p>E.28℃</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、早产儿应与足月儿分室居住，室内温度应保持在24～26℃，晨间护理时提高到27～28℃，相对湿度55%～65%。</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

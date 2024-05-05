@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>抗帕金森病药(共3题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">苯海索治疗帕金森病的作用机制是</div>
+                <div class="layui-input-block">
+
+                    <p>A.中枢抗胆碱作用</p>
+
+                    <p>B.激活多巴胺受体</p>
+
+                    <p>C.减少多巴胺降解</p>
+
+                    <p>D.抑制多巴胺再摄取</p>
+
+                    <p>E.提高脑内多巴胺浓度</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：A</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">左旋多巴在体内的代谢特点是</div>
+                <div class="layui-input-block">
+
+                    <p>A.外周作用大部分可进入中枢</p>
+
+                    <p>B.口服后胃排空时间与胃内pH有关</p>
+
+                    <p>C.口服小肠吸收缓慢</p>
+
+                    <p>D.外周多巴脱羧酶抑制不减少其用量</p>
+
+                    <p>E.血药浓度个体差异较少</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：B</p>
+                    <p>题目解析：口服绝大部分被肠黏膜等外周组织脱羧成为多巴胺，仅1%左右能进入中枢神经系统，故A不正确。左旋多巴是多巴胺的前体，口服后通过芳香族氨基酸的共同转运载体从小肠迅速吸收，排除C。抑制外周脱羧酶作用，可增加血和脑内左旋多巴达3～4倍，D不正确。胃排空延缓、胃酸酸度高或高蛋白饮食等，均可降低其生物利用度，故排除E，选B。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o3">
+            <div class="sttk-top">
+                <span>3、[B1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label"> 司来吉兰（丙炔苯丙胺）属于</div>
+                <div class="layui-input-block">
+
+                    <p>A.抗胆碱药</p>
+
+                    <p>B.多巴胺受体激动剂</p>
+
+                    <p>C.复方左旋多巴</p>
+
+                    <p>D.单胺氧化酶B抑制剂</p>
+
+                    <p>E.儿茶酚-氧-甲基转移酶抑制剂</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('dats3','showAndHideButton3')">显示答案</div>
+                <div class="datas" id="dats3" style="display: none;">
+                    <p>参考答案：D</p>
+                    <p>题目解析： 司来吉兰为选择性的B型单胺氧化酶抑制药，能加强和延长左旋多巴对帕金森病的作用，故1题选D。溴隐亭可激动多巴胺受体，使纹状体内的神经化学恢复平衡，改善震颤、僵直、活动迟缓和帕金森病的其他症状，疗效可保持多年。故2题选B。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

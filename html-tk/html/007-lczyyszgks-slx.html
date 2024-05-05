@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>尿的生成和排出 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/42. 肾功能的重要生理意义是 【单选题】</p>
+        <p>A.排泄代谢终产物</p>
+        <p>B.调节水、盐代谢</p>
+        <p>C.维持酸碱平衡</p>
+        <p>D.产生生物活性物质</p>
+        <p>E.维持机体内环境相对稳定</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/42. 正常终尿约占肾小球超滤液量的 【单选题】</p>
+        <p>A.1%</p>
+        <p>B.5%</p>
+        <p>C.10%</p>
+        <p>D.15%</p>
+        <p>E.20%</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、p244</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/42. 下列情况中，能引起肾小球滤过率减少的是 【单选题】</p>
+        <p>A.血浆胶体渗透压减低</p>
+        <p>B.血浆胶体渗透压升高</p>
+        <p>C.血浆晶体渗透压降低</p>
+        <p>D.血浆晶体渗透压升高</p>
+        <p>E.肾小球毛细血管血压升高</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、注意晶体渗透压不是影响有效滤过压的因素，而是影响抗利尿激素释放的因素。</p>
+            <p>2、根据有效滤过压的公示可以得出答案。</p>
+            <p>3、p245</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/42. 原尿的成分 【单选题】</p>
+        <p>A.和终尿近似</p>
+        <p>B.比终尿多葡萄糖</p>
+        <p>C.比终尿多Na<sup>+</sup>、K<sup>+</sup></p>
+        <p>D.比血浆少葡萄糖</p>
+        <p>E.比血浆少蛋白质</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、b也是对的吧</p>
+            <p>2、血浆里的蛋白质和红细胞进不到尿里</p>
+            <p>3、所以原尿里面的葡萄糖和血浆里一样多？</p>
+            <p>4、终尿中也有少量的葡萄糖吧，251页说正常情况下尿中几乎不含葡萄糖，但是还会有少量的，只要不超过阈值就行</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/42. 滤过分数指 【单选题】</p>
+        <p>A.肾小球滤过率／肾血浆流量</p>
+        <p>B.肾血浆流量／肾血流量</p>
+        <p>C.肾血流量／肾血浆流量</p>
+        <p>D.肾小球滤过率／肾血流量</p>
+        <p>E.肾血流量／心排出量</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、注意是血浆流量</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/42. 肾小球滤过率指 【单选题】</p>
+        <p>A.每侧肾脏每分钟生成的原尿量</p>
+        <p>B.每分钟两肾生成的超滤液量</p>
+        <p>C.每分钟两肾生成的尿的总量</p>
+        <p>D.每分钟每侧肾脏通过的血浆量</p>
+        <p>E.每分钟每侧肾脏的血浆滤过量</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、超滤液即原尿</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/42. 形成肾小囊超滤液的有效滤过压等于 【单选题】</p>
+        <p>A.肾小球毛细血管压+血浆胶体渗透压+囊内压</p>
+        <p>B.肾小球毛细血管压-血浆胶体渗透压-囊内压</p>
+        <p>C.肾小球毛细血管压+血浆胶体渗透压+囊内压</p>
+        <p>D.肾小球毛细血管压-血浆胶体渗透压+囊内压</p>
+        <p>E.肾小球毛细血管压-(血浆胶体渗透压-囊内压)</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/42. 葡萄糖重吸收的部位主要在 【单选题】</p>
+        <p>A.近球小管</p>
+        <p>B.髓袢细段</p>
+        <p>C.远曲小管和集合管</p>
+        <p>D.髓袢降支粗段</p>
+        <p>E.髓袢升支粗段</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/42. 水重吸收的量最多的部位是 【单选题】</p>
+        <p>A.肾小囊</p>
+        <p>B.近球小管</p>
+        <p>C.髓袢</p>
+        <p>D.远曲小管</p>
+        <p>E.集合管</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、在书本的247页。近端小管是水重吸收的主要部位。</p>
+            <p>2、啊？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/42. 决定尿量多少最关键的部位是 【单选题】</p>
+        <p>A.肾小囊</p>
+        <p>B.近曲小管</p>
+        <p>C.髓袢升支</p>
+        <p>D.髓袢降支</p>
+        <p>E.远曲小管和集合管</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、抗利尿激素作用于集合管和远端小管对水的重吸收。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/42. 大量饮水引起尿量增多，主要是由于 【单选题】</p>
+        <p>A.ADH分泌减少</p>
+        <p>B.滤过率增加</p>
+        <p>C.醛固酮分泌减少</p>
+        <p>D.肾素分泌减少</p>
+        <p>E.肾血流量下降</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、ADH 抗利尿激素</p>
+            <p>2、血浆晶体渗透压降低</p>
+            <p>3、大量饮水，渗透压降低，ADH分泌减少，尿量增多</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/42. ADH主要由何处合成 【单选题】</p>
+        <p>A.腺垂体</p>
+        <p>B.神经垂体</p>
+        <p>C.下丘脑视上核</p>
+        <p>D.下丘脑室旁核</p>
+        <p>E.肾脏</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、室旁核合成缩宫素</p>
+            <p>2、错了，主要分泌部位的确是视上核。所以答案是对的。</p>
+            <p>3、在神经垂体储存</p>
+            <p>4、c和d都对吧</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/42. ADH释放的有效刺激主要是 【单选题】</p>
+        <p>A.血浆晶体渗透压降低</p>
+        <p>B.血浆晶体渗透压升高</p>
+        <p>C.血浆胶体渗透压升高</p>
+        <p>D.血浆胶体渗透压降低</p>
+        <p>E.循环血量增加</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、饮水多，晶体渗透压降低，ADH分泌减少。。。</p>
+            <p>2、不是水多，晶体渗透压降低，有ADH分泌增加吗?</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/42. ADH可以调节 【单选题】</p>
+        <p>A.近曲小管对水的重吸收</p>
+        <p>B.髓袢降支粗段对水的重吸收</p>
+        <p>C.髓袢细段对水的重吸收</p>
+        <p>D.髓袢升支粗段对水的重吸收</p>
+        <p>E.远曲小管和集合管对水的重吸收</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、远曲小管和集合管对水的重吸收受ADH的调节</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/42. 静脉注射20%葡萄糖50ml，尿量明显增加。尿量增多的主要原因是 【单选题】</p>
+        <p>A.肾小球滤过率增加</p>
+        <p>B.血容量增加</p>
+        <p>C.肾小管对水的通透性降低</p>
+        <p>D.肾小管溶质浓度增加</p>
+        <p>E.肾小管为Na<sup>+</sup>重吸收减少</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、原理是渗透性利尿。书本252页。第八版教材。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/42. 与肾小球滤过作用无关的因素是 【单选题】</p>
+        <p>A.肾血浆流量</p>
+        <p>B.有效滤过压</p>
+        <p>C.滤过膜面积</p>
+        <p>D.滤过通透性</p>
+        <p>E.肾髓质渗透压梯度</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/42. 下列哪项与尿的生成过程无关 【单选题】</p>
+        <p>A.肾小球的滤过</p>
+        <p>B.肾小管与集合管的重吸收</p>
+        <p>C.肾小管与集合管的排泄</p>
+        <p>D.肾小管与集合管的分泌</p>
+        <p>E.输尿管的蠕动</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/42. 动脉血压在多大范围内变动时，肾小球毛细血管压和肾血流量保持相对恒定 【单选题】</p>
+        <p>A.5.3～13.3kPa(40～100mmHg)</p>
+        <p>B.6.7～18.6kPa(50～140mmHg)</p>
+        <p>C.8.0～16.OkPa(60～120mmHg)</p>
+        <p>D.10.7～24.OkPa(80～180mmHg)</p>
+        <p>E.24.0～29.3kPa(180～220mmHg)</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/42. 正常人尿量为 【单选题】</p>
+        <p>A.100ml以下/24h</p>
+        <p>B.100～500ml/24h</p>
+        <p>C.1000～2000ml/24h</p>
+        <p>D.2000～2500ml/24h</p>
+        <p>E.2500ml以上/24h</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、书上哪有啊啊啊啊啊啊</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/42. 多尿指尿量长期保持在 【单选题】</p>
+        <p>A.100ml以下/24h</p>
+        <p>B.100～500ml/24h</p>
+        <p>C.1000～2000ml/24h</p>
+        <p>D.2000～2500ml/24h</p>
+        <p>E.2500ml以上/24h</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/42. 少尿指尿量为 【单选题】</p>
+        <p>A.100ml以下/24h</p>
+        <p>B.100～500ml/24h</p>
+        <p>C.1000～2000ml/24h</p>
+        <p>D.2000～2500ml/24h</p>
+        <p>E.2500ml以上/24h</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、100以下算是无尿了</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/42. 无尿指尿量为 【单选题】</p>
+        <p>A.100ml以下/24h</p>
+        <p>B.100～500ml/24h</p>
+        <p>C.1000～2000ml/24h</p>
+        <p>D.2000～2500ml/24h</p>
+        <p>E.2500ml以上/24h</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/42. 一次饮大量清水导致尿量增多称 【单选题】</p>
+        <p>A.水利尿</p>
+        <p>B.渗透性利尿</p>
+        <p>C.尿崩症</p>
+        <p>D.尿失禁</p>
+        <p>E.尿潴留</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、渗透性利尿是因为溶质重吸收少而也把水留在了小管液中的现象</p>
+            <p>2、血浆晶体渗透压降低，所以尿量增多。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/42. 静脉滴注甘露醇引起 【单选题】</p>
+        <p>A.水利尿</p>
+        <p>B.渗透性利尿</p>
+        <p>C.尿崩症</p>
+        <p>D.尿失禁</p>
+        <p>E.尿潴留</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/42. 糖尿病病人多尿属于 【单选题】</p>
+        <p>A.水利尿</p>
+        <p>B.渗透性利尿</p>
+        <p>C.尿崩症</p>
+        <p>D.尿失禁</p>
+        <p>E.尿潴留</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/42. 小管液重吸收率与肾小球滤过率具有等比关系的部位是 【单选题】</p>
+        <p>A.近端小管</p>
+        <p>B.髓袢降支细段</p>
+        <p>C.髓袢升支细段</p>
+        <p>D.髓袢升支粗段</p>
+        <p>E.远曲小管和集合管</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、书上253页，球馆平衡。</p>
+            <p>2、九版240 定比重吸收</p>
+            <p>3、都不会</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/42. 水的重吸收量不多但可被调节的部位是 【单选题】</p>
+        <p>A.近端小管</p>
+        <p>B.髓袢降支细段</p>
+        <p>C.髓袢升支细段</p>
+        <p>D.髓袢升支粗段</p>
+        <p>E.远曲小管和集合管</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、ADH</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/42. 与近髓肾单位相比，皮质肾单位的特点是 【单选题】</p>
+        <p>A.数目少而体积大，髓袢长</p>
+        <p>B.人球、出球小动脉口径相近</p>
+        <p>C.出球小动脉后形成直小血管</p>
+        <p>D.肾素含量少</p>
+        <p>E.功能侧重于滤过和重吸收</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、A选项数目多，髓半短。B选项入球微动脉大于出球微动脉。C选项是近髓肾单位的特点。D选项主要分泌肾素。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/42. 有关近球小管对Na<sup>+</sup>的重吸收，下列哪一项叙述是正确的 【单选题】</p>
+        <p>A.约占滤液中Na<sup>+</sup>总数的1／3</p>
+        <p>B.有主动转运，也有被动转运</p>
+        <p>C.与葡萄糖、氨基酸转运无关</p>
+        <p>D.与H<sup>+</sup>的分泌无关</p>
+        <p>E.受醛固酮的调节</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、近端小管后半段：钠氢交换体，氯离子碳酸氢根交换体，钠离子和氯离子进入细胞内，氢离子和碳酸氢根离子进入小管液——小管液的氯离子浓度高于细胞间液的氯离子浓度，顺浓度梯度进入细胞间液，产生电位梯度，造成钠离子顺电位梯度被动重吸收。</p>
+            <p>2、咋有被动转运呢!</p>
+            <p>3、钠的重吸收受醛固酮的调节主要发生在远曲小管和集合管，水的重吸收受血管升压素的调节</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/42. 高位截瘫患者排尿障碍表现为 【单选题】</p>
+        <p>A.尿失禁</p>
+        <p>B.尿潴留</p>
+        <p>C.无尿</p>
+        <p>D.尿崩症</p>
+        <p>E.少尿</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/42. 肾小球有效滤过压等于 【单选题】</p>
+        <p>A.肾小球毛细血管血压+血浆胶体渗透压-囊内压</p>
+        <p>B.肾小球毛细血管血压-血浆晶体渗透压+囊内压</p>
+        <p>C.肾小球毛细血管血压+血浆胶体渗透压+囊内压</p>
+        <p>D.肾小球毛细血管血压-血浆晶体渗透压-囊内压</p>
+        <p>E.肾小球毛细血管血压-血浆胶体渗透压-囊内压</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一个胶体一个晶体</p>
+            <p>2、De答案都是一样的哎</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/42. 67%的NaCl吸收在 【单选题】</p>
+        <p>A.皮质</p>
+        <p>B.远曲小管</p>
+        <p>C.集合管</p>
+        <p>D.近球小管</p>
+        <p>E.髓质</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/42. 关于肾小管分泌H<sup>+</sup>的描述，正确的是 【单选题】</p>
+        <p>A.仅发生于远端小管</p>
+        <p>B.通过质子泵和Na<sup>+</sup>-H<sup>+</sup>交换而实现</p>
+        <p>C.肾小管分泌NH<sub>3</sub>有碍于分泌H<sup>+</sup></p>
+        <p>D.分泌1个H<sup>+</sup>可有多个HCO<sup>3-</sup>重吸收</p>
+        <p>E.受肾素-血管紧张素-醛固酮系统调节</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、a选项中集合管也可以分泌，书上250页。c选项中应该是促进。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/42. (2008)人体在交感神经兴奋时，尿量减少的主要原因是 【单选题】</p>
+        <p>A.肾小球毛细血管血压下降</p>
+        <p>B.血浆胶体渗透压升高</p>
+        <p>C.肾素分泌减少</p>
+        <p>D.醛固酮分泌减少</p>
+        <p>E.抗利尿激素分泌减少</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、释放去甲肾上腺素 释放肾素 增加肾小管对水和氯化钠的重吸收 尿量减少</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/42. (2011)下列可使肾小球滤过率增加的因素是 【单选题】</p>
+        <p>A.肾血浆流量增多</p>
+        <p>B.有效滤过压降低</p>
+        <p>C.肾小囊内压升高</p>
+        <p>D.毛细血管血压降低</p>
+        <p>E.血浆胶体渗压升高</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/42. (2003)关于肾小管HCO<sup>3-</sup>重吸收的叙述，错误的是 【单选题】</p>
+        <p>A.主要在近端小管重吸收</p>
+        <p>B.与H<sup>+</sup>的分泌有关</p>
+        <p>C.HCO<sup>3-</sup>是以CO<sub>2</sub>扩散的形式重吸收</p>
+        <p>D.HCO<sup>3-</sup>重吸收需碳酸酐酶的帮助</p>
+        <p>E.Cl<sup>-</sup>的重吸收优先于HCO<sup>3-</sup>的重吸收</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、250页原话，碳酸氢根离子吸收优于氯离子</p>
+            <p>2、HCO3的重吸收主要以CO2的形式在近段小管处重吸收</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/42. (2007)67%NaCl吸收在 【单选题】</p>
+        <p>A.皮质</p>
+        <p>B.远曲小管</p>
+        <p>C.集合管</p>
+        <p>D.近球小管</p>
+        <p>E.髓质</p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/42. (2001)某患者多食、多饮、多尿，血糖浓度为200mg／dl，尿糖(+)。其尿量增加的主要原因是 【单选题】</p>
+        <p>A.肾小球滤过率增加</p>
+        <p>B.肾小管中溶质浓度增加</p>
+        <p>C.肾小管分泌增加</p>
+        <p>D.血浆晶体渗透压升高</p>
+        <p>E.醛固酮分泌增加</p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、渗透性利尿的原理</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/42. (2012)大量出汗时尿量减少，主要原因是 【单选题】</p>
+        <p>A.血浆胶体渗透压升高，导致肾小球滤过减少</p>
+        <p>B.血浆晶体渗透压升高，引起ADH分泌增多</p>
+        <p>C.血容量减少，导致肾小球滤过减小</p>
+        <p>D.交感神经兴奋，引起肾小球滤过减少</p>
+        <p>E.肾素-血管紧张素系统活动增强，可引起醛固酮分泌增多</p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、汗液是低渗溶液</p>
+            <p>2、第八版259页体液渗透压中那一段有原话</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/42. (2005)关于血管紧张素Ⅱ对肾小球入球及出球小动脉的收缩作用，正确的是 【单选题】</p>
+        <p>A.对入球小动脉的收缩作用大于出球小动脉</p>
+        <p>B.对入球小动脉的收缩作用小于出球小动脉</p>
+        <p>C.对入球小动脉的收缩作用等于出球小动脉</p>
+        <p>D.对入球小动脉无收缩作用</p>
+        <p>E.对出球小动脉无收缩作用</p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、是A吧</p>
+            <p>2、根据楼上的说法（也是书本的说法），那这道题选什么？</p>
+            <p>3、p260，看量</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>41/42. (2007)测肾小球滤过率的物质是 【单选题】</p>
+        <p>A.肌酐</p>
+        <p>B.PAH</p>
+        <p>C.碘锐特</p>
+        <p>D.肌酸</p>
+        <p>E.菊粉</p>
+        <div class="divXSDA" id="showAndHideButton41" onclick="showAndHideButton('data41','showAndHideButton41')">显示答案</div>
+        <div class="datas" id="data41" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、菊粉可滤过但不可被重吸收，尿中有多少就滤过了多少</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>42/42. (2002)高位截瘫病人排尿障碍表现为 【单选题】</p>
+        <p>A.尿失禁</p>
+        <p>B.尿潴留</p>
+        <p>C.无尿</p>
+        <p>D.尿崩症</p>
+        <p>E.少尿</p>
+        <div class="divXSDA" id="showAndHideButton42" onclick="showAndHideButton('data42','showAndHideButton42')">显示答案</div>
+        <div class="datas" id="data42" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

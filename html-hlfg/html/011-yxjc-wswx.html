@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>弧菌属(共3题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">关于霍乱弧菌的生物学性状，错误的描述是</div>
+                <div class="layui-input-block">
+
+                    <p>A.增菌培养基通常为碱性蛋白胨水</p>
+
+                    <p>B.革兰染色为阴性</p>
+
+                    <p>C.悬滴观察呈\'穿梭\'样运动</p>
+
+                    <p>D.El-Tor生物型可形成芽胞</p>
+
+                    <p>E.有菌毛和单鞭毛</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：D</p>
+                    <p>题目解析：霍乱弧菌在pH8.5的碱性蛋白胨水或碱性琼脂平板上生长良好。A正确。霍乱弧菌有菌毛和单鞭毛，头尾相接，\'鱼群\'状排列，悬滴观察呈\'穿梭\'样运动。故C、E正确。霍乱弧菌为革兰阴性菌，B正确。El-Tor生物型不可形成芽胞，D说法不正确，故选D。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">患者女，20岁。进食海鲜后3小时出现腹痛、腹泻、呕吐，大便为稀水样，共便10余次。化验粪常规可见少量白细胞，末梢血象正常。该患者最主要的治疗措施是</div>
+                <div class="layui-input-block">
+
+                    <p>A.立即应用抗生素</p>
+
+                    <p>B.静脉补充碳酸氢钠</p>
+
+                    <p>C.迅速静脉补液</p>
+
+                    <p>D.立即给予甘露醇</p>
+
+                    <p>E.应用糖皮质激素</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：C</p>
+                    <p>题目解析：副溶血性弧菌引起的胃肠炎临床表现有：恶心、呕吐、腹痛、低热、寒战等。水样便是最显著特征.偶尔出现血便，补液是主要治疗措施。应及时输液，防止其脱水。故选C。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o3">
+            <div class="sttk-top">
+                <span>3、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">霍乱弧菌的主要致病物质是</div>
+                <div class="layui-input-block">
+
+                    <p>A.霍乱肠毒素</p>
+
+                    <p>B.霍乱内毒素</p>
+
+                    <p>C.腺苷酸环化酶</p>
+
+                    <p>D.透明质酸酶</p>
+
+                    <p>E.蛋白水解酶</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('dats3','showAndHideButton3')">显示答案</div>
+                <div class="datas" id="dats3" style="display: none;">
+                    <p>参考答案：A</p>
+                    <p>题目解析：霍乱肠毒素作用于腺苷酸环化酶，使细胞内cAMP浓度增高，肠黏膜细胞分泌增多，致水样便。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

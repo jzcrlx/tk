@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>痛经病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/3. 关于痛经的描述，下列哪项是错误的 【单选题】</p>
+        <p>A.分为原发性痛经和继发性痛经，其中原发性痛经占痛经90%以上</p>
+        <p>B.原发性痛经多发生于青春期，初潮1～2年内</p>
+        <p>C.原发性痛经最早出现疼痛为经前12小时</p>
+        <p>D.原发性痛经以精神治疗为主，避免精神刺激或过度疲劳。</p>
+        <p>E.E原发性痛经妇科检查常有器质性病变。</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、妇科检查无器质性病变</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 患者女性，18岁，高三学生，月经来潮3年，有痛经史，今日月经第一天，下腹部疼痛，坠胀伴腰痛就诊，医生诊断为：原发性痛经。该疾病的护理为 【单选题】</p>
+        <p>A.遵医嘱给予止痛药、镇静剂；腹部热敷或进食冷饮</p>
+        <p>B.遵医嘱给予止痛药、镇静剂；腹部冷敷或进食热饮</p>
+        <p>C.遵医嘱给予止痛药、镇静剂；腹部热敷或进食热饮</p>
+        <p>D.遵医嘱给予止痛药、镇静剂；腹部热敷或进普通食</p>
+        <p>E.遵医嘱给予止痛药、镇静剂；腹部冷敷或进食冷饮</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 患者女性，18岁，高三学生，月经来潮3年，有痛经史，今日月经第一天，下腹部疼痛，坠胀伴腰痛就诊，医生诊断为：原发性痛经。告知患者 【单选题】</p>
+        <p>A.合理休息，充足睡眠，摄取足够的营养</p>
+        <p>B.增加运动，减少睡眠，进食清淡饮食</p>
+        <p>C.减少运动，充足睡眠，增加饮食</p>
+        <p>D.增加运动，充足睡眠，减少饮食</p>
+        <p>E.运动、睡眠，饮食无特殊变化</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>脂类代谢 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/54. 脂肪酸β氧化发生部位是 【单选题】</p>
+        <p>A.胞液</p>
+        <p>B.线粒体</p>
+        <p>C.内质网</p>
+        <p>D.胞液和线粒体</p>
+        <p>E.胞液和内质网</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、B氧化在线粒体中进行，脂肪酸活化是在胞质中进行</p>
+            <p>2、为什么胞液也有B氧化</p>
+            <p>3、脂肪酸要先在细胞质中活化为脂酰辅酶A</p>
+            <p>4、明白了，原来题目问得是一整个氧化过程。</p>
+            <p>5、为何</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/54. 体内脂肪酸合成的主要原料是 【单选题】</p>
+        <p>A.NADPH和乙酰CoA</p>
+        <p>B.NADH和乙酰CoA</p>
+        <p>C.NADPH和丙二酰CoA</p>
+        <p>D.NADPH和乙酰乙酸</p>
+        <p>E.NADH和丙二酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、coA是转氨基和脂肪酸的原料</p>
+            <p>2、注意原料是乙酰辅酶A，而直接供体是丙二酸辅酶A</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/54. 何种情况下机体由脂肪提供能量 【单选题】</p>
+        <p>A.长期饥饿</p>
+        <p>B.空腹</p>
+        <p>C.进餐后</p>
+        <p>D.剧烈运动</p>
+        <p>E.安静状态</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、就是可以饿瘦的那种</p>
+            <p>2、？？？？一脸懵逼</p>
+            <p>3、为什么啊</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/54. 控制长链脂肪酰基进入线粒体氧化的关键因素是 【单选题】</p>
+        <p>A.ATP水平</p>
+        <p>B.肉碱脂酰转移酶的活性</p>
+        <p>C.脂酰CoA合成酶的活性</p>
+        <p>D.脂酰CoA的水平</p>
+        <p>E.脂酰CoA脱氢酶的活性</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、就是长链进不去，需要肉碱的转运。</p>
+            <p>2、不懂
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/54. 某脂肪酰CoA(20：0)经β氧化可分解为10mol乙酰CoA，此时可形成ATP的摩尔数为 【单选题】</p>
+        <p>A.15</p>
+        <p>B.25</p>
+        <p>C.36</p>
+        <p>D.45</p>
+        <p>E.60</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第八版书上156页，脂酰CoA分解产生乙酰CoA、FADH2和NADH:脱氢、加水、再脱氢、硫解反复进行，最终完成脂肪酸β氧化。 在线粒体,脂酰CoA经过脱氢、加水、再脱氢和硫解四步反应，分解生成1分子乙酰CoA和少了2个C原子的脂酰CoA。每次分解生成1分子乙酰CoA和少了2个C原子的脂酰CoA，第9次后正好形成9mol乙酰CoA和剩余下来的1mol乙酰CoA，共10mol。 所以9次β氧化，得9个NADH,FADH2 得9*（1.5+2.5）＝36</p>
+            <p>2、注意:脂肪酸和脂酰不一样，脂酰不用活化，不用-2ATP</p>
+            <p>3、不用➖2吗
+            </p>
+            <p>4、不加上乙酰辅酶A进入三羧酸循环后的产能吗？</p>
+            <p>5、题目是不算乙酰辅酶A的ATP</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/54. 肝中乙酰CoA不能来自下列哪些物质 【单选题】</p>
+        <p>A.脂肪酸</p>
+        <p>B.α-磷酸甘油</p>
+        <p>C.葡萄糖</p>
+        <p>D.甘油</p>
+        <p>E.酮体</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、酮体在肝内生成，消耗乙酰CoA（原料）</p>
+            <p>2、酮体肝内生成，肝外用</p>
+            <p>3、反了</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/54. 不能利用脂肪酸的组织是 【单选题】</p>
+        <p>A.肝脏</p>
+        <p>B.肾脏</p>
+        <p>C.肌肉</p>
+        <p>D.脑组织</p>
+        <p>E.心肌</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、用酮体</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/54. 食物脂肪消化吸收后进入血液的主要方式是 【单选题】</p>
+        <p>A.甘油及FA</p>
+        <p>B.DG及FA</p>
+        <p>C.MG及FA</p>
+        <p>D.CM</p>
+        <p>E.TG</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、食物脂肪消化吸收后在胆汁酸作用下形成乳糜颗粒进入血液</p>
+            <p>2、乳糜微粒</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/54. 不参与甘油三酯合成的化合物是 【单选题】</p>
+        <p>A.磷脂酸</p>
+        <p>B.DG</p>
+        <p>C.脂酰CoA</p>
+        <p>D.α-磷酸甘油</p>
+        <p>E.CDPDG</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、DG是甘油二酯的意思</p>
+            <p>2、记</p>
+            <p>3、是1-2PDG</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/54. FA由血液中何种物质运输 【单选题】</p>
+        <p>A.CM</p>
+        <p>B.LDL</p>
+        <p>C.HDL</p>
+        <p>D.清蛋白</p>
+        <p>E.球蛋白</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、FA(fatty acids)脂肪酸</p>
+            <p>2、清蛋白作用是载体</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/54. 有关柠檬酸-丙酮酸循环的叙述，哪项不正确 【单选题】</p>
+        <p>A.提供NADH</p>
+        <p>B.提供NADPH</p>
+        <p>C.使乙酰CoA进入胞液</p>
+        <p>D.参与TAC的部分反应</p>
+        <p>E.消耗ATP</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、教材150页下方</p>
+            <p>2、消耗2个ATP，一个NADH。产生一个NADPH. 柠檬酸到草酰乙酸（柠檬酸裂解酶）需要一个ATP，草酰乙酸到苹果酸消耗NADH，苹果酸到丙酮酸产生一个NADPH.丙酮酸变回草酰乙酸消耗一个ATP。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/54. 脑组织在正常情况下主要利用葡萄糖供能，只有在下述哪种情况下脑组织主要利用酮体 【单选题】</p>
+        <p>A.剧烈运动</p>
+        <p>B.空腹</p>
+        <p>C.短期饥饿</p>
+        <p>D.长期饥饿</p>
+        <p>E.轻型糖尿病</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/54. 乙酰CoA是在线粒体内产生的，而FA及Ch是在胞液内以乙酰CoA为原料进行合成的，乙酰CoA通过下列哪种机制由线粒体进入胞液中 【单选题】</p>
+        <p>A.乳酸循环</p>
+        <p>B.柠檬酸-丙酮酸循环</p>
+        <p>C.鸟氨酸循环</p>
+        <p>D.三羧酸循环</p>
+        <p>E.丙氨酸-葡萄糖循环</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/54. 胆固醇合成的主要场所是 【单选题】</p>
+        <p>A.肾</p>
+        <p>B.肝</p>
+        <p>C.小肠</p>
+        <p>D.脑</p>
+        <p>E.胆</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/54. 胆固醇在体内的主要生理功能是 【单选题】</p>
+        <p>A.影响基因表达</p>
+        <p>B.合成磷脂的前体</p>
+        <p>C.控制胆汁分泌</p>
+        <p>D.影响胆汁分泌</p>
+        <p>E.控制膜的流动性</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、胆固醇是细胞膜的重要组成成分。</p>
+            <p>2、记</p>
+            <p>3、为什么>o</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/54. 胆固醇体内合成的原料是 【单选题】</p>
+        <p>A.胆汁酸盐和磷脂酰胆碱</p>
+        <p>B.17羟类固醇和17酮类固醇</p>
+        <p>C.胆汁酸和VD等</p>
+        <p>D.乙酰CoA和NADPH</p>
+        <p>E.胆汁酸</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/54. 下列哪种物质不是甘油磷脂的成分 【单选题】</p>
+        <p>A.胆碱</p>
+        <p>B.乙醇胺</p>
+        <p>C.肌醇</p>
+        <p>D.丝氨酸</p>
+        <p>E.神经鞘氨醇</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、书上144页，甘油磷脂:水，胆碱，乙醇胺，丝氨酸，肌醇，甘油，磷脂酰甘油。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/54. 下述哪种物质是体内合成胆碱的原料 【单选题】</p>
+        <p>A.肌醇</p>
+        <p>B.苏氨酸</p>
+        <p>C.丝氨酸</p>
+        <p>D.甘氨酸</p>
+        <p>E.核酸</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、记</p>
+            <p>2、丝氨酸合成胆碱</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/54. 下列物质中参加胆固醇酯化成胆固醇酯过程的是 【单选题】</p>
+        <p>A.LCAT</p>
+        <p>B.LDL</p>
+        <p>C.IPL</p>
+        <p>D.LDH</p>
+        <p>E.HMGCoA还原酶</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、LCAT:胆固醇酯酰转移酶</p>
+            <p>2、懂了</p>
+            <p>3、p172</p>
+            <p>4、不懂？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/54. 甘油磷脂合成最活跃的组织是 【单选题】</p>
+        <p>A.肺</p>
+        <p>B.脑</p>
+        <p>C.骨</p>
+        <p>D.肝</p>
+        <p>E.肌肉</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、肝肾肠活性最高</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/54. 乙酰CoA不能转变为下列哪种物质 【单选题】</p>
+        <p>A.丙二酰CoA</p>
+        <p>B.胆固醇</p>
+        <p>C.乙酰乙酸</p>
+        <p>D.丙酮酸</p>
+        <p>E.脂肪酸</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、乙酰辅酶A不能转变成丙酮酸，因为丙酮酸脱氢酶复合体催化的是不可逆反应</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/54. 合成VLDL的主要场所是 【单选题】</p>
+        <p>A.脂肪组织</p>
+        <p>B.肾</p>
+        <p>C.肝</p>
+        <p>D.小肠黏膜</p>
+        <p>E.血浆</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、你记反了。LDL 由VLDL转变</p>
+            <p>2、VLDL不是在血浆中由LDL转变而来的嘛？？？</p>
+            <p>3、LDL在血浆中 VLDL在肝中 CM在肠黏膜上皮中
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/54. 胆固醇体内代谢的主要去路是在肝中转化为 【单选题】</p>
+        <p>A.乙酰CoA</p>
+        <p>B.NADPH</p>
+        <p>C.维生素D</p>
+        <p>D.类固醇</p>
+        <p>E.胆汁酸</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、胆固醇的去路有3:①转化为胆汁酸盐（最主要）②转化为类固醇化合物③在皮肤转化为维生素D3</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/54. 生物膜组成成分是 【单选题】</p>
+        <p>A.贮能和供能</p>
+        <p>B.磷脂、胆固醇和不饱和脂肪酸</p>
+        <p>C.前列腺素、血栓恶烷及白三烯</p>
+        <p>D.胆汁酸盐、辅脂酶与胰脂酶</p>
+        <p>E.小肠</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/54. 脂肪的主要生理功用是 【单选题】</p>
+        <p>A.贮能和供能</p>
+        <p>B.磷脂、胆固醇和不饱和脂肪酸</p>
+        <p>C.前列腺素、血栓恶烷及白三烯</p>
+        <p>D.胆汁酸盐、辅脂酶与胰脂酶</p>
+        <p>E.小肠</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/54. 多不饱和脂酸的重要衍生物是 【单选题】</p>
+        <p>A.贮能和供能</p>
+        <p>B.磷脂、胆固醇和不饱和脂肪酸</p>
+        <p>C.前列腺素、血栓恶烷及白三烯</p>
+        <p>D.胆汁酸盐、辅脂酶与胰脂酶</p>
+        <p>E.小肠</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、不懂</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/54. 脂肪乳化主要物质是 【单选题】</p>
+        <p>A.贮能和供能</p>
+        <p>B.磷脂、胆固醇和不饱和脂肪酸</p>
+        <p>C.前列腺素、血栓恶烷及白三烯</p>
+        <p>D.胆汁酸盐、辅脂酶与胰脂酶</p>
+        <p>E.小肠</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/54. 乳糜微粒生成部位是 【单选题】</p>
+        <p>A.贮能和供能</p>
+        <p>B.磷脂、胆固醇和不饱和脂肪酸</p>
+        <p>C.前列腺素、血栓恶烷及白三烯</p>
+        <p>D.胆汁酸盐、辅脂酶与胰脂酶</p>
+        <p>E.小肠</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/54. 胆固醇和酮体合成的中间产物是 【单选题】</p>
+        <p>A.β-羟丁酸</p>
+        <p>B.β-羟脂酰CoA</p>
+        <p>C.HMGCoA</p>
+        <p>D.磷酸二羟丙酮</p>
+        <p>E.琥珀酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、hmg coa 是胆固醇合成的限速酶</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/54. 酮体氧化和三羧酸循环中共需的物质是 【单选题】</p>
+        <p>A.β-羟丁酸</p>
+        <p>B.β-羟脂酰CoA</p>
+        <p>C.HMGCoA</p>
+        <p>D.磷酸二羟丙酮</p>
+        <p>E.琥珀酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/54. 甘油和糖分解代谢的共同中间产物是 【单选题】</p>
+        <p>A.β-羟丁酸</p>
+        <p>B.β-羟脂酰CoA</p>
+        <p>C.HMGCoA</p>
+        <p>D.磷酸二羟丙酮</p>
+        <p>E.琥珀酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、甘油脱氢生成磷酸二羟丙酮后进入糖代谢途径分解或异生为葡萄糖。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/54. VLDL 【单选题】</p>
+        <p>A.运送内源性TG</p>
+        <p>B.运送内源性Ch</p>
+        <p>C.运送外源性TG</p>
+        <p>D.蛋白质含量最高</p>
+        <p>E.与冠状动脉粥样硬化的发生率呈负相关</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/54. CM 【单选题】</p>
+        <p>A.运送内源性TG</p>
+        <p>B.运送内源性Ch</p>
+        <p>C.运送外源性TG</p>
+        <p>D.蛋白质含量最高</p>
+        <p>E.与冠状动脉粥样硬化的发生率呈负相关</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、TG指的是甘油三酯。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/54. LDL 【单选题】</p>
+        <p>A.运送内源性TG</p>
+        <p>B.运送内源性Ch</p>
+        <p>C.运送外源性TG</p>
+        <p>D.蛋白质含量最高</p>
+        <p>E.与冠状动脉粥样硬化的发生率呈负相关</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、Ch.指的是胆固醇。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/54. HDL 【单选题】</p>
+        <p>A.运送内源性TG</p>
+        <p>B.运送内源性Ch</p>
+        <p>C.运送外源性TG</p>
+        <p>D.蛋白质含量最高</p>
+        <p>E.与冠状动脉粥样硬化的发生率呈负相关</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、e也对</p>
+            <p>2、选DE</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/54. HDL2 【单选题】</p>
+        <p>A.运送内源性TG</p>
+        <p>B.运送内源性Ch</p>
+        <p>C.运送外源性TG</p>
+        <p>D.蛋白质含量最高</p>
+        <p>E.与冠状动脉粥样硬化的发生率呈负相关</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、这题我觉得不行</p>
+            <p>2、这题D也是对的？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/54. 高脂蛋白血症分型 【单选题】</p>
+        <p>A.TG、C、CE、磷脂和游离脂肪酸</p>
+        <p>B.A、B、C、D与E</p>
+        <p>C.I、ⅡA、ⅢB、Ⅲ、Ⅳ和V</p>
+        <p>D.CM、HDL、LDL、VLDL</p>
+        <p>E.乙酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/54. 载脂蛋白分类 【单选题】</p>
+        <p>A.TG、C、CE、磷脂和游离脂肪酸</p>
+        <p>B.A、B、C、D与E</p>
+        <p>C.I、ⅡA、ⅢB、Ⅲ、Ⅳ和V</p>
+        <p>D.CM、HDL、LDL、VLDL</p>
+        <p>E.乙酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/54. 血脂包括 【单选题】</p>
+        <p>A.TG、C、CE、磷脂和游离脂肪酸</p>
+        <p>B.A、B、C、D与E</p>
+        <p>C.I、ⅡA、ⅢB、Ⅲ、Ⅳ和V</p>
+        <p>D.CM、HDL、LDL、VLDL</p>
+        <p>E.乙酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、CE是什么？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/54. 糖异生和三羧酸循环共同的代谢场所是 【单选题】</p>
+        <p>A.溶酶体</p>
+        <p>B.内质网</p>
+        <p>C.线粒体</p>
+        <p>D.细胞液</p>
+        <p>E.高尔基体</p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>41/54. 胆固醇合成和磷脂合成的共同代谢场所是 【单选题】</p>
+        <p>A.溶酶体</p>
+        <p>B.内质网</p>
+        <p>C.线粒体</p>
+        <p>D.细胞液</p>
+        <p>E.高尔基体</p>
+        <div class="divXSDA" id="showAndHideButton41" onclick="showAndHideButton('data41','showAndHideButton41')">显示答案</div>
+        <div class="datas" id="data41" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>42/54. 属于脂肪动员产物的是 【单选题】</p>
+        <p>A.甘油</p>
+        <p>B.3-磷酸甘油</p>
+        <p>C.3-磷酸甘油醛</p>
+        <p>D.1，3-二磷酸甘油酸</p>
+        <p>E.2，3-二磷酸甘油酸</p>
+        <div class="divXSDA" id="showAndHideButton42" onclick="showAndHideButton('data42','showAndHideButton42')">显示答案</div>
+        <div class="datas" id="data42" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、产物是游离脂肪酸和甘油。</p>
+            <p>2、肪动员是指储存在脂肪细胞中的脂肪，被脂肪酶逐步水解为游离脂酸(FFA)及甘油并释放入血液，被其他组织氧化利用的过程。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>43/54. 属于脂肪组织中合成甘油三酯原料的是 【单选题】</p>
+        <p>A.甘油</p>
+        <p>B.3-磷酸甘油</p>
+        <p>C.3-磷酸甘油醛</p>
+        <p>D.1，3-二磷酸甘油酸</p>
+        <p>E.2，3-二磷酸甘油酸</p>
+        <div class="divXSDA" id="showAndHideButton43" onclick="showAndHideButton('data43','showAndHideButton43')">显示答案</div>
+        <div class="datas" id="data43" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、在脂肪组织中，主要利用糖酵解的中间代谢产物3-磷酸甘油为原料，生成中间代谢产物磷脂酸，后合成甘油三酯</p>
+            <p>2、不是应该是甘油吗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>44/54. 体内合成胆固醇的主要原料是 【单选题】</p>
+        <p>A.乙酰辅酶A</p>
+        <p>B.乙酰乙酰辅酶A</p>
+        <p>C.丙酰辅酶A</p>
+        <p>D.草酰乙酸</p>
+        <p>E.葡萄糖</p>
+        <div class="divXSDA" id="showAndHideButton44" onclick="showAndHideButton('data44','showAndHideButton44')">显示答案</div>
+        <div class="datas" id="data44" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>45/54. 体内合成长链脂酸的主要原料是 【单选题】</p>
+        <p>A.乙酰辅酶A</p>
+        <p>B.乙酰乙酰辅酶A</p>
+        <p>C.丙酰辅酶A</p>
+        <p>D.草酰乙酸</p>
+        <p>E.葡萄糖</p>
+        <div class="divXSDA" id="showAndHideButton45" onclick="showAndHideButton('data45','showAndHideButton45')">显示答案</div>
+        <div class="datas" id="data45" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、长链脂酸和胆固醇原料都是乙酰辅酶A</p>
+            <p>2、记</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>46/54. 合成脂肪酸的乙酰CoA主要来自 【单选题】</p>
+        <p>A.糖的分解代谢</p>
+        <p>B.脂肪酸的分解代谢</p>
+        <p>C.胆固醇的分解代谢</p>
+        <p>D.生糖氨基酸的分解代谢</p>
+        <p>E.生酮氨基酸的分解代谢</p>
+        <div class="divXSDA" id="showAndHideButton46" onclick="showAndHideButton('data46','showAndHideButton46')">显示答案</div>
+        <div class="datas" id="data46" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>47/54. 导致脂肪肝的主要原因是 【单选题】</p>
+        <p>A.肝内脂肪合成过多</p>
+        <p>B.肝内脂肪分解过多</p>
+        <p>C.肝内脂肪运出障碍</p>
+        <p>D.食入脂肪过多</p>
+        <p>E.食入糖类过多</p>
+        <div class="divXSDA" id="showAndHideButton47" onclick="showAndHideButton('data47','showAndHideButton47')">显示答案</div>
+        <div class="datas" id="data47" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>48/54. 关于脂肪酸β-氧化的叙述错误的是 【单选题】</p>
+        <p>A.酶系存在于线粒体中</p>
+        <p>B.不发生脱水反应</p>
+        <p>C.需要FAD及NAD<sup>+</sup>为受氢体</p>
+        <p>D.脂肪酸的活化是必要的步骤</p>
+        <p>E.每进行一次β-氧化产生2分子乙酰CoA</p>
+        <div class="divXSDA" id="showAndHideButton48" onclick="showAndHideButton('data48','showAndHideButton48')">显示答案</div>
+        <div class="datas" id="data48" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、脱氢，加水，再脱氢，硫解</p>
+            <p>2、产生一份子</p>
+            <p>3、脱氢，加水，再脱氢。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>49/54. 脂酰CoA经β氧化的酶促反应顺序是 【单选题】</p>
+        <p>A.加水、脱氢、再脱氢、硫解</p>
+        <p>B.脱氢、加水、再脱氢、硫解</p>
+        <p>C.脱氢、硫解、再脱氢、加水</p>
+        <p>D.硫解、脱氢、加水、再脱氢</p>
+        <p>E.加水、硫解、再脱氢、脱氢</p>
+        <div class="divXSDA" id="showAndHideButton49" onclick="showAndHideButton('data49','showAndHideButton49')">显示答案</div>
+        <div class="datas" id="data49" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>50/54. (2000、2005)脂肪酸合成的原料乙酰CoA从线粒体转移至胞液的途径是 【单选题】</p>
+        <p>A.三羧酸循环</p>
+        <p>B.乳酸循环</p>
+        <p>C.糖醛酸循环</p>
+        <p>D.柠檬酸-丙酮酸循环</p>
+        <p>E.丙氨酸-葡萄糖循环</p>
+        <div class="divXSDA" id="showAndHideButton50" onclick="showAndHideButton('data50','showAndHideButton50')">显示答案</div>
+        <div class="datas" id="data50" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>51/54. (2013)长期饥饿时体内能量的主要来源是 【单选题】</p>
+        <p>A.泛酸</p>
+        <p>B.磷脂</p>
+        <p>C.葡萄糖</p>
+        <p>D.胆固醇</p>
+        <p>E.甘油三酯</p>
+        <div class="divXSDA" id="showAndHideButton51" onclick="showAndHideButton('data51','showAndHideButton51')">显示答案</div>
+        <div class="datas" id="data51" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、甘油三酯就是脂肪</p>
+            <p>2、找到了，应该是因为甘油三酯分解产生大量的ATP供机体使用，</p>
+            <p>3、为啥是甘油三酯？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>52/54. 1克软脂酸(分子量256)较1克葡萄糖(分子量180)彻底氧化所生成的ATP高多少倍？ 【单选题】</p>
+        <p>A.2</p>
+        <p>B.2.5</p>
+        <p>C.3</p>
+        <p>D.3.5</p>
+        <p>E.5</p>
+        <div class="divXSDA" id="showAndHideButton52" onclick="showAndHideButton('data52','showAndHideButton52')">显示答案</div>
+        <div class="datas" id="data52" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、1克葡萄糖（分子量108）彻底氧化产生ATP32/108，1克软脂酸 106/256，后者除以前者可得2.5</p>
+            <p>2、怎么算</p>
+            <p>3、32/180</p>
+            <p>4、？？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>53/54. 先天缺乏琥珀酰CoA转硫酶的患者若长期摄取低糖膳食，将会产生的代谢障碍是 【单选题】</p>
+        <p>A.酮血症</p>
+        <p>B.高脂血症</p>
+        <p>C.低血糖</p>
+        <p>D.苯丙酮尿症</p>
+        <p>E.尿黑酸尿症</p>
+        <div class="divXSDA" id="showAndHideButton53" onclick="showAndHideButton('data53','showAndHideButton53')">显示答案</div>
+        <div class="datas" id="data53" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、结果是导致酮体含量增加。出现酮血症。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>54/54. (2003)胆固醇不能转化成 【单选题】</p>
+        <p>A.胆汁酸</p>
+        <p>B.维生素D<sub>3</sub></p>
+        <p>C.睾丸酮</p>
+        <p>D.雌二醇</p>
+        <p>E.胆红素</p>
+        <div class="divXSDA" id="showAndHideButton54" onclick="showAndHideButton('data54','showAndHideButton54')">显示答案</div>
+        <div class="datas" id="data54" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、胆汁酸，类固醇类激素，维生素D3的前体</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

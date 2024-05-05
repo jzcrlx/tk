@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>基因表达调控 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/28. cAMP对转录进行调控，必须先与 【单选题】</p>
+        <p>A.CAP结合，形成cAMP-CAP复合物</p>
+        <p>B.RNA聚合酶结合，从而促进该酶与启动子结合</p>
+        <p>C.C蛋白结合</p>
+        <p>D.受体结合</p>
+        <p>E.操纵基因结合</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/28. 启动子是指 【单选题】</p>
+        <p>A.DNA分子中能转录的序列</p>
+        <p>B.与RNA聚合酶结合的DNA序列</p>
+        <p>C.与阻遏蛋白结合的DNA序列</p>
+        <p>D.有转录终止信号的序列</p>
+        <p>E.与顺式作用元件结合的序列</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/28. 基因表达调控最重要的环节是 【单选题】</p>
+        <p>A.基因转录</p>
+        <p>B.DNA合成</p>
+        <p>C.转录后加工</p>
+        <p>D.蛋白质合成</p>
+        <p>E.蛋白质合成后加工</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、更详细一点为转录起始。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/28. 增强子的作用是 【单选题】</p>
+        <p>A.促进结构基因转录</p>
+        <p>B.抑制结构基因转录</p>
+        <p>C.抑制阻遏蛋白</p>
+        <p>D.抑制操纵基因表达</p>
+        <p>E.抑制启动子</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/28. 增强子的作用特点是 【单选题】</p>
+        <p>A.只作用于真核细胞中</p>
+        <p>B.有固定的部位，必须在启动子上游</p>
+        <p>C.有严格的专一性</p>
+        <p>D.无需与蛋白质因子结合就能增强转录作用</p>
+        <p>E.作用无方向性</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、增强子发挥作用时与距离和方向无关。因此B错误，E正确。A存在原核生物也存在。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/28. 关于TFⅡD的叙述，下列哪项正确 【单选题】</p>
+        <p>A.是唯一能与TATA盒结合的转录因子</p>
+        <p>B.能促进RNApolⅡ与启动子结合</p>
+        <p>C.具有ATP酶活性</p>
+        <p>D.能解开DNA双链</p>
+        <p>E.抑制DNA基因转录</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、转录因子有多种，a是一种基本转录因子，负责与TATA.盒结合</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/28. 关于乳糖操纵子的叙述，下列哪项正确 【单选题】</p>
+        <p>A.属于可诱导型调控</p>
+        <p>B.属于可阻遏型调控</p>
+        <p>C.结构基因产物抑制分解代谢</p>
+        <p>D.结构基因产物与分解代谢无关</p>
+        <p>E.受代谢终产物抑制</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/28. RNA聚合酶结合于操纵子的位置是 【单选题】</p>
+        <p>A.结构基因起始区</p>
+        <p>B.CAP结合位点</p>
+        <p>C.调节基因</p>
+        <p>D.启动序列</p>
+        <p>E.操纵序列</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/28. 关于启动子的叙述下列哪项正确 【单选题】</p>
+        <p>A.开始被翻译的DNA序列</p>
+        <p>B.开始转录生成mRNA的DNA序列</p>
+        <p>C.开始结合RNA聚合酶的DNA序列</p>
+        <p>D.阻遏蛋白结合的DNA序列</p>
+        <p>E.产生阻遏物的基因</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/28. 基因表达中的诱导现象是指 【单选题】</p>
+        <p>A.阻遏物的生成</p>
+        <p>B.细菌利用葡萄糖作碳源</p>
+        <p>C.细菌不用乳糖作碳源</p>
+        <p>D.由底物的存在引起代谢底物的酶的合成</p>
+        <p>E.低等生物可以无限制地利用营养物</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、诱导：基因表达水平因环境差就差而升高，表达产物增加，和D的表述不谋而合。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/28. 与DNA结合并阻止转录进行的蛋白质称为 【单选题】</p>
+        <p>A.正调控蛋白</p>
+        <p>B.反式作用因子</p>
+        <p>C.诱导物</p>
+        <p>D.阻遏物</p>
+        <p>E.分解代谢基因活化蛋白</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、反式作用因子是一种蛋白质，由特定基因编码，调控另一基因转录激活的转录因子。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/28. 以下关于增强子的叙述错误是 【单选题】</p>
+        <p>A.增强子决定基因表达的组织特异性</p>
+        <p>B.增强子是远离启动子的顺式作用元件</p>
+        <p>C.增强子作用无方向性</p>
+        <p>D.增强子在基因的上游或下游均对基因的转录有增强作用</p>
+        <p>E.增强子只在个别真核生物中存在，无普遍性</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、增强子具有普遍性。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/28. 在亮氨酸拉链中，每隔多少个氨基酸出现1个亮氨酸 【单选题】</p>
+        <p>A.7个</p>
+        <p>B.3.6个</p>
+        <p>C.9个</p>
+        <p>D.12个</p>
+        <p>E.7.2个</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、6个吧</p>
+            <p>2、答案错了吧，书上明明写的是6个</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/28. 下列哪种结构是操纵子所没有的 【单选题】</p>
+        <p>A.启动子</p>
+        <p>B.调控基因</p>
+        <p>C.结构基因</p>
+        <p>D.操纵基因</p>
+        <p>E.5’帽子结构</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、注意操纵子是原核生物特有的就知E是错误的。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/28. cAMP对转录起始的调控是 【单选题】</p>
+        <p>A.单独与操纵基因结合，封闭其基因表达</p>
+        <p>B.以cAMP-CAP复合物与操纵基因结合，使该基因开放</p>
+        <p>C.与RNApolⅡ结合，促进酶的活性</p>
+        <p>D.与阻遏蛋白结合，去阻遏作用</p>
+        <p>E.与增强子结合，促进转录</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、E答案错了</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/28. 对自身基因转录具有调控作用的 【单选题】</p>
+        <p>A.顺式作用元件</p>
+        <p>B.反式作用元件</p>
+        <p>C.顺式作用因子</p>
+        <p>D.NA序列是</p>
+        <p>E.顺／反式作用元件</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、但是顺式作用因子也是存在的啊</p>
+            <p>2、顺式作用元件 反式作用因子
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/28. 特定基因编码、调控另一基因转录激活的转录因子是 【单选题】</p>
+        <p>A.顺式作用元件</p>
+        <p>B.反式作用元件</p>
+        <p>C.顺式作用因子</p>
+        <p>D.NA序列是</p>
+        <p>E.顺／反式作用元件</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、反式作用蛋白或反式作用因子</p>
+            <p>2、什么意思</p>
+            <p>3、选项缺失</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/28. 大多数原核生物基因转录调控机制是 【单选题】</p>
+        <p>A.操纵子</p>
+        <p>B.启动子</p>
+        <p>C.增强子</p>
+        <p>D.沉默子</p>
+        <p>E.衰减子</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/28. 激活真核基因组织特异性转录所必需的是 【单选题】</p>
+        <p>A.操纵子</p>
+        <p>B.启动子</p>
+        <p>C.增强子</p>
+        <p>D.沉默子</p>
+        <p>E.衰减子</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、增强子在真核细胞中普遍存在</p>
+            <p>2、特异性</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/28. 包含有RNA聚合酶识别位点的是 【单选题】</p>
+        <p>A.操纵子</p>
+        <p>B.启动子</p>
+        <p>C.增强子</p>
+        <p>D.沉默子</p>
+        <p>E.衰减子</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、启动子至少包括一个转录起点以及1个以上的功能组件</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/28. 可使阻遏蛋白变构并促进其与操纵基因结合的是 【单选题】</p>
+        <p>A.辅阻遏蛋白</p>
+        <p>B.TFⅡB</p>
+        <p>C.CAP</p>
+        <p>D.乳糖</p>
+        <p>E.抑制基因</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/28. 参与操纵子正调控的蛋白质因子是 【单选题】</p>
+        <p>A.辅阻遏蛋白</p>
+        <p>B.TFⅡB</p>
+        <p>C.CAP</p>
+        <p>D.乳糖</p>
+        <p>E.抑制基因</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/28. 能与阻遏蛋白结合，使操纵基因开放的是 【单选题】</p>
+        <p>A.乳糖</p>
+        <p>B.葡萄糖</p>
+        <p>C.cAMP</p>
+        <p>D.色氨酸</p>
+        <p>E.阿拉伯糖</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、半乳糖或别乳糖更为准确。</p>
+            <p>2、21题与23题都有乳糖，为什么这题选乳糖，21题不选？而且题目都是差不多</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/28. 与分解代谢基因活化蛋白(CAP)结合生成复合物的是 【单选题】</p>
+        <p>A.乳糖</p>
+        <p>B.葡萄糖</p>
+        <p>C.cAMP</p>
+        <p>D.色氨酸</p>
+        <p>E.阿拉伯糖</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、camp-cap复合物</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/28. 属于基本转录因子的是 【单选题】</p>
+        <p>A.阻遏蛋白</p>
+        <p>B.TFⅡB</p>
+        <p>C.CAP</p>
+        <p>D.乳糖</p>
+        <p>E.结构基因</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/28. 诱导操纵子表达的是 【单选题】</p>
+        <p>A.阻遏蛋白</p>
+        <p>B.TFⅡB</p>
+        <p>C.CAP</p>
+        <p>D.乳糖</p>
+        <p>E.结构基因</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、这题A吧</p>
+            <p>2、？能不能来个正经的解释</p>
+            <p>3、CAP是增强</p>
+            <p>4、CAP增强</p>
+            <p>5、CAP是增强</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/28. 含有几个可转录的编码基因序列的是 【单选题】</p>
+        <p>A.阻遏蛋白</p>
+        <p>B.TFⅡB</p>
+        <p>C.CAP</p>
+        <p>D.乳糖</p>
+        <p>E.结构基因</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/28. CAMP对转录进行调控，必须先与 【单选题】</p>
+        <p>A.CAP结合，形成CAMP-CAP复合物</p>
+        <p>B.RNA聚合酶结合，从而促进该酶与启动子结合</p>
+        <p>C.G蛋白结合</p>
+        <p>D.受体结合</p>
+        <p>E.操纵基因结合</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

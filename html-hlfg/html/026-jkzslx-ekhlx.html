@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>循环系统疾病患儿的护理（案例分析题）(共3题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A4型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">患儿，7岁，发热、咳嗽一周，感胸闷不适，乏力，气促2天，查体：T38.2℃，心律140次／分，心律不齐，心前区闻及心包摩擦音，ECG示频发室性早搏伴二联律，测CK、MB增高，血清肌钙蛋白T增高，诊断为病毒性心肌炎。 所采取的治疗措施合理的是</div>
+                <div class="layui-input-block">
+
+                    <p>A.休息</p>
+
+                    <p>B.吸氧</p>
+
+                    <p>C.心包穿刺</p>
+
+                    <p>D.大剂量维生素C和能量合剂</p>
+
+                    <p>E.应用黄芪或丹参等中药</p>
+
+                    <p>F.大剂量使用抗生素</p>
+
+                    <p>G.应用肾上腺皮质激素</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：A B D E G</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A4型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">患儿，7岁，发热、咳嗽一周，感胸闷不适，乏力，气促2天，查体：T38.2℃，心律140次／分，心律不齐，心前区闻及心包摩擦音，ECG示频发室性早搏伴二联律，测CK、MB增高，血清肌钙蛋白T增高，诊断为病毒性心肌炎。 经护理评估后，护士给出的护理诊断合理的是</div>
+                <div class="layui-input-block">
+
+                    <p>A.体温升高</p>
+
+                    <p>B.活动无耐力</p>
+
+                    <p>C.生长发育迟缓</p>
+
+                    <p>D.营养失调：低于机体需要量</p>
+
+                    <p>E.气体交换受损</p>
+
+                    <p>F.潜在并发症：心力衰竭、心律失常</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：A B E F</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o3">
+            <div class="sttk-top">
+                <span>3、[A4型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">患儿，7岁，发热、咳嗽一周，感胸闷不适，乏力，气促2天，查体：T38.2℃，心律140次／分，心律不齐，心前区闻及心包摩擦音，ECG示频发室性早搏伴二联律，测CK、MB增高，血清肌钙蛋白T增高，诊断为病毒性心肌炎。 护士的护理措施合理的是</div>
+                <div class="layui-input-block">
+
+                    <p>A.强调休息的重要性</p>
+
+                    <p>B.密切观察和记录患儿的精神状态及生命体征</p>
+
+                    <p>C.静脉给药注意点滴的速度不要过快</p>
+
+                    <p>D.在体温稳定后即可恢复正常活动</p>
+
+                    <p>E.胸闷气促时给予吸氧</p>
+
+                    <p>F.患儿烦躁不安时可遵医嘱给予镇静剂</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('dats3','showAndHideButton3')">显示答案</div>
+                <div class="datas" id="dats3" style="display: none;">
+                    <p>参考答案：A B C E F</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

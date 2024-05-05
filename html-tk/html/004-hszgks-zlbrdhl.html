@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>胰腺癌病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 胰腺癌常好发于 【单选题】</p>
+        <p>A.胰体、尾部</p>
+        <p>B.胰颈、体部</p>
+        <p>C.全胰腺</p>
+        <p>D.胰头部</p>
+        <p>E.胰尾</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 胰腺癌的最常见的首发症状是 【单选题】</p>
+        <p>A.上腹痛</p>
+        <p>B.上腹部肿块</p>
+        <p>C.消化不良、腹泻</p>
+        <p>D.乏力和消瘦</p>
+        <p>E.黄疸进行性加重</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、上腹痛和上腹饱胀不适是胰腺癌最常见的首发症状。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 胰头癌的最主要症状和体征是 【单选题】</p>
+        <p>A.上腹痛</p>
+        <p>B.上腹部肿块</p>
+        <p>C.消化不良、腹泻</p>
+        <p>D.乏力和消瘦</p>
+        <p>E.黄疸进行性加重</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 患者女性，56岁，胰腺癌术后第一天，表情痛苦，心率加快，血压升高，多次询问后患者诉伤口疼痛严重。此时应首先给予的措施是 【单选题】</p>
+        <p>A.鼓励患者忍受疼痛</p>
+        <p>B.立即给予止痛药</p>
+        <p>C.给予止痛指导</p>
+        <p>D.继续观察</p>
+        <p>E.分散患者注意力</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、术后第一天疼痛最严重，疼痛会引起一系列全身不良反应，如心率增快、血压升高、高血糖、肌紧张、胃肠道反应等。因此应及时给予止痛，由于该患者为多次询问后才承认其疼痛，可推知患者害怕麻醉药成瘾，因此应首先给予止痛宣教。</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

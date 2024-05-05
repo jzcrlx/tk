@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>恶性组织细胞病 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/3. 关于恶性组织细胞病发热的描述，错误的是： 【单选题】</p>
+        <p>A．多为不规则发热</p>
+        <p>B．少数为低热或中等度发热</p>
+        <p>C．发热常持续不退</p>
+        <p>D．可伴畏寒</p>
+        <p>E．不伴畏寒</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 恶性组织细胞病 </p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：是异常组织细胞增生所致的恶性疾病，临床有高热，肝、脾、淋巴结肿大，全血细胞减少及进行性衰竭，多数病人骨髓中可找到数量不等散在或成堆的异常组织细胞，病情凶险，预后不良。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 试述恶性组织细胞病的诊断要点。 </p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：对不明原因的长期发热而不能以感染性疾病解释者，尤其是伴有全血细胞减少和肝、脾、淋巴结肿大时，应考虑本病的可能性。（1）临床表现：发热、血液系统受累、其他系统浸润的症状；（2）实验室检查：血常规：①大多呈全血细胞减少；②骨髓象：多数增生活跃，以找到异常组织细胞为重要，其中异型组织细胞、多核巨组织细胞对诊断有重要意义，单纯发现吞噬性组织细胞缺乏特异性诊断价值；③其他：异常组织细胞酸性磷酸酯酶阳性，可被酒石酸所抑制；非特异性酯酶阳性，可被氟化钠抑制等；④染色体检查：与5q35有关的染色体易位已在较多的儿童及青年患者中发现，这可能是一种与本病有关的重要标志。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

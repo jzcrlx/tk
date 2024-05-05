@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>其他细菌(共3题) - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJs.js"></script>
+
+
+</head>
+
+<body>
+    <form class="ksbt layui-form">
+        <div class="sttk" id="o1">
+            <div class="sttk-top">
+                <span>1、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">鼠疫耶尔森菌（鼠疫杆菌）的传播媒介是</div>
+                <div class="layui-input-block">
+
+                    <p>A.鼠蚤</p>
+
+                    <p>B.鼠</p>
+
+                    <p>C.恙螨</p>
+
+                    <p>D.蚊</p>
+
+                    <p>E.蜱</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('dats1','showAndHideButton1')">显示答案</div>
+                <div class="datas" id="dats1" style="display: none;">
+                    <p>参考答案：A</p>
+                    <p>题目解析：鼠蚤是鼠疫耶尔森菌的传播媒介，故选A。鼠蚤也是地方性斑疹伤寒的传播媒介，恙螨是恙虫病的传播媒介，蚊是登革热和流脑的传播媒介，蜱是Q热病原体。B、C、D、E不正确。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o2">
+            <div class="sttk-top">
+                <span>2、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">某人在参加一次聚餐3天后，突然出现发热、腹痛和腹泻，腹泻始为水样便，1天后转变为黏液脓血便，并有里急后重感。根据以上症状应考虑的疾病和检查方法是</div>
+                <div class="layui-input-block">
+
+                    <p>A.霍乱；取脓血便直接镜检</p>
+
+                    <p>B.葡萄球菌食物中毒；取剩余食物分离致病菌</p>
+
+                    <p>C.沙门菌食物中毒；取剩余食物分离致病菌</p>
+
+                    <p>D.伤寒；取脓血便进行免疫荧光检查</p>
+
+                    <p>E.细菌性痢疾；取脓血便分离肠道致病菌</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('dats2','showAndHideButton2')">显示答案</div>
+                <div class="datas" id="dats2" style="display: none;">
+                    <p>参考答案：E</p>
+                    <p>题目解析：黏液脓血便，并有里急后重感，显示是肠侵袭性大肠埃希菌(EIEC)感染，可以考虑细菌性痢疾。检验方法是脓血便分离肠道致病菌。故选E。其他选项都不符合题中描述的症状和应该的检验方法，故错误。</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sttk" id="o3">
+            <div class="sttk-top">
+                <span>3、[A1型题]</span>
+            </div>
+            <div class="sttk-main">
+                <div class="form-label">关于幽门螺杆菌的生物学性状正确的是</div>
+                <div class="layui-input-block">
+
+                    <p>A.无鞭毛</p>
+
+                    <p>B.革兰染色阳性</p>
+
+                    <p>C.营养要求低</p>
+
+                    <p>D.微需氧</p>
+
+                    <p>E.呈球形</p>
+
+                </div>
+                <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('dats3','showAndHideButton3')">显示答案</div>
+                <div class="datas" id="dats3" style="display: none;">
+                    <p>参考答案：D</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+<div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>神经系统解剖生理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class='form-label'>
+        <p>1/3. 3岁小儿腰穿部位正确的是 【单选题】</p>
+        <p>A.2～3腰椎间隙</p>
+        <p>B.4～5腰椎间隙</p>
+        <p>C.3～4腰椎间隙</p>
+        <p>D.5～6腰椎间隙</p>
+        <p>E.1～2腰椎间隙</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、答案是B啊</p>
+            <p>2、新生儿是4-5腰椎 而3岁小儿不是
+            </p>
+            <p>3、所以答案不应该是B吗？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 有关小儿神经系统解剖生理特点，下列叙述错误的是 【单选题】</p>
+        <p>A.出生时大脑对外来刺激反应缓慢且易泛化</p>
+        <p>B.腰椎穿刺时，新生儿应在第4、5腰椎间隙进针</p>
+        <p>C.大脑皮质下中枢发育已较为成熟</p>
+        <p>D.大脑的皮质及新纹状体发育成熟，灰、白质分界清楚</p>
+        <p>E.小儿缺氧的耐受性较成人差</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 患儿男，1岁，发热3天，呕吐数次，患儿精神萎靡，前囟饱满，怀疑化脓性脑膜炎，拟行腰椎穿刺，穿刺部位应选择 【单选题】</p>
+        <p>A.1～2腰椎间隙</p>
+        <p>B.2～3腰椎间隙</p>
+        <p>C.3～4腰椎间隙</p>
+        <p>D.4～5腰椎间隙</p>
+        <p>E.第5腰椎与第1骶椎间隙</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、所见略同
+            </p>
+            <p>2、无语了</p>
+            <p>3、一岁也算新生儿？</p>
+            <p>4、由上所得答案为D</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

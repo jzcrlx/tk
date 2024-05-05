@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>泌尿系统的解剖生理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class='form-label'>
+        <p>1/3. 正常成人安静时的双肾血流量约为 【单选题】</p>
+        <p>A.600ml/min</p>
+        <p>B.700ml/min</p>
+        <p>C.800ml/min</p>
+        <p>D.900ml/min</p>
+        <p>E.1000ml/min</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 反映肾小球滤过功能最可靠的指标是 【单选题】</p>
+        <p>A.内生肌酐清除率</p>
+        <p>B.血肌酐</p>
+        <p>C.血尿素氮</p>
+        <p>D.血尿酸</p>
+        <p>E.尿肌酐</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 下列说法错误的是： 【单选题】</p>
+        <p>A.输尿管有3个狭窄：输尿管的起始部，跨越髂血管处，膀胱壁内。是结石易滞留之处。</p>
+        <p>B.女性尿道特点是宽、短、直</p>
+        <p>C.男性尿道有3处狭窄：尿道内口、尿道膜部、尿道外口。是尿路结石最易滞留处。</p>
+        <p>D.女性阴道具有自净作用，阴道上皮内含有丰富的糖原，维持正常的阴道碱性环境。</p>
+        <p>E.排尿是一种反射动作、副交感神经兴奋时可促进排尿</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、阴道上皮内含有丰富的糖原，维持正常的阴道酸性环境（pH4～5）</p>
+            <p>2、好</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

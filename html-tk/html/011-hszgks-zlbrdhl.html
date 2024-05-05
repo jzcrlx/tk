@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>绒毛膜癌病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 关于绒毛膜癌的病理改变，正确的是 【单选题】</p>
+        <p>A.增生的滋养细胞未侵及子宫肌层</p>
+        <p>B.不伴有远处转移</p>
+        <p>C.不伴有滋养细胞出血、坏死</p>
+        <p>D.滋养细胞增生规则</p>
+        <p>E.绒毛结构消失</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 绒毛膜癌的治疗原则是 【单选题】</p>
+        <p>A.手术为主，化疗为辅</p>
+        <p>B.化疗为主，手术、放疗为辅</p>
+        <p>C.手术为主，放疗为辅</p>
+        <p>D.放疗为主，手术为辅</p>
+        <p>E.放疗为主，化疗为辅</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 绒癌最常见的转移部位是 【单选题】</p>
+        <p>A.肝</p>
+        <p>B.肺</p>
+        <p>C.阴道</p>
+        <p>D.脑</p>
+        <p>E.胃肠道</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 一位绒毛膜癌化疗的患者，家属为了配合治疗，咨询护士给患者吃何种饮食，护士指导的饮食为 【单选题】</p>
+        <p>A.进食低脂肪、高维生素、易消化的饮食</p>
+        <p>B.进食高蛋白、低维生素、易消化的饮食</p>
+        <p>C.进食高热量、高维生素、一般饮食</p>
+        <p>D.进食高蛋白、高维生素、易消化的饮食</p>
+        <p>E.进食低蛋白、高维生素、易消化的饮食</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 恶性葡萄胎与绒毛膜癌的主要鉴别点为 【单选题】</p>
+        <p>A.继发良性葡萄胎后的时间</p>
+        <p>B.症状轻重</p>
+        <p>C.体内HCG浓度高低</p>
+        <p>D.有无黄素化囊肿</p>
+        <p>E.病理切片中有无绒毛结构</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

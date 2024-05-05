@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>呼吸系统的解剖生理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class='form-label'>
+        <p>1/4. 婴幼儿易患呼吸道感染的免疫因素是 【单选题】</p>
+        <p>A.SIgE低</p>
+        <p>B.SIgM低</p>
+        <p>C.SIgA低</p>
+        <p>D.SIgG低</p>
+        <p>E.清蛋白活性低</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、小儿呼吸道的非特异性及特异性免疫功能均较差。婴幼儿体内的免疫球蛋白含量低，尤以分泌型IgA（SIgA）为低，且肺泡巨噬细胞功能不足，故易患呼吸道感染。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 小儿肺部易发生感染的主要内因是 【单选题】</p>
+        <p>A.呼吸中枢不健全</p>
+        <p>B.黏膜纤毛运动差</p>
+        <p>C.胸腔小而肺相对较大</p>
+        <p>D.肺含血量丰富，含气量小</p>
+        <p>E.肋骨呈水平位，呼吸运动度小</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、 肺组织尚未发育完善，弹力组织发育差，血管丰富，间质发育旺盛，肺泡数量较少，使其含血量相对多而含气量少，易于感染，并易引起间质性肺炎、肺不张及肺气肿等。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 婴幼儿上呼吸道感染易并发中耳炎的原因是( ) 【单选题】</p>
+        <p>A.咽鼓管短、宽、粗，成水平位</p>
+        <p>B.缺乏免疫球蛋白</p>
+        <p>C.咽部狭窄、垂直</p>
+        <p>D.鼻窦口相对较大</p>
+        <p>E.扁桃体炎症扩散</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、咽鼓管较宽、短、直，呈水平位，故鼻咽炎易侵及中耳而致中耳炎。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 导致婴幼儿易患呼吸道感染的主要因素是( ) 【单选题】</p>
+        <p>A.呼吸浅快</p>
+        <p>B.呼吸系统发育不完善</p>
+        <p>C.呈腹式呼吸</p>
+        <p>D.体内免疫球蛋白特别是sIgA含量低</p>
+        <p>E.鼻腔短小，狭窄，黏膜血管丰富</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、婴幼儿体内的免疫球蛋白含量低，尤以分泌型IgA（SIgA）为低，且肺泡巨噬细胞功能不足，故易患呼吸道感染。</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

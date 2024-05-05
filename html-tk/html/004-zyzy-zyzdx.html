@@ -1,0 +1,925 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>切诊 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/70. 寸口位于（） 【单选题】</p>
+        <p>A.头侧太阳穴</p>
+        <p>B.颈部人迎处</p>
+        <p>C.手腕掌后桡动脉处</p>
+        <p>D.腹股沟动脉处</p>
+        <p>E.脚背趺阳脉处</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/70. 寸口诊脉法始见于（） 【单选题】</p>
+        <p>A.《内经》</p>
+        <p>B.《难经》</p>
+        <p>C.《脉经》</p>
+        <p>D.《伤寒杂病论》</p>
+        <p>E.《中藏经》</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、寸口始见于内经，详见于难经，推广于脉经</p>
+            <p>2、寸口始见于内经 详见干难经 推广于脉经</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/70. 右手寸口寸、关、尺三部一般侯（） 【单选题】</p>
+        <p>A.心肺肝</p>
+        <p>B.肺脾命门</p>
+        <p>C.心肝肾</p>
+        <p>D.心脾肾</p>
+        <p>E.上中下三焦</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、忘了命门是肾的意思了，这题有点坑。</p>
+            <p>2、左手是心肝肾</p>
+            <p>3、看清左右</p>
+            <p>4、左右 心肝肾 肺脾肾</p>
+            <p>5、心肝肾，肺脾肾</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/70. 左手寸口寸、关、尺三部一般侯（） 【单选题】</p>
+        <p>A.心肺肝</p>
+        <p>B.肺脾命门</p>
+        <p>C.心肝肾</p>
+        <p>D.心脾肾</p>
+        <p>E.上中下三焦</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一般而言，人的左手寸口寸、关、尺三部分别候心、肝、肾。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/70. 《内经》认为切脉的最佳时间是（） 【单选题】</p>
+        <p>A.平旦</p>
+        <p>B.日中</p>
+        <p>C.日西</p>
+        <p>D.夜晚</p>
+        <p>E.环境安静即可</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么呢</p>
+            <p>2、平旦即清晨</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/70. 小儿寸口短小，故一般切脉时可采用（） 【单选题】</p>
+        <p>A.三指密布法</p>
+        <p>B.二指切脉法</p>
+        <p>C.一指定关法</p>
+        <p>D.遍诊法</p>
+        <p>E.望食指络脉法</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/70. 每次诊脉的时间最佳为（） 【单选题】</p>
+        <p>A.1分钟</p>
+        <p>B.2─3分钟</p>
+        <p>C.5分钟</p>
+        <p>D.3─5分钟</p>
+        <p>E.半分钟</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、临床上每次脉诊每手应不少于1分钟，两手以3分钟左右为宜，必要时可延长3-5分钟</p>
+            <p>2、是必要时延长至3到5分钟</p>
+            <p>3、书上说以3-5分钟为宜</p>
+            <p>4、切脉应该以3—5分钟为宜吧</p>
+            <p>5、看书，3~5呀</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/70. 正常的脉象称为（） 【单选题】</p>
+        <p>A.正脉</p>
+        <p>B.平脉</p>
+        <p>C.和脉</p>
+        <p>D.缓脉</p>
+        <p>E.有根脉</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/70. 轻取即得，重按稍减的脉是（） 【单选题】</p>
+        <p>A.浮脉</p>
+        <p>B.洪脉</p>
+        <p>C.芤脉</p>
+        <p>D.革脉</p>
+        <p>E.濡脉</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、答案是错的，应该选A</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/70. 濡脉的脉象表现为（） 【单选题】</p>
+        <p>A.脉来无力</p>
+        <p>B.脉来虚浮</p>
+        <p>C.脉来细软</p>
+        <p>D.脉来沉细</p>
+        <p>E.脉来浮而细软</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、濡脉是浮细软无力 弱脉是沉细软无力
+            </p>
+            <p>2、濡脉，脉象浮而细软，轻按可得，重按反而不明显。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/70. 三部举按皆有力的脉称为（） 【单选题】</p>
+        <p>A.紧脉</p>
+        <p>B.大脉</p>
+        <p>C.弦脉</p>
+        <p>D.实脉</p>
+        <p>E.洪脉</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、洪脉有什么特点</p>
+            <p>2、大脉是脉体宽大，但无脉来汹涌之势</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/70. 应指明显，但细小如线的脉是（） 【单选题】</p>
+        <p>A.濡脉</p>
+        <p>B.细脉</p>
+        <p>C.弦脉</p>
+        <p>D.小脉</p>
+        <p>E.弱脉</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、细脉的特点是脉细如线，但起落应指明显</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/70. 紧脉的主病为（） 【单选题】</p>
+        <p>A.寒、痛、宿食</p>
+        <p>B.寒、痛、痰饮</p>
+        <p>C.表证、瘀血、痰饮</p>
+        <p>D.宿食、瘀血</p>
+        <p>E.寒、痛</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、@psszxy,宿食就是食积的意思吧</p>
+            <p>2、食积有滑脉，促脉，紧脉</p>
+            <p>3、宿食是什么</p>
+            <p>4、食积还有涩脉</p>
+            <p>5、实寒证，痛➕ 宿食</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/70. 单主阳热亢盛的脉象是（） 【单选题】</p>
+        <p>A.数脉</p>
+        <p>B.实脉</p>
+        <p>C.滑脉</p>
+        <p>D.洪脉</p>
+        <p>E.促脉</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、兄弟们，数亦主虚</p>
+            <p>2、久病气虚，或虚劳，失血久泄等病也可见洪脉，必须脉症合参。</p>
+            <p>3、脉细数，主虚热</p>
+            <p>4、数脉呢</p>
+            <p>5、洪脉不也主邪盛正衰吗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/70. 弦细脉的主病为（） 【单选题】</p>
+        <p>A.里寒证</p>
+        <p>B.肝郁气滞</p>
+        <p>C.血虚肝郁</p>
+        <p>D.阴血亏虚</p>
+        <p>E.肝风挟痰</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、书本p114：弦细脉多见于肝肾阴虚或血虚肝郁，或肝郁脾虚等证。</p>
+            <p>2、血虚肝郁，脉弦细</p>
+            <p>3、或肝肾阴虚，肝郁脾虚</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/70. 辨肌肤肿胀，按之凹陷举手即起的是（） 【单选题】</p>
+        <p>A.肤肿</p>
+        <p>B.气肿</p>
+        <p>C.水肿</p>
+        <p>D.趺肿</p>
+        <p>E.脓肿</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、按之凹陷，不能即起者，为水肿，按之凹陷，举手即起者，为气肿。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/70. 心下或胃脘满痛，按之坚硬而痛的称（） 【单选题】</p>
+        <p>A.心下痞</p>
+        <p>B.脘痞</p>
+        <p>C.满痞</p>
+        <p>D.胸痹</p>
+        <p>E.结胸</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、傷寒五六日，嘔而發熱者，柴胡湯證具，而以他藥下之，柴胡證仍在者，復與柴胡湯。此雖已下之，不為逆，必蒸蒸而振，卻發熱汗出而解。若心下滿而鞕痛者，此為結胸也，大陷胸湯主之。但滿而不痛者，此為痞，柴胡不中與之，宜半夏瀉心湯。 </p>
+            <p>2、我觉得应是结胸证</p>
+            <p>3、我觉得也是结胸证</p>
+            <p>4、不是结胸嘛</p>
+            <p>5、应该为结胸</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/70. 小儿手掌心发热，多属（） 【单选题】</p>
+        <p>A.蛔虫</p>
+        <p>B.阳亢</p>
+        <p>C.阴虚</p>
+        <p>D.脾虚</p>
+        <p>E.食积</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、食积阻滞，积久化热可致手足心热 食积不消，积久化热临床亦较常见，尤其儿科更是如此。因为，小儿形体娇嫩，脏腑之气未充，脾胃本自脆弱，加之小儿饥饱不能自制，故常易罹患饮食之伤。若食之过多，脾胃受累，则运化不及而停滞，日久可致发热，其发热的表现既可出现于午后，也可见于夜间，还可呈现手足心热。临床常用消食导滞，通腹泻热之法，不仅可以使停滞之积食祛除，同时亦可使伴见的各种热象消退。方可选保和丸加减。
+            </p>
+            <p>2、为什么呀</p>
+            <p>3、小儿多是食积 阴虚内热是普通人的情况
+            </p>
+            <p>4、脾虚才致食积吗</p>
+            <p>5、不懂</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/70. 症见胸腹灼热而四肢厥冷，多是（） 【单选题】</p>
+        <p>A.食厥</p>
+        <p>B.寒厥</p>
+        <p>C.热厥</p>
+        <p>D.蛔厥</p>
+        <p>E.气厥</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、那食厥是什么症状捏</p>
+            <p>2、那寒厥呢</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/70. 腹中有块，按之坚硬疼痛，推之不移，长久不散的称（） 【单选题】</p>
+        <p>A.聚</p>
+        <p>B.瘕</p>
+        <p>C.痈</p>
+        <p>D.疝</p>
+        <p>E.癥</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、推之不移为癥，推之可移为瘕</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/70. 男性患儿李某，5岁，腹痛月余。其腹痛的特点是脐周疼痛，时作时止，按之有块，呈条索筋结状，有移动感。其腹痛病多属（） 【单选题】</p>
+        <p>A.燥屎</p>
+        <p>B.肠痈</p>
+        <p>C.蛔虫</p>
+        <p>D.癥积</p>
+        <p>E.气滞</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、腹中虫块，形如筋结，久按之肿块移动</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/70. 林某，女性病人，腹痛两天。其右下腹疼痛，从上腹部转移而来，按之疼痛不甚，突然放手疼痛加剧。舌红苔黄而干，脉数。其腹痛原因为（） 【单选题】</p>
+        <p>A.燥屎</p>
+        <p>B.肠痈</p>
+        <p>C.蛔虫</p>
+        <p>D.癥积</p>
+        <p>E.气滞</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、转移性右下腹疼痛并伴有反跳痛，是典型的阑尾炎症状。同时舌红苔黄而干，脉数，是热证的表现，符合痈的特点。</p>
+            <p>2、转移性右下腹痛 阑尾炎
+            </p>
+            <p>3、求解释</p>
+            <p>4、肠痈大概是西医所谓的阑尾炎</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/70. 病人罗某，臀部疮疡5日，查见局部红肿高突，灼热，根盘紧缩，按之边硬顶软。其疮疡为（） 【单选题】</p>
+        <p>A.阳证有脓</p>
+        <p>B.阳证无脓</p>
+        <p>C.阴证有脓</p>
+        <p>D.阴证无脓</p>
+        <p>E.疮疡即将内陷</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/70. 少年刘某，两天前冒雨淋湿，症见恶寒发热无汗，咳嗽吐痰清稀，头身疼痛不适，其脉象可见（） 【单选题】</p>
+        <p>A.浮缓</p>
+        <p>B.浮紧</p>
+        <p>C.沉紧</p>
+        <p>D.浮数</p>
+        <p>E.沉细</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、浮紧：表寒证或风寒痹证疼痛。浮缓：风邪伤卫，营卫不和的太阳中风证。浮数：表热证。</p>
+            <p>2、外感风寒，发热无汗，故脉浮紧</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/70. 病人脉来疾急、至数不清，烦燥不宁，汗出如珠而粘，手足尚温，目眶深陷。证属（） 【单选题】</p>
+        <p>A.阳热亢盛</p>
+        <p>B.阴虚阳亢</p>
+        <p>C.亡阴</p>
+        <p>D.亡阳</p>
+        <p>E.热盛伤津</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、书上说：若汗出如油，四肢肌肤尚温而脉燥疾无力者，为亡阴之象。</p>
+            <p>2、问诊问汗绝汗</p>
+            <p>3、汗出如油，汗如珠而粘</p>
+            <p>4、有人能帮忙解释一下吗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/70. 病人脉象沉弦，在期门穴有压痛，伴有厌食腹胀，大便不调，多属（） 【单选题】</p>
+        <p>A.脾病</p>
+        <p>B.胃病</p>
+        <p>C.肺病</p>
+        <p>D.肝病</p>
+        <p>E.肾病</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、那个评论了肝病两个字的人为什么有人点赞，卧槽？</p>
+            <p>2、期门穴在肝经</p>
+            <p>3、肝病</p>
+            <p>4、肺病：中府、肺俞、太渊；心病：巨阙、膻中、大陵；脾病：章门、太白、脾俞；肝病：期门、肝俞、太冲；肾病：气海、太溪；大肠病：天枢、大肠俞；小肠病：关元；胆病：日月、胆俞；胃病：胃俞、足三里；膀胱病：中极。</p>
+            <p>5、肝病为期门、肝俞、太冲， 肺病为中府、肺俞、太渊</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/70. 脉来时有一止，止有定数，良久方来的脉象是（） 【单选题】</p>
+        <p>A.促脉</p>
+        <p>B.代脉</p>
+        <p>C.结脉</p>
+        <p>D.缓脉</p>
+        <p>E.涩脉</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、结促代都节律失常而有歇止，其中仅代有规律（有定数），而结为迟而时止，促为数而时止</p>
+            <p>2、代脉，脉来时一止，止有定数，良久方来</p>
+            <p>3、结脉止无定数</p>
+            <p>4、是结脉吧</p>
+            <p>5、结脉生，代脉死</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/70. 脉来缓而时止，止无定数的脉象是（） 【单选题】</p>
+        <p>A.促脉</p>
+        <p>B.代脉</p>
+        <p>C.结脉</p>
+        <p>D.缓脉</p>
+        <p>E.涩脉</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、代有定律，结为缓而时止，促为数而时止</p>
+            <p>2、这下就对了</p>
+            <p>3、缓而时止，止无定数 结脉 一止是代
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/70. 主痰饮、食积的脉象是（） 【单选题】</p>
+        <p>A.滑脉</p>
+        <p>B.涩脉</p>
+        <p>C.弦脉</p>
+        <p>D.濡脉</p>
+        <p>E.细脉</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、痰饮食积实热生理情况有青壮年和妊娠妇女 都为滑脉
+            </p>
+            <p>2、我觉得涩脉滑脉都行吧？</p>
+            <p>3、应该是一回事</p>
+            <p>4、痰食内停和痰饮食积是一回事吗</p>
+            <p>5、痰饮食积滑涩均可能，在无其他诊断信息的情况下。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/70. 主脾虚湿困的脉象是（） 【单选题】</p>
+        <p>A.滑脉</p>
+        <p>B.涩脉</p>
+        <p>C.弦脉</p>
+        <p>D.濡脉</p>
+        <p>E.细脉</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、滑：痰湿，食积等实热证。涩：气滞，血瘀，痰食内停，精伤、血少 弦：肝胆病、疼痛、痰饮、胃气衰败 濡、细：虚证、湿证。</p>
+            <p>2、脾虚湿困，濡脉</p>
+            <p>3、细脉如线指明显，气血俱虚湿症猜。 濡脉浮软细无力，虚症湿困要牢记。
+            </p>
+            <p>4、对啊，我也觉得是缓脉</p>
+            <p>5、脾虚不是缓脉吗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/70. 脉来浮而细软的脉象是（） 【单选题】</p>
+        <p>A.濡脉</p>
+        <p>B.弦滑数脉</p>
+        <p>C.弦脉</p>
+        <p>D.沉细数脉</p>
+        <p>E.紧脉</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/70. 脉来端直以长，挺然指下，如按琴弦的脉象是（） 【单选题】</p>
+        <p>A.濡脉</p>
+        <p>B.弦滑数脉</p>
+        <p>C.弦脉</p>
+        <p>D.沉细数脉</p>
+        <p>E.紧脉</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、弦脉和弦滑数脉区别？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/70. 初按肌肤热甚，久按反转轻的是（） 【单选题】</p>
+        <p>A.真寒假热</p>
+        <p>B.真热假寒</p>
+        <p>C.表热</p>
+        <p>D.里热</p>
+        <p>E.里寒</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、欺负我现在在家里没书是吧</p>
+            <p>2、假热和真寒假热怎么区分呀？？</p>
+            <p>3、这还真是书上有的。。。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/70. 按之四肢厥冷而胸腹灼热的是（） 【单选题】</p>
+        <p>A.真寒假热</p>
+        <p>B.真热假寒</p>
+        <p>C.表热</p>
+        <p>D.里热</p>
+        <p>E.里寒</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/70. 弦滑数脉的主病有（） 【多选题】</p>
+        <p>A.痰热壅盛</p>
+        <p>B.食积化热</p>
+        <p>C.肝风挟痰</p>
+        <p>D.肝风痰热</p>
+        <p>E.肝火痰热</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：ABDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、肝风痰热和肝火痰热怎么分呀？</p>
+            <p>2、答案与解析不一致</p>
+            <p>3、是啊，应该是ABCE</p>
+            <p>4、书上说的弦滑数脉主要见于肝郁夹痰，风阳上扰，痰饮内停等证</p>
+            <p>5、不一致</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/70. 构成脉象的要素包括了脉搏所显示的（） 【多选题】</p>
+        <p>A.部位</p>
+        <p>B.速率</p>
+        <p>C.形态</p>
+        <p>D.强度</p>
+        <p>E.节律</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、八个要素不是脉位，至数，脉长，脉宽，脉力，流利度，紧张度，均匀度么？</p>
+            <p>2、形态应该是脉长脉宽这种的⑧</p>
+            <p>3、不是位数形势率吗？</p>
+            <p>4、形态应该是 ，洪脉， 弦脉。。。这类的吧。。。脉宽？</p>
+            <p>5、形态是什么？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/70. 涩脉的主病有（） 【多选题】</p>
+        <p>A.阴虚</p>
+        <p>B.精伤</p>
+        <p>C.血虚</p>
+        <p>D.血瘀</p>
+        <p>E.气滞</p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：BCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、不太懂为什么阴虚不能导致涩脉？</p>
+            <p>2、气滞、血瘀、痰浊、宿食等邪气内停，阻滞脉道，气机不畅，血行壅滞，以致脉气往来艰涩；精血亏少，津液耗伤 不能充养脉道，久而脉失濡润，气血运行不畅，以致脉气往来艰涩而无力。</p>
+            <p>3、精血亏少，津液耗伤，不能充养脉道，久而脉失濡养，气血运行不畅，出现涩脉</p>
+            <p>4、阴虚一般有虚热，应该为细数脉</p>
+            <p>5、陰靜陽動吧</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/70. 正常脉象的特点包括有（） 【多选题】</p>
+        <p>A.不浮不沉</p>
+        <p>B.节律整齐</p>
+        <p>C.有胃气</p>
+        <p>D.有神气</p>
+        <p>E.有根</p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：CDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、正常脉象特点：有胃，有神，有根 正常脉象的形象特征：不浮不沉，不快不慢，不大不小，从容和缓，节律均匀
+            </p>
+            <p>2、应该是全选吧</p>
+            <p>3、解释与题干意思不符</p>
+            <p>4、答案没错，问的是特点</p>
+            <p>5、节律整齐不是包括在有神里面么，有神就是柔和有力，节律整齐。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/70. 主虚证的脉象有（） 【多选题】</p>
+        <p>A.代脉</p>
+        <p>B.弱脉</p>
+        <p>C.虚脉</p>
+        <p>D.细脉</p>
+        <p>E.滑脉</p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：ABCD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、代脉主脏气衰微，故主虚证</p>
+            <p>2、细脉，多见于虚证或湿证。</p>
+            <p>3、七情惊恐也是虚？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/70. 主阳热亢盛的脉象有（） 【多选题】</p>
+        <p>A.促脉</p>
+        <p>B.弦细数脉</p>
+        <p>C.沉弦数脉</p>
+        <p>D.实脉</p>
+        <p>E.滑脉</p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：ACDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、滑脉主痰饮、食滞、实热等证，又主妊娠。</p>
+            <p>2、滑？</p>
+            <p>3、细脉主气血俱虚和湿证</p>
+            <p>4、B为什么不可呢</p>
+            <p>5、沉脉主里证</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>41/70. 按诊可诊察所按部位的（） 【多选题】</p>
+        <p>A.肌肤冷热</p>
+        <p>B.皮肤润燥</p>
+        <p>C.皮肤颜色</p>
+        <p>D.是否有肿块</p>
+        <p>E.是否有疼痛</p>
+        <div class="divXSDA" id="showAndHideButton41" onclick="showAndHideButton('data41','showAndHideButton41')">显示答案</div>
+        <div class="datas" id="data41" style="display: none;">
+            <p id='ptockda'>参考答案：ABDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、肌肤的凉热，润燥不是通过触法来实现的么？</p>
+            <p>2、按诊的手法是触、摸、按、叩</p>
+            <p>3、疼痛不应该是问诊吗</p>
+            <p>4、颜色应是望诊</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>42/70. 按胸胁可以诊察的脏腑病变有（） 【多选题】</p>
+        <p>A.心</p>
+        <p>B.肝</p>
+        <p>C.肺</p>
+        <p>D.胃</p>
+        <p>E.肾</p>
+        <div class="divXSDA" id="showAndHideButton42" onclick="showAndHideButton('data42','showAndHideButton42')">显示答案</div>
+        <div class="datas" id="data42" style="display: none;">
+            <p id='ptockda'>参考答案：ABC</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、心肺肝胆脾</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>43/70. 脉象 </p>
+        <div class="divXSDA" id="showAndHideButton43" onclick="showAndHideButton('data43','showAndHideButton43')">显示答案</div>
+        <div class="datas" id="data43" style="display: none;">
+            <p id='ptockda'>参考答案：脉象是指脉搏应指所显示的部位、速率、形态、强度、节律等综合形象。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、脉象是指脉动应指的形象</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>44/70. 举、按、寻 </p>
+        <div class="divXSDA" id="showAndHideButton44" onclick="showAndHideButton('data44','showAndHideButton44')">显示答案</div>
+        <div class="datas" id="data44" style="display: none;">
+            <p id='ptockda'>参考答案：举、按、寻是三种切脉的手法。凡以轻指力触及皮肤的，称 “举”；以重指力按在肌肉与筋骨之间的叫 “按”；介于举按之间，或轻或重或前或后左右挪动切脉，以寻找脉象最佳部位和状态的叫 “寻”。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>45/70. 复合脉 </p>
+        <div class="divXSDA" id="showAndHideButton45" onclick="showAndHideButton('data45','showAndHideButton45')">显示答案</div>
+        <div class="datas" id="data45" style="display: none;">
+            <p id='ptockda'>参考答案：两种以上的脉象同时出现，称复合脉，又叫相兼脉。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>46/70. 舍症从脉 </p>
+        <div class="divXSDA" id="showAndHideButton46" onclick="showAndHideButton('data46','showAndHideButton46')">显示答案</div>
+        <div class="datas" id="data46" style="display: none;">
+            <p id='ptockda'>参考答案：在辨证过程中，当脉象与症状不相一致时，经过分析判断，以脉象作为审定病机、确定治疗方案的依据，称舍症从脉。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>47/70. 斜飞脉 </p>
+        <div class="divXSDA" id="showAndHideButton47" onclick="showAndHideButton('data47','showAndHideButton47')">显示答案</div>
+        <div class="datas" id="data47" style="display: none;">
+            <p id='ptockda'>参考答案：因桡动脉生理异位，脉不见于寸口，而从尺部斜向合谷穴，称斜飞脉。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、脉不见于寸口，而从尺部斜向手背，称为斜飞脉；脉出现在寸口的背侧，称为反关脉。</p>
+            <p>2、斜飞脉的脉象一般不作为辨证的依据</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>48/70. 尺肤 </p>
+        <div class="divXSDA" id="showAndHideButton48" onclick="showAndHideButton('data48','showAndHideButton48')">显示答案</div>
+        <div class="datas" id="data48" style="display: none;">
+            <p id='ptockda'>参考答案：从肘部内侧至掌后横纹处的一段皮肤，称尺肤。临床可根据尺肤的缓急、滑涩、冷热，辨别病证的寒热虚实。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、缓急是啥？</p>
+            <p>2、缓急即紧张度</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>49/70. 水臌 </p>
+        <div class="divXSDA" id="showAndHideButton49" onclick="showAndHideButton('data49','showAndHideButton49')">显示答案</div>
+        <div class="datas" id="data49" style="display: none;">
+            <p id='ptockda'>参考答案：腹中积水，腹胀如鼓，以手按之，如囊裹水，以手分置腹部两侧，一手轻叩，一 手贴于另一侧腹壁，而有波动感的，为水臌。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、水鼓：两手分置于腹部两侧对称部位，一手轻轻扣拍腹壁，另一手有波动感，按之如裹裹水者为水鼓</p>
+            <p>2、液波震颤</p>
+            <p>3、两侧要对称位置</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>50/70. 癥瘕 </p>
+        <div class="divXSDA" id="showAndHideButton50" onclick="showAndHideButton('data50','showAndHideButton50')">显示答案</div>
+        <div class="datas" id="data50" style="display: none;">
+            <p id='ptockda'>参考答案：腹中包块，若按之坚硬，推之不移，痛有定处，为癥；按之无形或软，时聚时散，痛无定处，为瘕。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、腹内肿块推之可移，或痛无定处，聚散不定者，称为“瘕聚”，病属气分；凡肿块痛有定又处，推之不移者，称为“癥积”，病属血分</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>51/70. 脉诊有何临床意义？ </p>
+        <div class="divXSDA" id="showAndHideButton51" onclick="showAndHideButton('data51','showAndHideButton51')">显示答案</div>
+        <div class="datas" id="data51" style="display: none;">
+            <p id='ptockda'>参考答案：脉诊的意义为：医生通过切脉，根据病人脉象变化，能够了解与掌握疾病的病理机制，探求病在何脏何经，属寒属热，在表在里，为实为虚，以及疾病的进退预后。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、1.辨别疾病的病位和病性 2.分析疾病的病因和病机 3.判断疾病的进退和预后
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>52/70. 为什么诊脉可以独取寸口？ </p>
+        <div class="divXSDA" id="showAndHideButton52" onclick="showAndHideButton('data52','showAndHideButton52')">显示答案</div>
+        <div class="datas" id="data52" style="display: none;">
+            <p id='ptockda'>参考答案：寸口属手太阴肺经，为脉之大会（因肺朝百脉，全身之气血均会聚于肺而变见于寸口）。又因肺经起于中焦，还循胃口，与脾经同属太阴，脾所运化之水谷精微上输于肺而灌注脏腑，此后又从百脉朝于气口，所以通过诊寸口脉象，可以诊察全身脏腑、气血、阴阳、表里、虚实等情况。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>53/70. 正常脉象的形象如何？ </p>
+        <div class="divXSDA" id="showAndHideButton53" onclick="showAndHideButton('data53','showAndHideButton53')">显示答案</div>
+        <div class="datas" id="data53" style="display: none;">
+            <p id='ptockda'>参考答案：平脉具有胃、神、根三个特点。脉来柔和有力，指下分明，是为有神；脉来从容和缓，节律一致，是为有胃气；尺部沉取有力，是为有根。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、从容和缓，柔和有力为有胃气。节律一致为有神</p>
+            <p>2、位置相对固定，方便易行</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>54/70. 影响平脉变异的因素有哪些？ </p>
+        <div class="divXSDA" id="showAndHideButton54" onclick="showAndHideButton('data54','showAndHideButton54')">显示答案</div>
+        <div class="datas" id="data54" style="display: none;">
+            <p id='ptockda'>参考答案：影响平脉的变异因素有：季节气候、地理方位、年龄、性别、体质等。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、四季气候、地理环境、性别、年龄、体质、情志、劳逸、饮食、昼夜。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>55/70. 缓脉与迟脉如何区别？ </p>
+        <div class="divXSDA" id="showAndHideButton55" onclick="showAndHideButton('data55','showAndHideButton55')">显示答案</div>
+        <div class="datas" id="data55" style="display: none;">
+            <p id='ptockda'>参考答案：缓脉为脉来一息四至（60次/分钟），来去怠缓；迟脉为脉来一息不足四至（60次/分钟以下）。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>56/70. 细脉与濡脉如何区别？ </p>
+        <div class="divXSDA" id="showAndHideButton56" onclick="showAndHideButton('data56','showAndHideButton56')">显示答案</div>
+        <div class="datas" id="data56" style="display: none;">
+            <p id='ptockda'>参考答案：细脉脉来细小如线，但应指明显；濡脉为脉来浮而细软，故濡脉为细脉与浮脉的相兼脉。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>57/70. 弦脉的特点及主病如何？ </p>
+        <div class="divXSDA" id="showAndHideButton57" onclick="showAndHideButton('data57','showAndHideButton57')">显示答案</div>
+        <div class="datas" id="data57" style="display: none;">
+            <p id='ptockda'>参考答案：弦脉表现为脉来端直以长，挺然指下，如按琴弦。一般主肝胆病、痛证、惊风、痰饮等。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>58/70. 结脉与代脉的特点及主病有何不同？ </p>
+        <div class="divXSDA" id="showAndHideButton58" onclick="showAndHideButton('data58','showAndHideButton58')">显示答案</div>
+        <div class="datas" id="data58" style="display: none;">
+            <p id='ptockda'>参考答案：结脉表现为脉来缓而一止，止无定数。其主病为：结而有力主寒证、痰饮、瘀血、癥瘕等；结而无力主气血虚衰、心阳不振。代脉表现为脉来缓而时有一止，止有定数，良久方来。主病为脏气衰微，或跌打损伤，痛证，惊恐等。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>59/70. 相兼脉的主病有何规律？ </p>
+        <div class="divXSDA" id="showAndHideButton59" onclick="showAndHideButton('data59','showAndHideButton59')">显示答案</div>
+        <div class="datas" id="data59" style="display: none;">
+            <p id='ptockda'>参考答案：相兼脉的主病常常是各单一脉象主病的相合。如浮脉主表，数脉主热，浮数脉即主表热证。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>60/70. 按诊包括哪些具体的方法？ </p>
+        <div class="divXSDA" id="showAndHideButton60" onclick="showAndHideButton('data60','showAndHideButton60')">显示答案</div>
+        <div class="datas" id="data60" style="display: none;">
+            <p id='ptockda'>参考答案：按诊包括有触、压、按、摸、叩等具体手法。触，即用手指或手掌轻轻接触病人身体，以了解寒热、润燥；摸，是以手抚摸局部，以探明局部的情况；按，是以手轻按局部，以了解局部肿块的界线、质地、肿胀程度、性质等；压，是用手重压病变部位，以测知病变深部有无压痛、是否有脓等；叩，是用手指头叩击病变部位，同时听其声响，以了解相关情况的诊察方法。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>61/70. 怎样辨别水臌与气臌？ </p>
+        <div class="divXSDA" id="showAndHideButton61" onclick="showAndHideButton('data61','showAndHideButton61')">显示答案</div>
+        <div class="datas" id="data61" style="display: none;">
+            <p id='ptockda'>参考答案：水臌是指腹中有积水而致腹部肿大。表现为腹大如鼓，按之如囊裹水，腹壁有凹痕，以手分置腹部两侧，一手轻叩，一手贴于另一侧腹壁，有波动感的，为水臌。若腹部肿大，叩之如鼓且无波动感、又无凹痕的，为气鼓。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>62/70. 按俞穴有何意义？ </p>
+        <div class="divXSDA" id="showAndHideButton62" onclick="showAndHideButton('data62','showAndHideButton62')">显示答案</div>
+        <div class="datas" id="data62" style="display: none;">
+            <p id='ptockda'>参考答案： 由于俞穴为脏腑经络之气汇聚的穴位，故当内脏有病变时，会在相应的俞穴出现明显的压痛和敏感反映，或可摸到结节、条索状物，均可作为相应内脏病变的辅助诊断依据。如肝病在肝俞和期门穴可有压痛。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>63/70. 试述脉诊的基本原理。 </p>
+        <div class="divXSDA" id="showAndHideButton63" onclick="showAndHideButton('data63','showAndHideButton63')">显示答案</div>
+        <div class="datas" id="data63" style="display: none;">
+            <p id='ptockda'>参考答案：脉诊的原理，主要在于脉为人体气血运行的通道。脉为血之府，与心相通连，心为五脏六腑之大主，心气推动血液在脉中运行。血由心所主以外，又由脾所统、肝所藏，且赖肺的朝百脉以辅心行血，肾藏精而生元气，元气以推动激发全身脏腑的功能，所以五脏均与血脉密切相关，故人体脏腑阴阳气血的状况均可显见于脉。当发生病变时，各种病理因素均可影响脉气，而表现出不同的病理脉象。因此，诊脉可以诊断病证。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>64/70. 简述脉症顺逆与从舍的意义。 </p>
+        <div class="divXSDA" id="showAndHideButton64" onclick="showAndHideButton('data64','showAndHideButton64')">显示答案</div>
+        <div class="datas" id="data64" style="display: none;">
+            <p id='ptockda'>参考答案：临症中多数情况下脉象与症状是一致的，如浮脉见表证特点，数脉见热象症状等，此为脉症相顺。有时出现脉象与症状的特征和意义不相应的，如“症热而脉静，泄而脉大，脱血而脉实”等脉症不相应者为脉症相逆。在脉症相逆时要辨明脉与症的真假而决定其从舍。如果脉真症假时，就要舍症从脉；若脉假症真时，则要舍脉从症。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>65/70. 比较结、代、促三脉的脉象及主病的异同。 </p>
+        <div class="divXSDA" id="showAndHideButton65" onclick="showAndHideButton('data65','showAndHideButton65')">显示答案</div>
+        <div class="datas" id="data65" style="display: none;">
+            <p id='ptockda'>参考答案：结、代、促三脉在脉象表现上均为脉来中有停顿，不同的是结脉为脉来缓而时一止，止无定数；促脉为脉来数而时一止，止无定数；代脉则为脉来缓而时一止，止有定数，良久方来。在主病上，三者均可即主实证，又主虚证。结而有力者，主实证，多寒、痰、瘀，癥瘕积聚；结而无力者，主虚证，多气血不足，心阳不振。代脉一般来讲多主虚证，是脏气衰弱的表现，但偶因跌打损伤，卒逢惊恐、痛证，也可临时表现为代脉，但不会持久。促脉的主病是促而有力主阳热亢盛，或气血壅滞，痰、食停积；促而无力主脏腑气衰，常见于虚脱之证。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>66/70. 简述弦数脉与滑数脉的脉象及主病的区别。 </p>
+        <div class="divXSDA" id="showAndHideButton66" onclick="showAndHideButton('data66','showAndHideButton66')">显示答案</div>
+        <div class="datas" id="data66" style="display: none;">
+            <p id='ptockda'>参考答案： 弦数脉在脉象上表现为脉来快数而挺直以长，如按琴弦。在主病上，多主肝胆热证、痰热壅盛。滑数脉表现为脉来快数而滑利，如盘滚珠。在主病上，多主痰热痰火，食积化热。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>67/70. 试述涩脉的脉象、主病及形成原理。 </p>
+        <div class="divXSDA" id="showAndHideButton67" onclick="showAndHideButton('data67','showAndHideButton67')">显示答案</div>
+        <div class="datas" id="data67" style="display: none;">
+            <p id='ptockda'>参考答案：涩脉在脉象表现上为脉来应指艰涩不畅，来往尤如 “轻刀刮竹”。在主病上，涩而无力主精亏血少之虚证；涩而有力主气滞血瘀之实证。涩脉的形成，或因于精亏血少，不能充盈濡养脉道而脉道失畅，故脉来艰涩。或因于气滞血瘀，脉道壅塞而气机不利，以致脉气失畅，脉来艰涩。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>68/70. 简述诊脉的方法及注意事项。 </p>
+        <div class="divXSDA" id="showAndHideButton68" onclick="showAndHideButton('data68','showAndHideButton68')">显示答案</div>
+        <div class="datas" id="data68" style="display: none;">
+            <p id='ptockda'>参考答案：诊脉时要掌握诊脉的时间、姿势、布指、指法和指力的应用。就诊脉时间而言，最佳时间一般认为以平旦为宜，每次诊脉的时间以2~3分为宜。切脉的姿势，无论病人持坐或卧姿，其手臂应平展、直腕仰掌，与心脏同一水平。医生布指的疏密当以病人身材高矮为据。医生指法分为单按与总按两种，三指应平齐微曲。诊脉时要不断地调整指下力量，虽有轻（举）、中（寻）、重（按）之别，应用时要视情况而定。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>69/70. 试述脘腹部的区位划分及腹部按诊方法。 </p>
+        <div class="divXSDA" id="showAndHideButton69" onclick="showAndHideButton('data69','showAndHideButton69')">显示答案</div>
+        <div class="datas" id="data69" style="display: none;">
+            <p id='ptockda'>参考答案： 腹部的划分为：胸骨剑突下称心下；以脐为中心，上下左右旁开两寸的范围内称脐周；从脐周上界至心下的区域称胃脘部；脐周左右两侧为左腹、右腹；脐周下界以下至耻骨联合的区域称小腹；小腹两侧为少腹。腹部按诊时，病人取仰卧位，松开腰带，充分暴露被检部位，两腿合拢，膝部屈曲，脚掌放平，腹肌放松，医生站在病人右侧，面向病人，用手切按时需由轻及重，由浅入深，从健康部位着手，逐渐移向患病部位。同时，应注意体会手下的感觉，与健侧进行比较，并观察病人的表情反映；若发现有包块，则须探明包块的位置、大小、质地、有无压痛、边界是否清楚、能否移动等。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>70/70. 简述如何根据按诊方法辨别疮疡的阴阳属性及是否成脓。 </p>
+        <div class="divXSDA" id="showAndHideButton70" onclick="showAndHideButton('data70','showAndHideButton70')">显示答案</div>
+        <div class="datas" id="data70" style="display: none;">
+            <p id='ptockda'>参考答案：凡遇疮疡，但见疮疡高突红肿，按之灼热疼痛，根盘紧缩者，属阳证。按之疮疡肿硬不热，根盘平塌漫肿，属阴证。凡按之疮疡顶部硬而热不甚者，为无脓；按之边硬顶软而热甚者，为有脓；轻按即痛者，为脓在浅表；重按始痛者，为脓在深部。已成脓的，可用两手指平放在脓肿部位，一指轻压推动，以另一指所感到的波动大小，来测知脓的多少。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

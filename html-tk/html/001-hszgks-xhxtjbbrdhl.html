@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>循环系统解剖生理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 下列不属于心脏传导系统的是 【单选题】</p>
+        <p>A.窦房结</p>
+        <p>B.房室结</p>
+        <p>C.冠状窦</p>
+        <p>D.希氏束</p>
+        <p>E.结间束</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、冠状窦
+            </p>
+            <p>2、心脏传导系统包括窦房结、结间束、房室结、希氏束、左右束支及其分支和普肯耶纤维，负责心脏正常冲动的形成和传导。</p>
+            <p>3、心脏的传导系统包括窦房结、房室结、房室束、左右房室束分支以及分布到心室乳头肌和心室壁的许多细支。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 心包腔内液体可起到的生理作用是 【单选题】</p>
+        <p>A.参与心肌电传导</p>
+        <p>B.在心包腔内起润滑作用</p>
+        <p>C.营养心包膜</p>
+        <p>D.体液免疫</p>
+        <p>E.增加心肌收缩力</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、心脏壁分为3层，由外向内依此为心外膜、肌层、心内膜，心外膜即心包的脏层紧贴于心脏表面，与心包壁层形成心包腔，腔内含少量浆液起润滑作用。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 心脏自身的血液供应主要来源于 【单选题】</p>
+        <p>A.胸主动脉</p>
+        <p>B.锁骨下动脉</p>
+        <p>C.冠状动脉</p>
+        <p>D.肺动脉</p>
+        <p>E.胸廓内动脉</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、冠状动脉是营养心脏的血管。</p>
+            <p>2、营养心脏的血管，主要是冠状动脉</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 生理情况下心脏的正常电活动起源于 【单选题】</p>
+        <p>A.浦肯野纤维</p>
+        <p>B.希氏束</p>
+        <p>C.房室结</p>
+        <p>D.心内膜细胞</p>
+        <p>E.窦房结</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、窦房结</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>概述 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class='form-label'>
+        <p>1/4. 影响人际沟通效果的环境因素是 【单选题】</p>
+        <p>A.沟通者情绪烦燥</p>
+        <p>B.沟通双方价值观不同</p>
+        <p>C.沟通双方距离较远</p>
+        <p>D.沟通双方信仰不同</p>
+        <p>E.沟通者听力障碍</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 语言沟通的主要媒介是 【单选题】</p>
+        <p>A.表情</p>
+        <p>B.姿势</p>
+        <p>C.文字</p>
+        <p>D.手势</p>
+        <p>E.眼神</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、解析 语言沟通是以语言文字为媒介的一种准确、有效、广泛的沟通形式。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 影响人际沟通的隐秘性因素是 【单选题】</p>
+        <p>A.沟通场所阴暗</p>
+        <p>B.沟通双方距离较远</p>
+        <p>C.沟通者一方情绪悲哀</p>
+        <p>D.沟通者一方性格内向</p>
+        <p>E.沟通过程中有其他人员在场</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 患者男性，69岁，农民，文化水平极低，肾癌术后，护士在探视时间与其进行交谈，交流过程中，护士手机来电，护士立刻将手机关闭；患者感到伤口阵阵疼痛，并很烦躁，患者女儿轻轻地安慰，最终交谈无法再进行下去，不得不终止。影响此项互患沟通的隐秘性因素是 【单选题】</p>
+        <p>A.患者伤口的疼痛</p>
+        <p>B.患者为文盲</p>
+        <p>C.护士未关闭手机</p>
+        <p>D.患者女儿在场</p>
+        <p>E.患者年龄较大</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

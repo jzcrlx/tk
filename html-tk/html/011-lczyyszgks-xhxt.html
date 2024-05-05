@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>腹部损伤 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/40. 胰腺损伤手术后最主要的观察项目是 【单选题】</p>
+        <p>A.血清淀粉酶</p>
+        <p>B.尿淀粉酶</p>
+        <p>C.引流液的质和量</p>
+        <p>D.白细胞计数</p>
+        <p>E.血胆红素</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、339页最后一行</p>
+            <p>2、这是什么</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/40. 腹部外伤合并失血性休克，主要处理原则为 【单选题】</p>
+        <p>A.快速补充液体</p>
+        <p>B.给予大量止血药物</p>
+        <p>C.主要为输血以补足血容量</p>
+        <p>D.应用大量抗生素控制感染</p>
+        <p>E.在积极治疗休克的同时手术探查止血</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/40. 腹部闭合性损伤诊断的关键在于确定有无 【单选题】</p>
+        <p>A.休克</p>
+        <p>B.内脏损伤</p>
+        <p>C.腹壁损伤</p>
+        <p>D.腹膜后血肿</p>
+        <p>E.颅脑损伤</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么不是休克？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/40. 腹部闭合性损伤患者，最有价值的症状体征 【单选题】</p>
+        <p>A.腹部压痛</p>
+        <p>B.腹膜刺激征</p>
+        <p>C.肠鸣音亢进</p>
+        <p>D.肠鸣音减弱</p>
+        <p>E.恶心，呕吐</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/40. 关于肝破裂诊断下列哪项是错误的 【单选题】</p>
+        <p>A.右上腹外伤</p>
+        <p>B.局部疼痛及压痛</p>
+        <p>C.血红蛋白值逐渐下降</p>
+        <p>D.心率加快</p>
+        <p>E.必须等待腹腔穿刺抽出血液</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/40. 诊断腹部闭合性损伤胃破裂，最有意义的是 【单选题】</p>
+        <p>A.白细胞计数及中性粒细胞数增高</p>
+        <p>B.腹部肌紧张及反跳痛</p>
+        <p>C.有固定压痛点</p>
+        <p>D.膈下游离气体</p>
+        <p>E.超声波测出腹腔内有积液</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/40. 回肠小穿孔早期查无腹膜刺激症状，原因为 【单选题】</p>
+        <p>A.邻近肠管紧贴穿孔，堵塞穿孔</p>
+        <p>B.肠腔空虚内无粪便</p>
+        <p>C.机体防御能力强，反应迟钝</p>
+        <p>D.肠管痉挛，黏膜外翻，血凝块堵塞</p>
+        <p>E.肠麻痹，肠蠕动消失，肠内容物不外漏</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/40. 诊断外伤性脾破裂下列哪项最重要 【单选题】</p>
+        <p>A.左上腹有外伤史</p>
+        <p>B.有早期休克表现</p>
+        <p>C.腹部有压痛而且逐渐扩大</p>
+        <p>D.有进行性贫血</p>
+        <p>E.诊断性腹腔穿刺，有不凝固血液</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/40. 结肠破裂的诊断，哪项是错误的 【单选题】</p>
+        <p>A.结肠损伤比小肠损伤机会少</p>
+        <p>B.一部分结肠位于腹膜后，伤后易漏诊</p>
+        <p>C.结肠内液体成分少而细菌多，故腹膜炎出现的较早</p>
+        <p>D.WBC总数增高</p>
+        <p>E.Hb，RBC不一定下降</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/40. 脾切除的主要适应证是 【单选题】</p>
+        <p>A.血液系统疾病</p>
+        <p>B.造血系统疾病</p>
+        <p>C.外伤性脾破裂</p>
+        <p>D.脾脓肿</p>
+        <p>E.脾肿瘤</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/40. 下列情况不需行脾切除术的是 【单选题】</p>
+        <p>A.游走脾</p>
+        <p>B.脾囊肿</p>
+        <p>C.脾肿瘤</p>
+        <p>D.脾梗死</p>
+        <p>E.脾脓肿</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、脾切除术适应症： 脾破裂、游走脾、脾囊肿、脾脓肿、脾肿瘤</p>
+            <p>2、？？</p>
+            <p>3、？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/40. 脾切除术的年龄限制为 【单选题】</p>
+        <p>A.大于2岁</p>
+        <p>B.大于4岁</p>
+        <p>C.大于6岁</p>
+        <p>D.青春期以后</p>
+        <p>E.没有限制</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/40. 关于脾功能亢进正确的是 【单选题】</p>
+        <p>A.主要由于门静脉高压引起代偿性脾肿大</p>
+        <p>B.巨型脾肿大仅见于血吸虫病性肝硬化</p>
+        <p>C.周围血细胞减少是由于脾脏破坏过多所致</p>
+        <p>D.临床主要表现为红细胞降低明显</p>
+        <p>E.脾切除效果良好，可使周围血液恢复正常</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、脾切除后可以使血细胞数接近或恢复正常，不严谨，周围血液也包括血流改变吧。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/40. 外伤性脾下极小裂伤，其最佳手术方式是 【单选题】</p>
+        <p>A.脾修补术</p>
+        <p>B.脾切除术</p>
+        <p>C.脾部分切除术</p>
+        <p>D.脾动脉结扎术</p>
+        <p>E.明胶海绵堵塞</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、极小的为啥不能海绵填塞，而要修补？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/40. 第9、10肋闭合性骨折，肝破裂，脉搏106次／分，血压90/60mmHg，血红蛋白9.0g，适当的治疗是 【单选题】</p>
+        <p>A.吸氧，输血，观察</p>
+        <p>B.抗休克，病情好转后手术</p>
+        <p>C.抗休克同时开腹手术</p>
+        <p>D.先抗休克2～3小时，不好转一面抗休克一面手术</p>
+        <p>E.肋骨骨折处封闭及橡皮膏固定后手术</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/40. 乙状结肠破裂，立位腹部×线平片，下列部位出现半月形气影，哪个正确 【单选题】</p>
+        <p>A.右侧腹部</p>
+        <p>B.Dauglas腔</p>
+        <p>C.回盲部</p>
+        <p>D.膈下</p>
+        <p>E.左侧腹</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/40. 患者被汽车撞伤，右上腹剧痛，呼吸36次／分，脉搏100次／分，BP90/65mmHg，诊断不明，禁用 【单选题】</p>
+        <p>A.异丙嗪</p>
+        <p>B.地西泮</p>
+        <p>C.6-氨基己酸</p>
+        <p>D.吗啡</p>
+        <p>E.苯巴比妥</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/40. 腹部闭合性损伤，持续腹痛，血压80/60mmHg，脉搏120次／分，诊断尚未确定，应给予处置是 【单选题】</p>
+        <p>A.吗啡止痛</p>
+        <p>B.给水止渴</p>
+        <p>C.苯巴比妥镇静</p>
+        <p>D.扶持患者去放射科透视</p>
+        <p>E.积极补充血容量，抗休克</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/40. 一体操运动员，练习时翻高低杠折腹，突然上腹疼痛，两小时后疼痛加剧，疼痛主要位于右上腹，且有对应部位背部疼痛，曾有血性呕吐物，X线见腹膜后有气体，应考虑诊断 【单选题】</p>
+        <p>A.肝破裂</p>
+        <p>B.胆囊破裂</p>
+        <p>C.右肾破裂</p>
+        <p>D.十二指肠破裂</p>
+        <p>E.腹膜后血管破裂</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/40. 结肠破裂 【单选题】</p>
+        <p>A.腹膜炎出现早</p>
+        <p>B.腹膜炎严重，呈板状腹</p>
+        <p>C.腹膜炎出现较晚，但较重</p>
+        <p>D.腹膜炎出现较晚且较轻</p>
+        <p>E.无腹膜刺激征</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/40. 胰腺损伤 【单选题】</p>
+        <p>A.腹膜炎出现早</p>
+        <p>B.腹膜炎严重，呈板状腹</p>
+        <p>C.腹膜炎出现较晚，但较重</p>
+        <p>D.腹膜炎出现较晚且较轻</p>
+        <p>E.无腹膜刺激征</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么呢</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/40. 男性，24岁，腹部闭合性损伤后2小时，血压120/80mmHg，脉搏96次／分，全腹压痛，反跳痛，肌紧张，移动性浊音不明显，肠音消失，尿无异常。应诊断为 【单选题】</p>
+        <p>A.腹腔内实质脏器损伤</p>
+        <p>B.腹腔内空腔脏器损伤</p>
+        <p>C.泌尿系损伤</p>
+        <p>D.胰腺损伤</p>
+        <p>E.肝破裂</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/40. 男性，24岁，腹部闭合性损伤后2小时，血压120/80mmHg，脉搏96次／分，全腹压痛，反跳痛，肌紧张，移动性浊音不明显，肠音消失，尿无异常。应如何处置 【单选题】</p>
+        <p>A.立即手术</p>
+        <p>B.观察12小时后手术</p>
+        <p>C.非手术治疗</p>
+        <p>D.抗炎，补液，如血压脉搏异常则手术</p>
+        <p>E.补液2000ml后手术</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/40. 患者车撞伤4小时，右上腹痛，查血压80/60mmHg，脉搏120次／分，右肋部见皮擦伤，右上腹压痛明显，全腹轻度肌紧张，移动性浊音阳性，肠音弱，尿色正常。应首先进行下列哪项检查 【单选题】</p>
+        <p>A.腹部CT</p>
+        <p>B.腹部B超</p>
+        <p>C.腹部X线</p>
+        <p>D.尿常规</p>
+        <p>E.腹腔穿刺</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/40. 患者车撞伤4小时，右上腹痛，查血压80/60mmHg，脉搏120次／分，右肋部见皮擦伤，右上腹压痛明显，全腹轻度肌紧张，移动性浊音阳性，肠音弱，尿色正常。应诊断为 【单选题】</p>
+        <p>A.肝破裂失血性休克</p>
+        <p>B.脾破裂失血性休克</p>
+        <p>C.肾破裂失血性休克</p>
+        <p>D.胃破裂失血性休克</p>
+        <p>E.胰腺破裂失血性休克</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/40. 男，37岁，急刹车致使方向盘挤压上腹部16小时，上腹部、腰部及右肩疼痛，持续性，伴恶心、呕吐。查体：T38.4℃，上腹部肌紧张明显，有压痛，反跳痛不明显，无移动性浊音，肠鸣音存在。怀疑胰腺损伤。对明确诊断帮助不大的是 【单选题】</p>
+        <p>A.B超</p>
+        <p>B.CT</p>
+        <p>C.红细胞压积</p>
+        <p>D.尿淀粉酶</p>
+        <p>E.血淀粉酶</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/40. 男，37岁，急刹车致使方向盘挤压上腹部16小时，上腹部、腰部及右肩疼痛，持续性，伴恶心、呕吐。查体：T38.4℃，上腹部肌紧张明显，有压痛，反跳痛不明显，无移动性浊音，肠鸣音存在。怀疑胰腺损伤。如果行剖腹探查术，术中最有可能发现合并损伤的脏器是 【单选题】</p>
+        <p>A.十二指肠</p>
+        <p>B.胆总管</p>
+        <p>C.横结肠</p>
+        <p>D.右肾</p>
+        <p>E.脾</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、胰腺和胆总管容易合并损伤</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/40. 男，37岁，急刹车致使方向盘挤压上腹部16小时，上腹部、腰部及右肩疼痛，持续性，伴恶心、呕吐。查体：T38.4℃，上腹部肌紧张明显，有压痛，反跳痛不明显，无移动性浊音，肠鸣音存在。怀疑胰腺损伤。胰腺损伤在各种腹部损伤中所占比例为 【单选题】</p>
+        <p>A.1%～2%</p>
+        <p>B.5%～10%</p>
+        <p>C.16%～20%</p>
+        <p>D.25%～35%</p>
+        <p>E.40%～50%</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、A.1%～2%</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/40. 男，37岁，急刹车致使方向盘挤压上腹部16小时，上腹部、腰部及右肩疼痛，持续性，伴恶心、呕吐。查体：T38.4℃，上腹部肌紧张明显，有压痛，反跳痛不明显，无移动性浊音，肠鸣音存在。怀疑胰腺损伤。如果处理不当，最可能的远期并发症是 【单选题】</p>
+        <p>A.胆总管狭窄</p>
+        <p>B.胰腺真性囊肿</p>
+        <p>C.脂肪泻</p>
+        <p>D.胰腺假性囊肿</p>
+        <p>E.横结肠梗阻</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/40. 腹部空腔脏器破裂最主要的临床表现是 【单选题】</p>
+        <p>A.胃肠道症状</p>
+        <p>B.腹膜刺激征</p>
+        <p>C.全身感染症状</p>
+        <p>D.气腹征</p>
+        <p>E.肠麻痹</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、应该是B吧</p>
+            <p>2、选b</p>
+            <p>3、腹膜炎</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/40. 脾脏真性破裂是指损伤 【单选题】</p>
+        <p>A.脾实质深部</p>
+        <p>B.累及被膜</p>
+        <p>C.脾实质周边</p>
+        <p>D.全脾</p>
+        <p>E.导致内出血不明显</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、脾脏真性破裂是累及背膜</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/40. 男，30岁，由5m高处跌下2小时。腹痛，腹肌紧张，有压痛和反跳痛，肠鸣音弱。BP104／70mmHg，P120次／分。Hb80g／L。X线检查：右侧第9、10肋骨骨折，右侧膈肌升高。最可能的诊断是 【单选题】</p>
+        <p>A.肝破裂</p>
+        <p>B.胃破裂</p>
+        <p>C.脾破裂</p>
+        <p>D.横结肠破裂</p>
+        <p>E.胰腺断裂</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：A<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/40. 腹部闭合性损伤时，不支持腹腔内脏损伤诊断的是 【单选题】</p>
+        <p>A.早期出现休克</p>
+        <p>B.腹膜刺激征</p>
+        <p>C.有气腹征</p>
+        <p>D.移动性浊音(+)</p>
+        <p>E.肠鸣音活跃</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/40. 腹部闭合性损伤X线检查发现右膈肌抬高，活动受限，最可能的损伤是 【单选题】</p>
+        <p>A.胃破裂</p>
+        <p>B.脾破裂</p>
+        <p>C.肝破裂</p>
+        <p>D.十二指肠破裂</p>
+        <p>E.结肠肝曲破裂</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/40. 男，34岁，腹部砸伤4小时。查体见四肢湿冷。腹肌紧张，全腹压痛反跳痛。有移动性浊音，肠鸣音消失。该患者目前应进行的处理不包括 【单选题】</p>
+        <p>A.诊断性腹腔穿刺</p>
+        <p>B.密切监测基本生命征</p>
+        <p>C.补充血容量，抗休克治疗</p>
+        <p>D.给予止痛和镇静剂</p>
+        <p>E.抗感染治疗</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/40. 腹部闭合性损伤中最易损伤的实质性器官是 【单选题】</p>
+        <p>A.肝</p>
+        <p>B.脾</p>
+        <p>C.胰</p>
+        <p>D.肾</p>
+        <p>E.肾上腺</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/40. 肝破裂的临床特点中，正确的是 【单选题】</p>
+        <p>A.在腹部损伤中罕见</p>
+        <p>B.腹痛和腹膜刺激征较轻</p>
+        <p>C.中央型破裂不易继发肝脓肿</p>
+        <p>D.有时可出现呕血或黑粪</p>
+        <p>E.被膜下破裂更易继发肝脓肿</p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、中央型更容易继发肝脓肿</p>
+            <p>2、中央型更易继发肝脓肿</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/40. 腹部闭合伤，确诊有无内脏伤最简便、最可靠的诊断方法为 【单选题】</p>
+        <p>A.X线片</p>
+        <p>B.CT</p>
+        <p>C.白细胞计数</p>
+        <p>D.B超</p>
+        <p>E.腹腔穿刺</p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/40. 腹部损伤时做诊断性腹腔穿刺，抽出不凝固血液，最可能的诊断为 【单选题】</p>
+        <p>A.空腔脏器破裂</p>
+        <p>B.误穿入腹腔血管</p>
+        <p>C.前腹壁血肿</p>
+        <p>D.实质性器官破裂</p>
+        <p>E.后腹膜间隙血肿</p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/40. 男，25岁。腹部被倒墙压伤，中腹部剧痛伴呕吐3小时。BP120／86mmHg，T38℃；腹胀、肌紧张、压痛、反跳痛阳性，肠鸣音消失。最可能的诊断是 【单选题】</p>
+        <p>A.腹壁挫伤</p>
+        <p>B.腹膜后血肿</p>
+        <p>C.肝破裂Ⅰ度</p>
+        <p>D.小肠破裂</p>
+        <p>E.右肾挫伤</p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

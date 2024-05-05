@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>基因突变的群体行为 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/36. 不影响遗传平衡的因素是 【单选题】</p>
+        <p>A．群体的大小</p>
+        <p>B．群体中个体的寿命</p>
+        <p>C．群体中个体的大规模迁移</p>
+        <p>D．群体中选择性交配</p>
+        <p>E．选择</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、遗传平衡定律:1.很大的群体2.随机婚配3.没有自然选择4.没有突变发生5.没有大规模个体迁移</p>
+            <p>2、满足条件里有一个是无迁入迁出</p>
+            <p>3、无选择，无突变，无限大，随机婚配</p>
+            <p>4、寿命没啥影响</p>
+            <p>5、为什么</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/36. 在一个群体中，BB为64%、Bb为32%、bb为4%，B基因的频率为 【单选题】</p>
+        <p>A．0.64</p>
+        <p>B．0.16</p>
+        <p>C．0.90</p>
+        <p>D．0.80</p>
+        <p>E．0.36</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、B的基因频率=BB+1/2Bb=80%。</p>
+            <p>2、应该选A</p>
+            <p>3、分母乘2
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/36. 一对夫妇表型正常，妻子的弟弟是白化病（AR）患者。假定白化病在人群中的发病率为1/10000，这对夫妇生下白化病患儿的概率是 【单选题】</p>
+        <p>A．1/4</p>
+        <p>B．1/100</p>
+        <p>C．1/200</p>
+        <p>D．1/300</p>
+        <p>E．1/400</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、答案错了吗？没有！首先能产生aa妻子是Aa的概率是2/3，产生配子拿出一个a的概率是2/3×（1/2），男的拿出a的概率就是人群a的基因频率1/100，口算就知道1/300啦</p>
+            <p>2、首先这是AR病，妻子是携带者的概率是三分之二，再者群体发病率是1/10000，所以隐性纯合子q²=1/10000，根据第三版书第102页：携带者频率比发病率=2/q，得出丈夫是携带者的概率为1/50，所以两者生出患儿的概率2/3×1/50×1/40=1/300</p>
+            <p>3、答案没错 2/3*2/100*1/4 ,2/100是父亲的Aa </p>
+            <p>4、答案错了</p>
+            <p>5、如果妻子父母的基因型为Aa×aa，她弟弟可能为aa没问题，概率为1/2 。那么妻子为Aa的概率也为1/2。丈夫那边没问题能给出a的概率为1/100.那应该又是1/2×1/2×1/100＝1/400啊。是不是两种可能性？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/36. PTC味盲为常染色体隐性性状，我国汉族人群中PTC味盲者占9%，相对味盲基因的显性基因频率是 【单选题】</p>
+        <p>A．0.7</p>
+        <p>B．0.49</p>
+        <p>C．0.42</p>
+        <p>D.0.3</p>
+        <p>E．0.09</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、aa为9%，则p（a）为0.3，则，p（A）为0.7</p>
+            <p>2、aa=9%，开根号a=0.3，A=1-0.3=0.7</p>
+            <p>3、怎么算的啊？</p>
+            <p>4、1-根号下9%</p>
+            <p>5、不懂</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/36. 基因频率是指 【单选题】</p>
+        <p>A．某一基因的数量</p>
+        <p>B．某一等位基因的数量</p>
+        <p>C．某一基因在所有基因中所占的比例</p>
+        <p>D．某一基因在所有等位基因中所占的比例</p>
+        <p>E．某一对等位基因的数量</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、根据我的经验，一般不会写的就挑长的，不过有大佬找到了第七版的多少页吗</p>
+            <p>2、？？？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/36. 下列处于遗传平衡状态的群体是 【单选题】</p>
+        <p>A．AA：0.20；Aa：0.60；aa：0.20</p>
+        <p>B．AA：0.25；Aa：0.50；aa：0.25</p>
+        <p>C．AA：0.30；Aa：0.50；aa：0.20</p>
+        <p>D．AA：0.50；Aa：0；aa：0.50</p>
+        <p>E．AA：0.75；Aa：0.25；aa：0</p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、这个题我还想说，额，你看哪一个AA aa的频率能开根号那个选项就对，具体原因自己领悟吧</p>
+            <p>2、课本p100有相应解释，但有个办法你算出(2×AA+Aa)/2即为A的基因频率，再平方如果和提干的AA频率相同即为遗传稳定种群，不用谢，俺叫ycwzh</p>
+            <p>3、二楼叫遗传我自豪?</p>
+            <p>4、√AA+√aa=1</p>
+            <p>5、一楼难道是叫遗传我最好？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/36. 某AR病群体发病率为1/10000，致病基因突变率为50×10-6/代。适合度(f)为 【单选题】</p>
+        <p>A．0.2</p>
+        <p>B．0.3</p>
+        <p>C．0.4</p>
+        <p>D．0.5</p>
+        <p>E．1</p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、没问题，据书上公式，常隐(AR)的话.50×10-6=10-4×（1-f） 得f为0.5</p>
+            <p>2、s=1-f u=Sq*2</p>
+            <p>3、s=1-f u=s×q×q(u=50×10-6,q×q=1/10000)
+            </p>
+            <p>4、怎么算的？</p>
+            <p>5、 突变率是5.0*10的-6
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/36. 在一个遗传平衡群体中，甲型血友病的男性发病率为0.00009，适合度为0.3，甲型血友病基因突变率为 【单选题】</p>
+        <p>A．63×10-6/代</p>
+        <p>B．27×10-6/代</p>
+        <p>C．9×10-6/代</p>
+        <p>D．81×10-6/代</p>
+        <p>E．12×10-6/代</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、错了好吗？！！！根本就没有正确答案，正确答案是u=1/3×(1-f)×q＝1/3*（1-0.3）*0.00009＝21*10－6</p>
+            <p>2、难道不是21×10-6吗</p>
+            <p>3、没错 u=1/3×(1-f)×q选B</p>
+            <p>4、选a吧，s等于1减f，给的是f啊</p>
+            <p>5、答案选A </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/36. 选择对遗传负荷的作用是使之 【单选题】</p>
+        <p>A．无影响</p>
+        <p>B．保持稳定</p>
+        <p>C．不断波动</p>
+        <p>D．降低</p>
+        <p>E．增高</p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、选择的作用随当代突变个体的死亡而消失，不会增加群体的遗传负荷。</p>
+            <p>2、选择与选择性交配不同</p>
+            <p>3、遗传负荷，课本8页，遗传病在群体中的严重程度。通常用发生率表示。</p>
+            <p>4、应该是保持平衡吧</p>
+            <p>5、选择影响的是遗传平衡</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/36. 某群体经典型苯丙酮尿症的群体发病率为1/10000，一对表型正常的姨表兄妹婚配，他们后代罹患苯丙酮尿症的风险是 【单选题】</p>
+        <p>A．1/100</p>
+        <p>B．1/200</p>
+        <p>C．1/400</p>
+        <p>D．1/800</p>
+        <p>E．1/1600</p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、表兄是携带者概率为2pq=1/50 姨表兄妹三级亲属，表妹和表兄基因型相同概率1/8 故生出患病孩子概率1/50*1/8*1/4=1/1600 正确就赞一下吧阿里嘎多(｡･ω･｡)ﾉ♡
+            </p>
+            <p>2、因为苯丙酮尿症属于AR，姨表兄妹属于二级亲属，二级亲属近婚系数为1/16，把其中一个人当做随机群体，则他给出a的概率为1/100，另一个人传递a与其给出的a纯和的概率为1/16，所以发病率为1/1600</p>
+            <p>3、发病风险＝0.01F＝0.01×1/16＝1/1600 可以从近亲婚配系数的定义方面考虑
+            </p>
+            <p>4、第一个人说的有点问题，不是表兄妹基因型相同的概率为1/8，而是他们从同一祖先继承a基因的概率为1/8（亲缘系数），这样两个Aa的人再生出患病后代。
+            </p>
+            <p>5、为什么，姨表兄弟近婚系数3/16啊，，八版86页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/36. 近亲婚配可以使 【单选题】</p>
+        <p>A．隐性遗传病发病率增高</p>
+        <p>B．显性遗传病发病率增高</p>
+        <p>C．遗传负荷增高</p>
+        <p>D．遗传负荷降低</p>
+        <p>E．以上都不是</p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、c也是对的</p>
+            <p>2、只会增加隐性遗传的遗传负荷，显性的遗传负荷不会增加吧</p>
+            <p>3、所以应该选什么</p>
+            <p>4、会增加遗传负荷里面的分离负荷</p>
+            <p>5、第六版86页，遗传负荷都会增高</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/36. 在10000人组成的群体中，M型血有3600人，N型血有1600人，MN型血有4800人，该群体是 【单选题】</p>
+        <p>A．遗传平衡群体</p>
+        <p>B．非遗传平衡群体</p>
+        <p>C．无法判定</p>
+        <p>D．t检验后，才能判定</p>
+        <p>E．以上都不是</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一群可以相互交配的个体称为群体。若一个群体符合下列条件：①群体无限大；②随机交配；③没有突变；④没有迁移；⑤没有任何形式的自然选择；则群体中各基因型的比率从一代到另一代保持不变。这就是由英国数学家G.H.哈迪和德国医生W.魏因贝格于1908年分别推导出来的遗传平衡定律，也称哈迪-魏因贝格定律。</p>
+            <p>2、应该是非遗传平衡群体</p>
+            <p>3、为什么我算的不是</p>
+            <p>4、这题不用算就能知道么？</p>
+            <p>5、说了句废话</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/36. 先天性聋哑（AR）的群体发病率为4/10000，该群体中携带者的频率是 【单选题】</p>
+        <p>A．0.01</p>
+        <p>B．0.02</p>
+        <p>C．0.04</p>
+        <p>D．0.0002</p>
+        <p>E．0.0004</p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、q=√群体发病率 p=1-q 携带者=2pq</p>
+            <p>2、大神来也╮(╯▽╰)╭由题知q＝0.02,携带者的概率为2pq，由于致病基因的频率q很小很小，所以p就约等于1咯，那么2pq≈2q. So携带者的概率为致病基因频率的2倍为0.04</p>
+            <p>3、常染色体隐形遗传的携带者频率≈2倍的致病基因频率</p>
+            <p>4、实际上就是掌握一句话，q很小时，p趋近于1，所以计算时就是2q＝2×0.02</p>
+            <p>5、q=0.02 p=0.98 2pq=0.392约等于0.4</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/36. 最终决定一个个体适合度的是 【单选题】</p>
+        <p>A．性别</p>
+        <p>B．健康状况</p>
+        <p>C．寿命</p>
+        <p>D．生存能力</p>
+        <p>E．生殖能力</p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、个体适合度是指个体能够生存下来并将基因传递给下一代的能力</p>
+            <p>2、适合度：是指在特定的环境条件之中，某种基因型个体能够生存下来并且讲其基因传给后代的能力。</p>
+            <p>3、对的</p>
+            <p>4、相对生殖能力</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/36. 选择放松使显性致病基因和隐性致病基因频率 【单选题】</p>
+        <p>A．同样的速度增加</p>
+        <p>B．同样的速度降低</p>
+        <p>C．二者都不变</p>
+        <p>D．显性致病基因频率增加快，隐性致病基因频率增加慢</p>
+        <p>E．显性致病基因频率降低快，隐性致病基因频率降低慢</p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、就是选择作用降低，可以这么考虑，对于隐性疾病u=s.q(2),显性v=sp,s减小时若u,v不变则隐性以平方升高，显性以单倍升高，所以前者q的频率自然就升高慢一点啦</p>
+            <p>2、选择放松是啥意思</p>
+            <p>3、选择放松就是选择压力的放松，</p>
+            <p>4、zhyaxx你抖什么机灵</p>
+            <p>5、补充下一楼，因为是频率,所以pq都小于1。所以请回想二次函数和一次函数的图。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/36. 遗传漂变指的是 【单选题】</p>
+        <p>A．基因在群体间的迁移</p>
+        <p>B．基因频率的增加</p>
+        <p>C．基因频率的降低</p>
+        <p>D．基因由A变为a或由a变为A</p>
+        <p>E．基因频率在小群体中的随机增减</p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、genetic drift</p>
+            <p>2、在小的种群中，基因频率可因偶然的机会，而不是由于选择，而发生变化，这种现象称为遗传漂变。</p>
+            <p>3、书上84页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/36. 通常表示遗传负荷的方式是 【单选题】</p>
+        <p>A．群体中有害基因的多少</p>
+        <p>B．群体中有害基因的总数</p>
+        <p>C．群体中有害基因的平均频率</p>
+        <p>D．一个个体携带的有害基因的数目</p>
+        <p>E．群体中每个个体携带的有害基因的平均数目</p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第6版92页</p>
+            <p>2、第七版第85页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/36. 下列不会改变群体基因频率的是 【单选题】</p>
+        <p>A．选择放松</p>
+        <p>B．选择系数增加</p>
+        <p>C．突变率降低</p>
+        <p>D．群体内随机婚配</p>
+        <p>E．群体变为很小</p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、大规模迁出群体</p>
+            <p>2、E选项是什么意思……</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/36. 某种遗传病患者，经治疗后可以和正常人一样生活和生育，该疾病经过若干年后的变化是 【单选题】</p>
+        <p>A．发病率降低</p>
+        <p>B．发病率升高</p>
+        <p>C．突变率升高</p>
+        <p>D．症状逐渐减轻</p>
+        <p>E．没有变化</p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、因为这个患者没有被淘汰掉，反而将这有害基因一代代传了下来，发病率就增高咯</p>
+            <p>2、被淘汰的患病个体减少了</p>
+            <p>3、不是应该根据遗传平衡定律么，发病率应该不变啊 。没有新的治疗方式发病率应该降低。</p>
+            <p>4、这个发病率增高是和无新治疗方式比较的。 患者能传递治病基因了，发病率自然增高
+            </p>
+            <p>5、哈代温伯格定律，相当于把杂合子那一份给“瓜分了”</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/36. 舅外甥女之间X连锁基因的近婚系数是 【单选题】</p>
+        <p>A．0</p>
+        <p>B．1/8</p>
+        <p>C．1/16</p>
+        <p>D．1/64</p>
+        <p>E．1/128</p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、最讨厌问这些亲戚关系的题目了，我搞不懂这些关系(ಥ_ಥ)</p>
+            <p>2、答案没有错</p>
+            <p>3、舅舅和外甥女结婚？？？？？</p>
+            <p>4、这道题错了吧。应该选C吧</p>
+            <p>5、舅外甥女是什么关系？(ฅ>ω</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/36. 红绿色盲（XR）的男性发病率为0.05，那么 【多选题】</p>
+        <p>A．女性发病率为0.0025</p>
+        <p>B．致病基因频率为0.05</p>
+        <p>C．XAXa基因型的频率为0.1</p>
+        <p>D．XaY基因型的频率为0.0025</p>
+        <p>E．女性表型正常的频率为p2+2pq</p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：ABCE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、c为啥不是0.095</p>
+            <p>2、A不少0啊</p>
+            <p>3、A选项没有少个0</p>
+            <p>4、c应该是0.095</p>
+            <p>5、c没错，这是规定。携带者频率近似等于致病等位基因的2倍。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/36. 维持群体遗传平衡的条件不包括 【多选题】</p>
+        <p>A．群体很大</p>
+        <p>B．近亲婚配</p>
+        <p>C．随机遗传漂变</p>
+        <p>D．没有选择</p>
+        <p>E．无限制地迁移</p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：BCE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、群体无限大，随机婚配，没有突变，没有自然选择，没有大规模迁移，没有遗传漂变</p>
+            <p>2、随机婚配包括近亲婚配吗？</p>
+            <p>3、不包括啊！</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/36. 假定糖原累积症Ⅰ型（AR）的群体发病率是1/10000，则 【多选题】</p>
+        <p>A．致病基因的频率为0.01</p>
+        <p>B．携带者的频率为0.2</p>
+        <p>C．随机婚配后代发病率为1/3200</p>
+        <p>D．表兄妹婚配后代发病率为1/1600</p>
+        <p>E．AA基因型的频率为0.09</p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：AD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、携带者频率是0.02 那么多人以为0.2 令人无语</p>
+            <p>2、ABD</p>
+            <p>3、携带者频率是0.02</p>
+            <p>4、0.02×1/8×1/4＝1/1600</p>
+            <p>5、B.假定糖原累积症Ⅰ型（AR）的群体发病率是1/10000即q=0.01，则p=0.99，携带者的频率为2pq≈2q=0.02（对于罕见的隐性遗传病，p近似等于1，则杂合子频率2pq近似等于2q）C．随机婚配后代发病率为7/24×0.01=7/2400</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/36. 群体中尿黑酸尿症（AR）的杂合子频率为0.004，那么 【多选题】</p>
+        <p>A．随机婚配后代患尿黑酸尿症的风险是0.00002</p>
+        <p>B．随机婚配后代患尿黑酸尿症的风险是0.00004</p>
+        <p>C．姑表兄妹婚配后代患尿黑酸尿症的风险是0.008</p>
+        <p>D．姑表兄妹婚配后代患尿黑酸尿症的风险是0.004</p>
+        <p>E．舅甥之间的近婚系数是1/8</p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、b少个零</p>
+            <p>2、b不对吧，如果是患者的话就不可以计算了</p>
+            <p>3、be</p>
+            <p>4、B少个零</p>
+            <p>5、小概率，常隐，2pq≈2q=0.004,所以q=0.002,A和B，q∧2=0.0000004</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/36. 对一个1000人群体的ABO血型抽样检验，A型血550人，B型血110人，AB型血30人，O型血为310人，则 【多选题】</p>
+        <p>A．ⅠA基因的频率为0.352</p>
+        <p>B．ⅠA基因的频率为0.565</p>
+        <p>C．ⅠB基因的频率为0.125</p>
+        <p>D．ⅠB基因的频率为0.073</p>
+        <p>E．i基因的频率为0.575</p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：ADE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、不对啊，i基因的频率为根号(310/1000)＝0.556啊，其它选项的结果也不对到啊</p>
+            <p>2、应该有六种型（复等位基因）AA，AO算是A型血。BB BO是B型血，AB单独一种，OO一种，列式为(p+q＋r)2＝p平方+q平方+r平方+2pq+2pr+2qr=1。i的基因频率为r，O型血频率：0.31=r平方，所以r=√0.31=0.557；IB的基因频率为q，B型血频率：0.11=q平方+2qr，解得q=0.0913，-1.2（舍去）；IA的基因频率为r，p+q+r=1,p=0.352
+
+            </p>
+            <p>3、i=√310/1000=0.575 A=1-√110/1000+310/1000=0.352 B=1-√550/1000+310/1000=0.073
+            </p>
+            <p>4、O＝r的平方可求出，A+O＝p的平方+2pr+r平方，等于(p+r）的平方，可求出p，p+r+q等于1，可求出q，即B的概率</p>
+            <p>5、应该有六种型，AA，AO算是A型血。BB BO是B型血，AB单独一种，OO一种，列式为(a+b＋c)2＝1</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/36. 群体发病率为1/10000的一种常染色体隐性遗传病，那么 【多选题】</p>
+        <p>A．该致病基因的频率为0.01</p>
+        <p>B．该病近亲婚配的有害效应为（1+15q）/16q</p>
+        <p>C．近亲婚配与随机婚配后代患病风险没有区别</p>
+        <p>D．姨表兄妹婚配的有害效应比堂兄妹大</p>
+        <p>E．经过2500年（每个世代按25年计算）由于选择该致病基因频率降低一半</p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：ABE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、B：AR遗传病复发概率 = qF+(1-F)×q平方=1/16×q+15/16×q平方= q（1+15q）/16； 近亲婚配的危害主要表现在群体隐性纯合子的频率增高。近亲婚配所生子女达到隐性纯合有两种途径：①继承同一祖先的同一基因，这一概率即近婚系数 F②继承共同祖先的非同一基因，即成为任一功能上的致病基因隐性纯合子(aa)，这一概率为1一F。 由此，结合群体中隐性致病基因频率(q)，近亲婚配导致群体中隐性纯合子发生的概率也有两种情况：在①情况下为Fq，指近婚后代成为单一基因完全等同的概率；在②情况下为(1一F)q
+                ，指共同祖先同一功能基因纯合的概率。近亲婚配导致群体中隐性纯合子发生的总概率为 ①+②= qF+(1-F)×q平方 =Fq+q平方-F×q平方= q平方+Fq(1 一q)=q +Fq(p+q—q)=q +Fpq。 相比较随机婚配中隐性纯合子频率的q ，近亲婚配产生隐性纯合体的概率增加Fpq。
+            </p>
+            <p>2、E选项就是：1/0.005—1/0.01 就是一百代</p>
+            <p>3、B看不懂，怎么算？</p>
+            <p>4、b怎么说</p>
+            <p>5、书上群体遗传那张都有讲解还有习题对应</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/36. 一个947人的群体，M血型348人，N血型103人，MN血型496人，则 【多选题】</p>
+        <p>A．M血型者占36.7%</p>
+        <p>B．M基因的频率为0.63</p>
+        <p>C．N基因的频率为0.63</p>
+        <p>D．MN血型者占52.4%</p>
+        <p>E．N血型者占36.7%</p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：ABD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、MN血型是由一对共显性基因决定的，M血型基因型频率等于p＝348/947 N＝q等于103/947，MN＝H＝496/947 所以M基因频率＝p+1/2H，N基因频率＝q+1/2H
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/36. 影响遗传平衡的因素是 【多选题】</p>
+        <p>A．群体的大小</p>
+        <p>B．群体中个体的寿命</p>
+        <p>C．群体中个体的大规模迁移</p>
+        <p>D．群体中选择性交配</p>
+        <p>E．选择</p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：ACDE<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/36. Hardy-Weinberg平衡律指 【多选题】</p>
+        <p>A．在一个大群体中</p>
+        <p>B．选型婚配</p>
+        <p>C．没有突变发生</p>
+        <p>D．没有大规模迁移</p>
+        <p>E．群体中基因频率和基因型频率在世代传递中保持不变</p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：ACDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、选型婚配是什么意思呀……</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/36. 在一个100人的群体中，AA为60%，Aa为20%，aa为20%，那么该群体中 【多选题】</p>
+        <p>A．A基因的频率为0.7</p>
+        <p>B．a基因的频率为0.3</p>
+        <p>C．是一个遗传平衡群体</p>
+        <p>D．是一遗传不平衡群体</p>
+        <p>E．经过一代后基因频率和基因型频率都会发生变化</p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：ABD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、基因型频率变化，基因频率不变</p>
+            <p>2、懂了 题目没说突变和选择，可以认为基因频率不变，但计算发现基因型频率变化了，那么他就不可能是遗传平衡群体 </p>
+            <p>3、遗传不平衡是因为群体太小了吗
+            </p>
+            <p>4、遗传不平衡怎么看</p>
+            <p>5、遗传不平衡是因为1.群体太小2.虽然现在AA：Aa:aa＝p2:2pq:q2，但经过一代后基因型频率都会发生变化3.选择</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/36. 对于一种相对罕见的X连锁隐性遗传病，其男性发病率为q 【多选题】</p>
+        <p>A．人群中杂合子频率为2q</p>
+        <p>B．女性发病率是p</p>
+        <p>C．男性患者是女性患者的两倍</p>
+        <p>D．女性患者是男性患者的两倍</p>
+        <p>E．女性发病率为q2</p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：ABE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、选AE</p>
+            <p>2、P约等于1 q约等于0
+            </p>
+            <p>3、 没有p…</p>
+            <p>4、B对，因为相对罕见，p近似等于1，女性发病率为q2非常小约等于0，就很不容易患病，女性发病率是p就是近似不发病。</p>
+            <p>5、为什么女性携带者不是2pq而是2q</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/36. 在遗传平衡的基础上，可以推导得出下列数据 【多选题】</p>
+        <p>A．对于一种罕见的AD病，几乎所有的受累者均为杂合子</p>
+        <p>B．对于一种罕见的AR病，杂合携带者的频率约为致病基因频率的2倍</p>
+        <p>C．对于一种罕见的XD病，男性患者是女性患者的1/2</p>
+        <p>D．对于一种罕见的XR病，男性患者为女性患者的1/q</p>
+        <p>E．对于一种罕见的Y伴性遗传病，男性患者是女性患者的2倍</p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：ABCD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、D的话男性患病频率是q，女性为q2，所以D 正确</p>
+            <p>2、楼上，是p接近于1</p>
+            <p>3、为什么D对</p>
+            <p>4、p近似于1，2pq:q=2p:1约为2，携带者频率是基因型频率，比的是致病基因频率，不是致病基因型频率。</p>
+            <p>5、因为是罕见遗传病，所以q近似等于1</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/36. 以AR为例，亲属之间的亲缘系数如下 【多选题】</p>
+        <p>A．姨表兄妹为1/8</p>
+        <p>B．祖孙为1/4</p>
+        <p>C．舅甥为1/4</p>
+        <p>D．同胞兄妹为1/2</p>
+        <p>E．双生子兄妹为1</p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、同胞兄妹就是一级亲属1/2，这里指的亲缘系数，不是近婚系数</p>
+            <p>2、双生兄妹一定是异卵双生，亲缘系数1/2</p>
+            <p>3、一直不懂舅甥</p>
+            <p>4、双生子不也有同卵双生和异卵双生吗 一定是1？</p>
+            <p>5、同卵双胞胎即单卵双胞胎是一个精子与一个卵子结合产生的一个受精卵。 异卵双胞胎在受孕时存在两个卵子分别和两个精子结合，然后分别发育成两个独立的个体，长大后差异比较大，并且可以为同性也可以为异性。由两个（或多个）卵细胞同时或相继与两个（或多个）不同的精子结合发育而成。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/36. 能影响遗传负荷的因素是 【多选题】</p>
+        <p>A．随机婚配</p>
+        <p>B．近亲婚配</p>
+        <p>C．电离辐射</p>
+        <p>D．化学诱变剂</p>
+        <p>E．迁移</p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：BCD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、遗传负荷只与近亲结婚与环境因素有关！</p>
+            <p>2、迁移，近亲婚配，环境污染都可使群体的遗传负荷增高啊，书上原话</p>
+            <p>3、遗传负荷包括突变负荷和分离负荷 ➢突变负荷是指由于基因的致死突变或有害基因突变产生而降低了适合度，给群体带来的负荷。 ➢分离负荷是指由于杂合子（Aa）和杂合子（Aa）之间的婚配，后代中必将分离而产生一部分适合度降低的纯合子（aa），因而导致群体的适合度降低。 而近亲婚配就是增加纯隐概率的</p>
+            <p>4、第九版P86 遗传负荷只与近亲婚配和环境因素有关</p>
+            <p>5、所以e为什么不对呀</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/36. 群体中的平衡多态表现为 【多选题】</p>
+        <p>A．DNA多态性</p>
+        <p>B．染色体多态性</p>
+        <p>C．蛋白质多态性</p>
+        <p>D．酶多态性</p>
+        <p>E．糖原多态性</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：ABCD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、好难</p>
+            <p>2、我佛了</p>
+            <p>3、？
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/36. 什么是遗传平衡定律？影响群体遗传平衡的因素有哪些？这些因素对群体遗传结构各有何作用？ </p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：遗传平衡定律是在一定条件（①在一个很大的群体中；②进行随机婚配而非选择性婚配；③没有自然选择；④没有突变发生；⑤没有大规模的迁移等）下，群体中的基因频率和基因型频率在一代一代繁殖传代中，保持稳定，也称为Hardy-Weinberg定律。影响遗传平衡的因素主要有：①非随机婚配：如果是发生在AR患者中的选型婚配，将会增加纯合患者的相对频率；另一种近亲婚配不仅提高后代的有害隐性基因纯合子的发生风险，而且增加后代对多基因或多因素疾病的出生缺陷的易感性。②突变：是影响遗传平衡最重要的因素，对遗传结构的改变在于增高群体中某一基因的频率；③选择：和突变的作用相反，选择的作用是降低有害基因的频率；④遗传漂变：可以使基因频率在小群体世代传递中随机变化，甚至使等位基因中的某一基因消失，另一基因固定；⑤基因流：群体的大规模迁移，新的等位基因进入另一群体，这种等位基因跨越种族或地界的渐近混合，将最终导致基因频率的改变。<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

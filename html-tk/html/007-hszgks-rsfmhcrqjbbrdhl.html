@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>过期妊娠病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/4. 过期产见于 【单选题】</p>
+        <p>A.妊娠12周以前终止</p>
+        <p>B.妊娠满37周不满42足周终止</p>
+        <p>C.妊娠满28周不满37足周终止</p>
+        <p>D.妊娠满12周不满28周终止</p>
+        <p>E.妊娠满42周及以后终止</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/4. 了解胎儿宫内发育情况的人工监护方法为 【单选题】</p>
+        <p>A.B超</p>
+        <p>B.听诊胎心</p>
+        <p>C.测量子宫底高度</p>
+        <p>D.测量血压</p>
+        <p>E.测量孕妇的骨盆各径线</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、宫内发育情况</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/4. 宫缩压力试验的目的是 【单选题】</p>
+        <p>A.观察胎心基线的变异</p>
+        <p>B.观察胎动后胎心增速的情况</p>
+        <p>C.观察子宫对催产素的敏感性</p>
+        <p>D.观察宫缩对胎心率的影响</p>
+        <p>E.观察子宫对胎动的反应</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：D<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/4. 孕妇，28岁，妊娠42周，无临产迹象就诊。查体：宫高32cm，枕左前位，胎头已衔接，胎心率120/min，进行缩宫素激惹试验，宫缩时重复出现晚期减速。应考虑的病因是 【单选题】</p>
+        <p>A.羊水过少</p>
+        <p>B.胎盘缺乏硫酸酯酶</p>
+        <p>C.宫锁时脐带受压</p>
+        <p>D.宫缩时胎头受压</p>
+        <p>E.胎儿缺氧</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、缩宫素激惹试验，宫缩时重复出现晚期减速提示胎儿缺氧。</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

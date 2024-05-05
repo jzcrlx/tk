@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>羊水量异常病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/5. 为羊水过多者放羊水治疗时，一次羊水放出量不应超过 【单选题】</p>
+        <p>A.500ml</p>
+        <p>B.800ml</p>
+        <p>C.1000ml</p>
+        <p>D.1200ml</p>
+        <p>E.1500ml</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、 放羊水时应防止速度过快、量过多，一次放羊水量不超过1500ml，以孕妇症状缓解为度。放出羊水过多可引起早产。放羊水后腹部放置沙袋或加腹带包扎。
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/5. 何项为羊水过少 【单选题】</p>
+        <p>A.
+            <2000ml</p>
+                <p>B.>2000ml</p>
+                <p>C.1000ml</p>
+                <p>D.500ml</p>
+                <p>E.
+                    <300ml</p>
+                        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+                        <div class="datas" id="data2" style="display: none;">
+                            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+                        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/5. 羊水过多指妊娠期羊水量超过 【单选题】</p>
+        <p>A.600ml</p>
+        <p>B.800ml</p>
+        <p>C.1000ml</p>
+        <p>D.1500ml</p>
+        <p>E.2000ml</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/5. 测定羊水量的方法为 【单选题】</p>
+        <p>A.宫腔镜</p>
+        <p>B.羊膜腔镜</p>
+        <p>C.B超检查</p>
+        <p>D.羊水检查</p>
+        <p>E.触诊有液体的振荡感</p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/5. 羊水过多的孕妇，容易并发 【单选题】</p>
+        <p>A.贫血</p>
+        <p>B.妊娠期高血压疾病</p>
+        <p>C.心脏病</p>
+        <p>D.糖尿病</p>
+        <p>E.病毒性肝炎</p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、羊水过多的孕妇，子宫张力过高，妊娠高血压综合征的发病风险是正常妊娠的的3倍。由于子宫肌纤维伸展过度，可致宫缩乏力、产程延长及产后出血增加。孕妇破膜后因子宫骤然缩小，胎盘早剥、胎膜早破、早产的几率也比正常的多。</p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

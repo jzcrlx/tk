@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>晚期产后出血病人的护理 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    
+    <div class='form-label'>
+        <p>1/3. 患者女性，25岁。生理产后1周，突然大量阴道流血，检查发现子宫大而软，宫口松弛。阴道及宫口有血块堵塞，正确的处理措施是 【单选题】</p>
+        <p>A.子宫切除</p>
+        <p>B.行刮宫术，刮出物送病理检查以明确诊断</p>
+        <p>C.开腹探察</p>
+        <p>D.左侧卧位、吸氧</p>
+        <p>E.子宫动脉结扎</p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：B<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/3. 产妇，29岁。产后10天，血性恶露持续一周后，反复阴道流血，导致该患者晚期产后出血最可能的原因是 【单选题】</p>
+        <p>A.子宫复旧不全</p>
+        <p>B.子宫胎盘附着面感染</p>
+        <p>C.蜕膜残留</p>
+        <p>D.剖宫产术后子宫伤口裂开</p>
+        <p>E.胎盘、胎膜残留</p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、胎盘、胎膜残留是晚期产后出血最常见的原因，多发生于产后10天左右</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/3. 女性，28岁，发生晚期产后出血，不正确的处理是 【单选题】</p>
+        <p>A.少量阴道流血，可给予抗生素、子宫收缩剂</p>
+        <p>B.中等量阴道流血，可给予抗生素、子宫收缩剂，支持疗法</p>
+        <p>C.剖宫产术后阴道流血，用刮匙取出宫腔残留组织</p>
+        <p>D.剖宫产术后阴道流血量多，必要时应开腹探查</p>
+        <p>E.剖宫产术后阴道流血量多，有时需切除子宫</p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：C<br/><b>解释与评论:</b></p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>

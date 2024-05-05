@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>药物代谢动力学 - 公众号：急诊超人老谢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="htmlCss.css">
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="htmlJS.js"></script>
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class='form-label'>
+        <p>1/44. 某弱酸药物pka=3.4,在血浆中解离百分率约： 【单选题】</p>
+        <p>A.10%</p>
+        <p>B.90%</p>
+        <p>C.99%</p>
+        <p>D.99.9%</p>
+        <p>E.99.99% </p>
+        <div class="divXSDA" id="showAndHideButton1" onclick="showAndHideButton('data1','showAndHideButton1')">显示答案</div>
+        <div class="datas" id="data1" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、，PH-PKa=7.4-3.4=4, 离子型/非离子型=10的4次方=10000 解离百分率=离子型/（离子型+非离子型）=10000/10001=99.99%
+            </p>
+            <p>2、南方医科大学就是会出这样的题吧</p>
+            <p>3、第八版P6 离子型/非离子型=[A－]/[HA]=10∧(PH-PKa) P9在生理情况下细胞内液pH为7.0，细胞外液为7.4。 综上:设弱酸药物为HA。 血浆为细胞外液故PH为7.4，已知pKa=3.4 则就有[A－]/[HA]=10∧(PH-PKa)=10^4=10000 解离百分率=解离的/总的=[A-]/([A-]+[HA])=10000/(10000+1)=0.9999 就是让你算溶液中A-的量
+            </p>
+            <p>4、因为离子型/非离子型等于10∧（pH-pKa）等于10∧（7.4-3.4）等于10000，即离子型/非离子型等于10000，相当于离子型是10000，非离子型是1，此处的10000和1都不是具体的浓度，是大小比例，所以解离百分率等于离子型/（离子型+非离子型）等于10000/（10000+1）等于99.99%。上面那位算出99.9%的同学用错公式了，用成弱碱性药物的公式了，弱酸性和弱碱性药物的公式是不一样的</p>
+            <p>5、答案应选第四个，离子型/分子型=PH3.4-7.4为10的-4次幂，1-0.001=0.999所以是99.9%</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>2/44. 阿司匹林的pKa是3.5,它在pH为7.5肠液中可吸收约： 【单选题】</p>
+        <p>A.1%</p>
+        <p>B.0.1%</p>
+        <p>C.0.01%</p>
+        <p>D.10%</p>
+        <p>E.99% </p>
+        <div class="divXSDA" id="showAndHideButton2" onclick="showAndHideButton('data2','showAndHideButton2')">显示答案</div>
+        <div class="datas" id="data2" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、非解离才能够吸收，解离了就只能排泄了</p>
+            <p>2、 详解：对于弱酸性药物而言，离子型/非离子型=10的（PH-PKa）次方 血浆的PH为7.4，PH-PKa=7.4-3.4=4, 离子型/非离子型=10的4次方=10000 解离百分率=离子型/（离子型+非离子型）=10000/10001=99.99%</p>
+            <p>3、对于弱酸性药物而言，离子型/非离子型=10的（PH-PKa）次方 血浆的PH为7.4，PH-PKa=7.4-3.4=4, 离子型/非离子型=10的4次方=10000 解离百分率=离子型/（离子型+非离子型）=10000/10001=99.99% 吸收的就只有0.01%</p>
+            <p>4、详解：对于弱酸性药物而言，离子型/非离子型=10的（PH-PKa）次方 血浆的PH为7.5，PH-PKa=7.5-3.5=4, 离子型/非离子型=10的4次方=10000 解离百分率=离子型/（离子型+非离子型）=10000/10001=99.99%---解离越大，吸收越少，吸收率＝1-99.99%＝0.01%</p>
+            <p>5、怎么判断弱酸还是弱碱</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>3/44. 某弱碱性药在pH5时，非解离部分为90.9%，该药pKa的接近数值： 【单选题】</p>
+        <p>A .2</p>
+        <p>B. 3</p>
+        <p>C. 4</p>
+        <p>D.5</p>
+        <p>E.6 </p>
+        <div class="divXSDA" id="showAndHideButton3" onclick="showAndHideButton('data3','showAndHideButton3')">显示答案</div>
+        <div class="datas" id="data3" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、非解离部分等于离子型浓度除以非离子型浓度加离子型浓度 再套用人卫版第六页的弱碱性药物公式，将九分之一估算看做为十分之一，最后算出来的答案是5减—1等于6，答案选E没有错，不要给一楼点赞刷上去误导大家了。
+            </p>
+            <p>2、对于上面有一位算出答案等于6的同学，书上有明确的公式，对于弱碱性药物，ka=[H+]*[B]/[BH+]，所以你用的公式是错误的，答案就应该是C。</p>
+            <p>3、一楼那个睿智的人儿，请你分清楚什么是非离子型，和非解离部分再来评论别人，答案是e没毛病，碱性药的离子型是非解离型</p>
+            <p>4、就是选E吧。。。</p>
+            <p>5、就是按弱碱性pka-pH算得 选C</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>4/44. 下列情况可称为首关消除： 【单选题】</p>
+        <p>A 苯巴比妥纳肌注后被肝药酶代谢，使血中浓度降低 </p>
+        <p>B 硝酸甘油舌下给药，自口腔粘膜吸收，经肝代谢后药效降低。 </p>
+        <p>C 青霉素口服后被胃酸破坏，使吸收入血的药量减少 </p>
+        <p>D 普萘洛尔口服，经肝代谢，使进入体循环的药量减少 </p>
+        <div class="divXSDA" id="showAndHideButton4" onclick="showAndHideButton('data4','showAndHideButton4')">显示答案</div>
+        <div class="datas" id="data4" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、首关效应是指某些药物口服后首次通过肠壁或肝脏时被其中的酶代谢，使进入体循环的有效药量减少的现象</p>
+            <p>2、首关消除就是首关效应</p>
+            <p>3、首关消除与首过消除有区别吗？</p>
+            <p>4、青霉素被肠壁酸性环境破坏，并非代谢</p>
+            <p>5、口服，肝，肠壁 胃肠道外给药，肺
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>5/44. 弱酸性药物从胃肠道吸收的主要部位是： 【单选题】</p>
+        <p>A 胃粘膜</p>
+        <p>B 小肠</p>
+        <p>C 横结肠</p>
+        <p>D 乙状结肠</p>
+        <p>E 十二指肠 </p>
+        <div class="divXSDA" id="showAndHideButton5" onclick="showAndHideButton('data5','showAndHideButton5')">显示答案</div>
+        <div class="datas" id="data5" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、书上的原话:在胃液酸性环境下，弱酸性药物不易解离，易被胃粘膜吸收；弱碱性药物易解离，则不易被吸收。小肠内的ph为4.8-8.2，弱碱性药物和弱酸性药物均易被吸收，而高度解离的药物则难吸收。</p>
+            <p>2、胃酸性环境使得弱酸性药物易于吸收，不易解离，但是小肠的吸收面积比较大，ph适宜，弱酸性药物在小肠被吸收较多</p>
+            <p>3、易错选A，可能是受pH与pKa药物分布规律影响。弱酸性药在胃中解离少，易跨膜转运。虽在胃中就有吸收，但吸收的主要部位仍是小肠。因为小肠内pH接近中性，黏膜吸收面广，缓慢蠕动，可增加药物与黏膜的接触机会，是主要的吸收部位。E项虽无原则错误，但不完整，因为十二指肠只是小肠的一部分。 百度的，我选了胃粘膜
+            </p>
+            <p>4、 酸碱碱酸难吸收，酸酸碱碱易吸收 xrx……</p>
+            <p>5、应该就是胃 酸性药物在酸性环境不易解离脂溶性大易吸收</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>6/44. 临床上可用丙磺舒以增加青霉素的疗效,原因是： 【单选题】</p>
+        <p>A.在杀菌作用上有协同作用</p>
+        <p>B.二者竞争肾小管的分泌通道 </p>
+        <p>C.对细菌代谢有双重阻断作用</p>
+        <p>D.延缓抗药性产生</p>
+        <p>E.以上都不对 </p>
+        <div class="divXSDA" id="showAndHideButton6" onclick="showAndHideButton('data6','showAndHideButton6')">显示答案</div>
+        <div class="datas" id="data6" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、第八版，11页。丙磺舒为弱酸性药，通过酸性药物转运机制经肾小管分泌，可竞争性抑制经同一机制排泄的其他酸性药，合用后，青霉素血药浓度增高，疗效增强，可用于少数重症感染。</p>
+            <p>2、丙磺舒可以与青霉素竞争同一受体，使得被结合的青霉素游离出来，青霉素血药浓度升高，疗效就加强</p>
+            <p>3、第九版12页第五行</p>
+            <p>4、就相当于他们俩都想坐车，但车的数量是有限的，那么其中一种药能坐车的几率就会变小，排出减慢。留在体内，发挥疗效。</p>
+            <p>5、8版370页药物相互作用</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>7/44. 药物的t1/2是指： 【单选题】</p>
+        <p>A.药物的血药浓度下降一半所需时间 </p>
+        <p>B.药物的稳态血药浓度下降一半所需时间 </p>
+        <p>C.与药物的血浆浓度下降一半相关，单位为小时 </p>
+        <p>D.与药物的血浆浓度下降一半相关，单位为克 </p>
+        <p>E.药物的血浆蛋白结合率下降一半所需剂量 </p>
+        <div class="divXSDA" id="showAndHideButton7" onclick="showAndHideButton('data7','showAndHideButton7')">显示答案</div>
+        <div class="datas" id="data7" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、辣鸡目前全错</p>
+            <p>2、九版十八页:药物消除半衰期（t1/2）是血浆药物浓度下降一半所需要的时间。</p>
+            <p>3、血药浓度等于血浆药物浓度吗</p>
+            <p>4、那目前为止没发现一位与我用同一教材的同学</p>
+            <p>5、第九版18页</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>8/44. 某催眠药的t1/2为1小时，给予100mg 剂量后，病人在体内药物只剩12.5mg时便清醒过来，该病人睡了： 【单选题】</p>
+        <p>A.2h</p>
+        <p>B.3h</p>
+        <p>C.4h</p>
+        <p>D.5h</p>
+        <p>E.0.5h</p>
+        <div class="divXSDA" id="showAndHideButton8" onclick="showAndHideButton('data8','showAndHideButton8')">显示答案</div>
+        <div class="datas" id="data8" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、50mg——1h 25mg——2h 12.5mg——3h
+            </p>
+            <p>2、这个人醒得好快呀！
+            </p>
+            <p>3、药物经过一个半衰期，消除50％，两个半衰期后消除75％ 赞(1)
+            </p>
+            <p>4、从100到12.5经历了三个半衰期，一个半衰期一小时，三个就是三小时</p>
+            <p>5、一级消除为等比消除，半衰期并不随浓度变化而变化</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>9/44. 药物的作用强度，主要取决于： 【单选题】</p>
+        <p>A.药物在血液中的浓度</p>
+        <p>B.在靶器官的浓度大小</p>
+        <p>C.药物排泄的速率大小</p>
+        <p>D.药物与血浆蛋白结合率之高低</p>
+        <p>E.以上都对 </p>
+        <div class="divXSDA" id="showAndHideButton9" onclick="showAndHideButton('data9','showAndHideButton9')">显示答案</div>
+        <div class="datas" id="data9" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、药物发挥作用最终是针对靶细胞或组织或器官才发挥作用，故取决于药物在靶器官的浓度大小</p>
+            <p>2、哈哈哈哈哈哈</p>
+            <p>3、什么破题啊</p>
+            <p>4、不懂</p>
+            <p>5、除b以外都是增加时长吧</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>10/44. 一次静注给药后约经过几个血浆t1/2可自机体排出达95%以上： 【单选题】</p>
+        <p>A.3个</p>
+        <p>B.4个</p>
+        <p>C.5个</p>
+        <p>D.6个</p>
+        <p>E.7个 </p>
+        <div class="divXSDA" id="showAndHideButton10" onclick="showAndHideButton('data10','showAndHideButton10')">显示答案</div>
+        <div class="datas" id="data10" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、4个半衰期达90,%，5个半衰期达95%以上</p>
+            <p>2、不加个至少，DE也对喽
+            </p>
+            <p>3、每经过一次t1/2，血药浓度下降一半。4次后，剩6.25，5次后，剩3.125</p>
+            <p>4、第九版P18</p>
+            <p>5、1-1/2的4次方=93.75% 1-1/2的5次方=96. 875%</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>11/44. 弱酸性药物与抗酸药物同服时，比单用该弱酸性药物： 【单选题】</p>
+        <p>A.在胃中解离增多，自胃吸收增多</p>
+        <p>B.在胃中解离减少，自胃吸收增多 </p>
+        <p>C.在胃中解离减少，自胃吸收减少</p>
+        <p>D.在胃中解离增多，自胃吸收减少 </p>
+        <p>E.无变化 </p>
+        <div class="divXSDA" id="showAndHideButton11" onclick="showAndHideButton('data11','showAndHideButton11')">显示答案</div>
+        <div class="datas" id="data11" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、抗酸药物能升高ph，因此弱酸性药物解离程度增大，非解离型药物更利于吸收，因此自胃的吸收减少</p>
+            <p>2、解离：酸酸少易，酸碱多难（解离少，易转运） 吸收排泄：酸酸碱碱促吸收，酸碱碱酸促排泄（酸性物质在酸性环境容易吸收，酸性物质在碱性环境容易排泄） 顶我上去让大家看到，谢谢！
+            </p>
+            <p>3、酸酸难解离，酸碱易解离。。。。分子易吸收，离子难吸收。抗酸应该就是碱性药</p>
+            <p>4、你把那个抗酸药想的绝对一点，吃了它以后，胃酸直接变成碱性了，那弱酸在碱性环境是不解离就多了，那是不就变成离子了，就形成离子障，离子型药物不易通过细胞膜脂质层，所以吸收就少了呗！懂了吗，我的大宝贝们</p>
+            <p>5、解离就存在离子障了，不容易吸收</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>12/44. 甲药与血浆蛋白的结合率为95%，乙药的血浆蛋白结合率为85%，甲药单用时血浆t1/2为4h，如甲药与乙药合用，则甲药血浆t1/2为： 【单选题】</p>
+        <p>A.小于4h</p>
+        <p>B.不变</p>
+        <p>C.大于4h</p>
+        <p>D.大于8h</p>
+        <p>E.大于10h</p>
+        <div class="divXSDA" id="showAndHideButton12" onclick="showAndHideButton('data12','showAndHideButton12')">显示答案</div>
+        <div class="datas" id="data12" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、你一天只吃两个鸡蛋 我只吃一个，现在有六个鸡蛋，你还是吃两个 我还是吃一个 和鸡蛋多少无关</p>
+            <p>2、与已药合用后，甲药的血浆内游离浓度增加。但是甲药的消除按一级消除动力学，t1/2与初始浓度无关，为固定值</p>
+            <p>3、甲药半衰期给定4h，说明是一级动力学消除，所以半衰期仍然是个恒定值。</p>
+            <p>4、可是题目没说是一级动力学消除啊?难道默认?</p>
+            <p>5、因为一级动力学的特点中有半衰期不变</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>13/44. 常用剂量恒量恒速给药最后形成的血药浓度为： 【单选题】</p>
+        <p>A.有效血浓度</p>
+        <p>B.稳态血浓度</p>
+        <p>C.峰浓度</p>
+        <p>D.阈浓度</p>
+        <p>E.中毒浓度 </p>
+        <div class="divXSDA" id="showAndHideButton13" onclick="showAndHideButton('data13','showAndHideButton13')">显示答案</div>
+        <div class="datas" id="data13" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、稳态浓度，按照一级动力学消除的药物，连续恒速给药或分次恒量给药，当进入体内的药物量等于消除的药量时，血药浓度维持基本稳定的水平就是稳态浓度</p>
+            <p>2、稳态血药浓度，药物在体内的进出达到平衡</p>
+            <p>3、9版19页第一行</p>
+            <p>4、一级动力学的前提，。</p>
+            <p>5、零级动力学是消除啊，这是给药</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>14/44. 药物产生作用的快慢取决于： 【单选题】</p>
+        <p>A.药物的吸收速度</p>
+        <p>B.药物的排泄速度</p>
+        <p>C.药物的转运方式</p>
+        <p>D.药物的光学异构体</p>
+        <p>E.药物的代谢速度 </p>
+        <div class="divXSDA" id="showAndHideButton14" onclick="showAndHideButton('data14','showAndHideButton14')">显示答案</div>
+        <div class="datas" id="data14" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、药-时曲线中，吸收越快，越快进入持续期就是指产生作用越快</p>
+            <p>2、应该是到靶向器官的速度⑧，吸收仅仅是到血液，又不是所有靶器官都到血液。</p>
+            <p>3、第九版P8，药物分布到达作用部位的速度越快，起效就越迅速。所以应该是药物的分布吧</p>
+            <p>4、求解</p>
+            <p>5、虽然但是，静脉注射没有吸收直接发挥作用了，只能说非静脉给药取决于吸收速度吧，毕竟要先吸收入血才能发挥作用。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>15/44. 苯巴比妥中毒时应用碳酸氢钠的目的是： 【单选题】</p>
+        <p>A.加速药物从尿液的排泄</p>
+        <p>B.加速药物从尿液的代谢灭活</p>
+        <p>C.加速药物由脑组织向血浆的转移</p>
+        <p>D.A和C.</p>
+        <p>E.A和B </p>
+        <div class="divXSDA" id="showAndHideButton15" onclick="showAndHideButton('data15','showAndHideButton15')">显示答案</div>
+        <div class="datas" id="data15" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、口服碳酸氢钠碱化血液可促进巴比妥类弱酸性药物由脑细胞向血浆转运；同时碱化尿液，可减少巴比妥类弱酸性药物在肾小管的重吸收，促进药物从尿中排出，这是临床上抢救巴比妥类药物中毒的措施之一。</p>
+            <p>2、这得看书看得多细啊orz</p>
+            <p>3、苯巴比妥有中枢抑制作用，吸收后脑组织内含量最高，碳酸氢钠可以碱化尿液，促使毒物排出</p>
+            <p>4、道道错，我需要看下去吗？</p>
+            <p>5、书上第九页，考的好细，碱化尿液不仅可以减少巴比妥药物在肾小管的重吸收，促进排泄，还可以使药物从脑细胞进入血浆</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>16/44. 某药在体内可被肝药酶转化，与酶抑制剂合用时比单独应用的效应： 【单选题】</p>
+        <p>A.增强</p>
+        <p>B.减弱</p>
+        <p>C.不变</p>
+        <p>D.无效</p>
+        <p>E.相反 </p>
+        <div class="divXSDA" id="showAndHideButton16" onclick="showAndHideButton('data16','showAndHideButton16')">显示答案</div>
+        <div class="datas" id="data16" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、抑制了肝药酶活性，造成首关消除减弱，可提高有效药物进入血液的量…从而增强了药效！！</p>
+            <p>2、要是只有经过肝药酶的转化才有药效的话，这个药的药效不就降低了吗？</p>
+            <p>3、药物经过代谢后其药理活性或毒性发生改变。大多数药物被灭活，药理作用降低或完全消失，但也有少数药物被活化而产生药理作用或毒性。需经活化才产生药理效应的药物称为前药，如可的松须在肝脏转化为氢化可的松而生效。人卫8版药理p10</p>
+            <p>4、肝药酶活性被抑制，药物代谢减少，血药浓度升高，效应增强</p>
+            <p>5、酶抑制剂使药物代谢酶活性降低，药物代谢减慢，药物不就都留在身体里头了吗，那药效肯定强啊。代谢（又称生物转化）是药物吸收后在体内经酶或其他作用发生的一系列反应导致药物化学结构改变。和首关消除没关，题目是转化是药物代谢啊，首关消除是影响药物口服吸收的因素，是吸收，两者没有关系，不要被误导。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>17/44. 每个t1/2恒量给药一次，约经过几个血浆t1/2可达稳态血浓度： 【单选题】</p>
+        <p>A.1个</p>
+        <p>B.3个</p>
+        <p>C.5个</p>
+        <p>D.7个</p>
+        <p>E.9个 </p>
+        <div class="divXSDA" id="showAndHideButton17" onclick="showAndHideButton('data17','showAndHideButton17')">显示答案</div>
+        <div class="datas" id="data17" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、假设要达到a浓度第一次给a则最后得到0.5a 第二次则再给a最后得到0.75a 第三次再给则0.875a 第四次再给0.9375a 第五次则满足a
+            </p>
+            <p>2、书上有原话:第九版P18第18行 若按固定剂量、固定间隔时间给药，或恒速静脉滴注，经4～5个t1/2基本达到稳态血药浓度。
+            </p>
+            <p>3、为什么？第四次0.9375，第五次是0.96875，第七次是0.9921875，第九次是0.998046875，为什么就选第五次的呢</p>
+            <p>4、当少于0.05%时就可以忽略不计
+            </p>
+            <p>5、第九版P19第四行</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>18/44. 某药t1/2为8h，一天给药三次，达到稳态血浓度的时间是： 【单选题】</p>
+        <p>A.16h</p>
+        <p>B.30h</p>
+        <p>C.24h</p>
+        <p>D.40h</p>
+        <p>E.50h </p>
+        <div class="divXSDA" id="showAndHideButton18" onclick="showAndHideButton('data18','showAndHideButton18')">显示答案</div>
+        <div class="datas" id="data18" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、达到稳态血液浓度时间为5个半衰期，5乘以8</p>
+            <p>2、5个半衰期达到稳态血药浓度，跟一天三次用药没关系</p>
+            <p>3、对，跟一天给三次药没关系，感觉被坑了</p>
+            <p>4、每个t1/2恒量给药一次，约经过5个血浆t1/2可达稳态血浓度</p>
+            <p>5、书上有原话:第九版P18第18行 若按固定剂量、固定间隔时间给药，或恒速静脉滴注，经4～5个t1/2基本达到稳态血药浓度。 这道题题干说 一天给药三次，意思就是说是 固定间隔时间给药，所以时间就是4或5×半衰期，半衰期是8，那答案就是32或40。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>19/44. 药物的时量曲线下面积反映： 【单选题】</p>
+        <p>A.在一定时间内药物的分布情况</p>
+        <p>B.药物的血浆t1/2长短 </p>
+        <p>C.在一定时间内药物消除的量</p>
+        <p>D.在一定时间内药物吸收入血的相对量 </p>
+        <p>E.药物达到稳态浓度时所需要的时间 </p>
+        <div class="divXSDA" id="showAndHideButton19" onclick="showAndHideButton('data19','showAndHideButton19')">显示答案</div>
+        <div class="datas" id="data19" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、反映药物进入体循环的相对量，与吸收进入血液循环的药物相对量积累量成比例。</p>
+            <p>2、第9版，16页倒数第二行</p>
+            <p>3、反应药物进去体循环的相对量</p>
+            <p>4、反映药物进入血循环的总量</p>
+            <p>5、药物进入体循环的相对量，与吸收进入血液循环的药物相对量积累量成比</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>20/44. 静脉注射某药0.5mg，达到稳态时测定其血浆药物浓度为0.7ηg/ml，其表观分布容积约为： 【单选题】</p>
+        <p>A.0.5L</p>
+        <p>B.7L</p>
+        <p>C.50L</p>
+        <p>D.70L</p>
+        <p>E.700L </p>
+        <div class="divXSDA" id="showAndHideButton20" onclick="showAndHideButton('data20','showAndHideButton20')">显示答案</div>
+        <div class="datas" id="data20" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、1mg=1 000 μg, 1μg=1 000 ng, 1ng=1 000 pg 0.5×1000*1000/0.7=714285ml＝714.285L
+            </p>
+            <p>2、P18有公式:Vd＝A/Co＝500/0.7</p>
+            <p>3、结果为700ml=0.7L</p>
+            <p>4、说错的，注意题目是纳克（ηg），不是微克（μg）</p>
+            <p>5、1毫克＝1000微克，1升＝1000毫升，Vd＝A/C0＝（0.5×10³/0.7）/10³L≈0.7L</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>21/44. 对于肾功能低下者，用药时主要考虑： 【单选题】</p>
+        <p>A.药物自肾脏的转运</p>
+        <p>B.药物在肝脏的转化</p>
+        <p>C.胃肠对药物的吸收</p>
+        <p>D.药物与血浆蛋白的结合率</p>
+        <p>E.个体差异 </p>
+        <div class="divXSDA" id="showAndHideButton21" onclick="showAndHideButton('data21','showAndHideButton21')">显示答案</div>
+        <div class="datas" id="data21" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、南方医科大学冒个泡</p>
+            <p>2、药物可以经过肾脏排泄，要考虑药物对肾脏的影响</p>
+            <p>3、南医大冒泡2</p>
+            <p>4、肝药酶的原因</p>
+            <p>5、难医大冒泡3</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>22/44. 二室模型的药物分布于： 【单选题】</p>
+        <p>A.血液与体液</p>
+        <p>B.血液与尿液</p>
+        <p>C.心脏与肝脏</p>
+        <p>D.中央室与周边室</p>
+        <p>E.肺脏与肾脏 </p>
+        <div class="divXSDA" id="showAndHideButton22" onclick="showAndHideButton('data22','showAndHideButton22')">显示答案</div>
+        <div class="datas" id="data22" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、二室室</p>
+            <p>2、二室模型:把机体划分为一个或多个独立单元，可对药物在体内吸收、分布、消除的特性作出模式图，以建立数学模型，揭示其动态变化规律。其划分 房室不是机体实际存在的解剖学、生理学空间。
+            </p>
+            <p>3、九版十三页:二室模型——第三行</p>
+            <p>4、翻车</p>
+            <p>5、。。。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>23/44. 血浆t1/2是指哪种情况下降一半的时间： 【单选题】</p>
+        <p>A.血浆稳态浓度</p>
+        <p>B.有效血浓度</p>
+        <p>C.血浆浓度</p>
+        <p>D.血浆蛋白结合率</p>
+        <p>E.阈浓度 </p>
+        <div class="divXSDA" id="showAndHideButton23" onclick="showAndHideButton('data23','showAndHideButton23')">显示答案</div>
+        <div class="datas" id="data23" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、应该是血浆药物浓度才对呀</p>
+            <p>2、血浆药物浓度每下降二分之一所需要的时间。</p>
+            <p>3、有效血浓度是什么？</p>
+            <p>4、血浆消除t1/2,是指血浆药物浓度每下降二分之一所需的时间（书上原话）。。。血浆t1/2，应该就是指血浆浓度吧。。。我也不太清楚</p>
+            <p>5、这次肯定是题的问题了吧
+            </p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>24/44. 关于坪值，错误的描述是： 【单选题】</p>
+        <p>A.血药浓度相对地稳定在一定水平称坪值，平均血药浓度称坪浓度 </p>
+        <p>B.通常用药间隔时间约为一个血浆半衰期时,需经4~5个t1/2才能达到坪值 </p>
+        <p>C.坪浓度的高低与每日总量成正比，在每日总量相等时，用药次数不改变坪浓度 </p>
+        <p>D.坪浓度的高限（峰）和低限（谷）的差距与每次用药量成正比 </p>
+        <p>E.首次用突击剂量，不能使血药浓度迅速达到坪浓度 </p>
+        <div class="divXSDA" id="showAndHideButton24" onclick="showAndHideButton('data24','showAndHideButton24')">显示答案</div>
+        <div class="datas" id="data24" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、坪值就是稳态浓度</p>
+            <p>2、D第9版p19图2-7下面第 2-4行 提高给药频率或加大给药剂量不能使稳态血浆浓度提前达到，但能改变药物总量或峰浓度与谷浓度</p>
+            <p>3、d的解释就是加大每次用药量，峰谷差值也会随之增大，波动度增大，最后坪值也会增大</p>
+            <p>4、坪值是指稳态血浆浓度的平均值</p>
+            <p>5、E可用负荷剂量，迅速到达稳态浓度。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>25/44. 药物的零级动力学消除是指： 【单选题】</p>
+        <p>A.药物完全消除至零</p>
+        <p>B.单位时间内消除恒量的药物 </p>
+        <p>C.药物的吸收量与消除量达到平衡</p>
+        <p>D.药物的消除速率常数为零 </p>
+        <p>E.单位时间内消除恒定比例的药物 </p>
+        <div class="divXSDA" id="showAndHideButton25" onclick="showAndHideButton('data25','showAndHideButton25')">显示答案</div>
+        <div class="datas" id="data25" style="display: none;">
+            <p id='ptockda'>参考答案：B</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一级消除：体内药物按恒定比例消除，在单位时间内的消除量和血浆药物浓度成正比，大多数药物按照一级消除 零级消除：恒定速率消除，不论血浆药物浓度，单位时间内消除的药物量不变 答案应该没问题
+            </p>
+            <p>2、零量一比</p>
+            <p>3、答案没错</p>
+            <p>4、答案选e吧，单位时间内消除恒量是1级消除，恒比才是零级消除</p>
+            <p>5、药理书第14面，零级消除动力学是药物在体内以恒定的速率消除，即不论血浆药物浓度高低，单位时间内消除的要量不变</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>26/44. 按一级动力学消除的药物，其血浆t1/2等于： 【单选题】</p>
+        <p>A.0.301/kE.</p>
+        <p>B.2.303/kE.</p>
+        <p>C.ke/0.693</p>
+        <p>D.0.693/kE.</p>
+        <p>E.ke/2.303 </p>
+        <div class="divXSDA" id="showAndHideButton26" onclick="showAndHideButton('data26','showAndHideButton26')">显示答案</div>
+        <div class="datas" id="data26" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一级的消除半衰期: 0.693除以Ke 记住</p>
+            <p>2、ke:消除速率常数，单位时间内消除药物的分数，反映体内各种途径消除药物的总和。按一级动力学消除时:T1/2=0.693/ke</p>
+            <p>3、课本p18</p>
+            <p>4、啊咩之鳖，公式都考</p>
+            <p>5、零级的t1/2=0.5×C。/Ke</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>27/44. 离子障指的是： 【单选题】</p>
+        <p>A.离子型药物可自由穿过，而非离子型药物则不能穿过 </p>
+        <p>B.非离子型药物不可自由穿过，离子型的也不能穿过 </p>
+        <p>C.非离子型药物可自由穿过，离子型的也能穿过 </p>
+        <p>D.非离子型药物可自由穿过，而离子型的则不能穿过 </p>
+        <p>E.以上都不是 </p>
+        <div class="divXSDA" id="showAndHideButton27" onclick="showAndHideButton('data27','showAndHideButton27')">显示答案</div>
+        <div class="datas" id="data27" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、离子型是不易穿过吧！不是不能穿过啊！</p>
+            <p>2、非离子型的药物不易解离大多数亲脂疏水，易穿过胞膜，离子型的极性高，亲水 所以不易跨过胞膜，这种现象叫做离子障</p>
+            <p>3、离子型:药物浓度极性高，不易通过细胞膜。 分子型（非解离型）:药物疏水而亲脂，易通过细胞膜。
+            </p>
+            <p>4、错了吧</p>
+            <p>5、书上有吗</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>28/44. pka是： 【单选题】</p>
+        <p>A.药物90%解离时的pH值</p>
+        <p>B.药物不解离时的pH值 </p>
+        <p>C.50%药物解离时的pH值</p>
+        <p>D.药物全部长解离时的pH值 </p>
+        <p>E.酸性药物解离常数值的负对数 </p>
+        <div class="divXSDA" id="showAndHideButton28" onclick="showAndHideButton('data28','showAndHideButton28')">显示答案</div>
+        <div class="datas" id="data28" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、答案不对，酸性和碱性都有Pka，应该选C</p>
+            <p>2、解离50％与解离到50％有什么区别…</p>
+            <p>3、第九版6页第2行</p>
+            <p>4、应该是药物解离到50％，而不是50％的药物解离</p>
+            <p>5、pKa表示药物解离50%所在体液的pH</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>29/44. 药物进入循环后首先： 【单选题】</p>
+        <p>A.作用于靶器官</p>
+        <p>B.在肝脏代谢</p>
+        <p>C.由肾脏排泄</p>
+        <p>D.储存在脂肪</p>
+        <p>E.与血浆蛋白结合 </p>
+        <div class="divXSDA" id="showAndHideButton29" onclick="showAndHideButton('data29','showAndHideButton29')">显示答案</div>
+        <div class="datas" id="data29" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、吸收 分布 代谢 排泄 </p>
+            <p>2、第二步是分布</p>
+            <p>3、吸收后就和血浆蛋白结合分布呗</p>
+            <p>4、书上哪呀</p>
+            <p>5、生物转化是代谢</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>30/44. 药物的生物转化和排泄速度决定其： 【单选题】</p>
+        <p>A.副作用的多少</p>
+        <p>B.最大效应的高低</p>
+        <p>C.作用持续时间的长短</p>
+        <p>D.起效的快慢</p>
+        <p>E.后遗效应的大小 </p>
+        <div class="divXSDA" id="showAndHideButton30" onclick="showAndHideButton('data30','showAndHideButton30')">显示答案</div>
+        <div class="datas" id="data30" style="display: none;">
+            <p id='ptockda'>参考答案：C</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、转化即代谢，代谢和排泄合称消除，消除速度慢，药物停留在机体的时间长，作用持续时间也比较长</p>
+            <p>2、消除包括代谢与排泄，因此其两者的速度决定作用时间的长短
+            </p>
+            <p>3、我们老师说这道题不严谨，但是c是最佳答案，b也可以接受</p>
+            <p>4、持续时间不是和半衰期有关吗？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>31/44. 时量曲线的峰值浓度表明： 【单选题】</p>
+        <p>A.药物吸收速度与消除速度相等</p>
+        <p>B.药物吸收过程已完成 </p>
+        <p>C.药物在体内分布已达到平衡</p>
+        <p>D.药物消除过程才开始 </p>
+        <p>E.药物的疗效最好 </p>
+        <div class="divXSDA" id="showAndHideButton31" onclick="showAndHideButton('data31','showAndHideButton31')">显示答案</div>
+        <div class="datas" id="data31" style="display: none;">
+            <p id='ptockda'>参考答案：A</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、药-时曲线上升是以吸收为主的曲线，下降是以消除为主，所以峰浓度是A答案</p>
+            <p>2、切线的斜率为0，所以是消除和吸收速率相等。（个人观点）</p>
+            <p>3、药物吸收速度与消除速度相等不是药物在体内分布平衡么</p>
+            <p>4、药时曲线就是时量曲线</p>
+            <p>5、从体内消除的药物量和进入体内的药物量相等</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>32/44. 药物的排泄途径不包括： 【单选题】</p>
+        <p>A.汗腺</p>
+        <p>B.肾脏</p>
+        <p>C.胆汁</p>
+        <p>D.肺</p>
+        <p>E.肝脏 </p>
+        <div class="divXSDA" id="showAndHideButton32" onclick="showAndHideButton('data32','showAndHideButton32')">显示答案</div>
+        <div class="datas" id="data32" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、肝脏代谢不排泄</p>
+            <p>2、胆汁分泌进入肠腔随粪便排泄</p>
+            <p>3、肺呼吸排出啊</p>
+            <p>4、11页，排泄方式没有肝脏，其他都有。</p>
+            <p>5、胆汁怎么排泄</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>33/44. 关于肝药酶的描述，错误的是： 【单选题】</p>
+        <p>A.属P-450酶系统</p>
+        <p>B.其活性有限</p>
+        <p>C.易发生竞争性抑制</p>
+        <p>D.个体差异大</p>
+        <p>E.只代谢20余种药物 </p>
+        <div class="divXSDA" id="showAndHideButton33" onclick="showAndHideButton('data33','showAndHideButton33')">显示答案</div>
+        <div class="datas" id="data33" style="display: none;">
+            <p id='ptockda'>参考答案：E</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、肝脏是药物代谢的主要器官，肝药酶种类繁多，介导人体内绝大多数药物的代谢</p>
+            <p>2、肝药酶不是非专一性酶吗？怎么会有竞争性抑制?</p>
+            <p>3、人卫第九版：肝药酶应该包括A选项，而不是属于A选项。</p>
+            <p>4、青霉素和丙磺舒不是竞争肾小管通道？别误导人</p>
+            <p>5、书本上是肝药酶包括A的吧？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>34/44. 已知某药按一级动力学消除，上午9时测得血药浓度为100μg/ml，晚6时测得的血药浓度为12.5μg/ml，则此药的t1/2为： 【单选题】</p>
+        <p>A.4h</p>
+        <p>B.2h</p>
+        <p>C.6h</p>
+        <p>D.3h</p>
+        <p>E.9h </p>
+        <div class="divXSDA" id="showAndHideButton34" onclick="showAndHideButton('data34','showAndHideButton34')">显示答案</div>
+        <div class="datas" id="data34" style="display: none;">
+            <p id='ptockda'>参考答案：D</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、经历了三个半衰期，时间九个小时，一个半衰期三个小时</p>
+            <p>2、100到50，50到25，25到12.5，所以是三个半衰期</p>
+            <p>3、恒比，第一个半衰期就是100的一半，第二个半衰期就是50的一半，第三个半衰期就是25的一半</p>
+            <p>4、12.5✖️2✖️2✖️2=100，三个半衰期，半衰期又是恒定的，9小时平分3份，半衰期是3小时</p>
+            <p>5、用瞪眼法直接瞪出来就行</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>35/44. 药物与血浆蛋白结合： 【多选题】</p>
+        <p>A.有利于药物进一步吸收</p>
+        <p>B.有利于药物从肾脏排泄</p>
+        <p>C.加快药物发生作用</p>
+        <p>D.两种蛋白结合率高的药物易发生竞争置换现象</p>
+        <p>E.血浆蛋白量低者易发生药物中毒</p>
+        <div class="divXSDA" id="showAndHideButton35" onclick="showAndHideButton('data35','showAndHideButton35')">显示答案</div>
+        <div class="datas" id="data35" style="display: none;">
+            <p id='ptockda'>参考答案：ADE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、个人认为A不对，吸收的概念是从用药部位到达血液循环系统的过程。吸收的快慢与血浆蛋白结合率无关，应该是促进分布</p>
+            <p>2、与血浆蛋白结合后，通过血液循环到全身，从而进一步吸收</p>
+            <p>3、药物与血浆蛋白结合后，血中游离药物浓度下降，药物更容易吸收进入血浆。</p>
+            <p>4、A 解释药物与血浆蛋白结合的药物活性暂消失，呈可逆性结合，是药物的暂时“储存”，有利于药物的吸收和消除。血浆蛋白结合位点有限，可发生两种以上药物竞争结合位点，而使游离药物浓度增加，可能导致药物中毒。</p>
+            <p>5、与血浆蛋白结合的药物不能跨膜运输只是一种暂时储存形式</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>36/44. 关于一级动力学的描述，正确的是： 【多选题】</p>
+        <p>A.消除速率与当时药浓一次方成正比</p>
+        <p>B.定量消除</p>
+        <p>C.c-t为直线</p>
+        <p>D.t1/2恒定</p>
+        <p>E.大多数药物在治疗量时均为一级动力学</p>
+        <div class="divXSDA" id="showAndHideButton36" onclick="showAndHideButton('data36','showAndHideButton36')">显示答案</div>
+        <div class="datas" id="data36" style="display: none;">
+            <p id='ptockda'>参考答案：ADE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、一级消除动力学是体内药物按恒定比例消除，在单位时间内的消除量与血浆浓度成正比。常规坐标图c-t为曲线，半数坐标图为直线。消除速率=单位时间内的消除量。所以ADE</p>
+            <p>2、c，我们老师说取对数后才是直线。a的话根据那个式子就可以知道是线性关系了</p>
+            <p>3、大多数药物为一级动力学消除，</p>
+            <p>4、一常曲对直恒比消除，0常直对曲恒量消除</p>
+            <p>5、等比消除</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>37/44. 表观分布容积的意义有： 【多选题】</p>
+        <p>A.反映药物吸收的量</p>
+        <p>B.反映药物分布的广窄程度</p>
+        <p>C.反映药物排泄的过程</p>
+        <p>D.反映药物消除的速度</p>
+        <p>E.估算欲达到有效药浓应投药量</p>
+        <div class="divXSDA" id="showAndHideButton37" onclick="showAndHideButton('data37','showAndHideButton37')">显示答案</div>
+        <div class="datas" id="data37" style="display: none;">
+            <p id='ptockda'>参考答案：BE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、为什么？求解</p>
+            <p>2、若Vd等于血浆容积，说明药物仅分布于血浆；若Vd远大于体液容积，则说明药物集中分布于人体某部位。A＝C0×Vd，知道有效药浓C0，又知道表观分布容积Vd，则容易算出应投药量。无论将公式如何变形都无法得到A、C、D的结论</p>
+            <p>3、表观分布容积可推测：药物的分布情况，计算预期药物浓度所需要的给药剂量，推测药物的排泄速度 C为过程，所以错；反映分布，不反映吸收A错；药物消除看半衰期，故D也错
+            </p>
+            <p>4、表观分布浓度的意义①:估计药物的分布范围②:估计药物在体内停留时间长短(Vd大，主要分布于组织中，停留长)③计算产生的期望药物浓度</p>
+            <p>5、还可以反映药物排泄速度，Vd小，排泄快</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>38/44. 属于药动学参数的有： 【多选题】</p>
+        <p>A.一级动力学</p>
+        <p>B.半衰期</p>
+        <p>C.表观分布容积</p>
+        <p>D.二室模型</p>
+        <p>E.生物利用度</p>
+        <div class="divXSDA" id="showAndHideButton38" onclick="showAndHideButton('data38','showAndHideButton38')">显示答案</div>
+        <div class="datas" id="data38" style="display: none;">
+            <p id='ptockda'>参考答案：BCE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、参数啊 ，又不是名词，一级动力学和二室模型都不是参数啊</p>
+            <p>2、药动学参数，1.药―时曲线下的面积，2.生物利用度，3表观分布容积4.半衰期5清除率</p>
+            <p>3、峰浓度和达峰时间曲线下面积生物利用度 表观分布容积 消除速率常数 消除半衰期 清除率</p>
+            <p>4、P17，重要参数有半衰期，清除率，表观分布容积，生物利用度</p>
+            <p>5、看课本上的分节就知道了</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>39/44. 经生物转化后的药物： 【多选题】</p>
+        <p>A.可具有活性</p>
+        <p>B.有利于肾小管重吸收</p>
+        <p>C.脂溶性增加</p>
+        <p>D.失去药理活性</p>
+        <p>E.极性升高</p>
+        <div class="divXSDA" id="showAndHideButton39" onclick="showAndHideButton('data39','showAndHideButton39')">显示答案</div>
+        <div class="datas" id="data39" style="display: none;">
+            <p id='ptockda'>参考答案：ADE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、D应表述为 可失去药理活性 ，则D选项无争议。原题目的表述不严谨
+            </p>
+            <p>2、生物转化后极性增高，水溶性增大，利于排泄</p>
+            <p>3、D项课本中说是可能减弱或丧失，</p>
+            <p>4、D应该加个“可”字。</p>
+            <p>5、极性升高，脂溶性降低，疏水性升高，不易吸收。</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>40/44. 药物消除t1/2的影响因素有： 【多选题】</p>
+        <p>A.首关消除</p>
+        <p>B.血浆蛋白结合率</p>
+        <p>C.表观分布容积</p>
+        <p>D.血浆清除率</p>
+        <p>E.曲线下面积</p>
+        <div class="divXSDA" id="showAndHideButton40" onclick="showAndHideButton('data40','showAndHideButton40')">显示答案</div>
+        <div class="datas" id="data40" style="display: none;">
+            <p id='ptockda'>参考答案：CD</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、t½＝0.693/ke ke＝CL/vd 所以与 表观分布容积（vd）和清除率（cl）有关</p>
+            <p>2、B与吸收有关 是吸收的参数 CD是消除参数 </p>
+            <p>3、t1/2关注的是血浆药浓度，血药浓度先快速下降因为分布，然后缓慢下降因为消除。所以选CD</p>
+            <p>4、A与吸收有关，B与分布有关啦？？？</p>
+            <p>5、为什么？可以解释一下吗？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>41/44. 药物与血浆蛋白结合的特点是： 【多选题】</p>
+        <p>A.暂时失去药理活性</p>
+        <p>B.具可逆性</p>
+        <p>C.特异性低</p>
+        <p>D.结合点有限</p>
+        <p>E.两药间可产生竞争性置换作用</p>
+        <div class="divXSDA" id="showAndHideButton41" onclick="showAndHideButton('data41','showAndHideButton41')">显示答案</div>
+        <div class="datas" id="data41" style="display: none;">
+            <p id='ptockda'>参考答案：ABCDE</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、游离型才可发挥作用，故暂时失去药理活性</p>
+            <p>2、特异性是指血浆蛋白可以与大多数的药物结合的意思吧</p>
+            <p>3、书上8页吧</p>
+            <p>4、药物与受体结合：可逆性 、 非特异性 、 延缓代谢 、药物暂时失去药理活</p>
+            <p>5、C why？？？</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>42/44. 表观分布容积 </p>
+        <div class="divXSDA" id="showAndHideButton42" onclick="showAndHideButton('data42','showAndHideButton42')">显示答案</div>
+        <div class="datas" id="data42" style="display: none;">
+            <p id='ptockda'>参考答案：药物在体内达到平衡时，按血药浓度推算体内药物总量在理论上应占有的体液容积</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、血浆和组织内药物分布达到平衡时，体内药物按血浆浓度在体内分布所需要的体液容积</p>
+            <p>2、啊 背不下来！</p>
+            <p>3、不能回答的</p>
+            <p>4、。。。</p>
+            <p>5、静脉注射一定量(A)药物进去达到动态平衡后，按测得的血浆药物浓度计算体内的药物总量应该占有体液的容积量。V=A/C=FD/C</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>43/44. 生物利用度 </p>
+        <div class="divXSDA" id="showAndHideButton43" onclick="showAndHideButton('data43','showAndHideButton43')">显示答案</div>
+        <div class="datas" id="data43" style="display: none;">
+            <p id='ptockda'>参考答案：药物吸收经过肝、肠药物代谢酶首过消除后进入体循环的相对份量及速度。</p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、药物经血管外途径给药后吸收进入全身血液循环的相对量</p>
+            <p>2、给予一定量的药物后能被吸收入体循环的药物相对量及速度</p>
+            <p>3、为什么要加个速度</p>
+            <p>4、药物经血管外途径给药后吸收进入全身血液循环的相对量。</p>
+            <p>5、药物吸收经过肝、肠药物代谢酶首过消除后进入体循环的相对份量及速度</p>
+        </div>
+    </div>
+    <div class='form-label'>
+        <p>44/44. 肝药酶的活性对药物作用的影响 </p>
+        <div class="divXSDA" id="showAndHideButton44" onclick="showAndHideButton('data44','showAndHideButton44')">显示答案</div>
+        <div class="datas" id="data44" style="display: none;">
+            <p id='ptockda'>参考答案：1.肝药酶活性提高，可以加速药物的代谢，使药物的作用减弱或产生耐受性。如苯巴比妥能诱导肝药酶的活性，可以加速自身的代谢，产生耐受性。诱导肝药酶的活性，也可以加速其它药物(如双香豆素)的代谢，使后者的作用减弱。 2.肝药酶的活性降低，可使药物的生物转化减慢，血浆药物浓度提高和药理效应增强。
+            </p>
+            <p id='ptopl'>解释与评论:</p>
+            <p>1、原来肝药酶是个坏东西，一直记着肝药酶诱导剂增强作用，涨姿势了。</p>
+            <p>2、异烟肼降低肝药酶活性，巴比妥、苯妥英钠增加</p>
+            <p>3、1.肝药酶活性提高，可以加速药物的代谢，使药物的作用减弱或产生耐受性。如苯巴比妥能诱导肝药酶的活性，可以加速自身的代谢，产生耐受性。诱导肝药酶的活性，也可以加速其它药物(如双香豆素)的代谢，使后者的作用减弱。 2.肝药酶的活性降低，可使药物的生物转化减慢，血浆药物浓度提高和药理效应增强。</p>
+            <p>4、大家都评论我没看懂，反正就是觉得，都有双面作用吧。我看书也是理解了一阵子</p>
+            <p>5、肝药酶诱导剂：两本卡马力（苯巴比妥、苯妥英钠、卡马西平、利福平） 肝药酶抑制剂：红霉素、氯霉素、环孢类、异烟肼、唑类、西咪替丁
+            </p>
+        </div>
+    </div>
+    </div>
+    <div id="div-top"></div>
+    <div id='tm-and-but'>
+        <div id='numToClass' style="display: none;"></div>
+        <div id='div-but'>
+            <div class="butctrl" id='shownumToClass' onclick="hideTop()">展开题表</div>
+            <div class="butctrl" id='showAllDa' onclick="showAllDa()">显示答案</div>
+            <div class="butctrl" id='but-show-all' onclick="go_show_all()">单题</div>
+            <div class="butctrl" id='butback' onclick="go_back()">上题</div>
+            <div class="butctrl" id='butnext' onclick="go_next()">下题</div>
+        </div>
+    </div>
+    <div title='点击关闭' class="bottom-qrcode" style="display: none;" onclick="showQrcode()">
+        <p>微信关注</p>
+        <div class="panel-body">
+            <img alt="微信关注" width="128" height="128" src="../../img/imgJZCRLX.jpg">
+        </div>
+    </div>
+    <div id="showTopBack">
+        <a title='返回目录' onclick="goback()" class="fa fa-angle-double-left -myBorder-"></a><br/>
+        <a title='回到页面顶端' onclick="goTop()" class="fa fa-angle-double-up -myBorder-"></a><br/>
+        <a title='微信扫码关注，获取更多资源' onclick="showQrcode()" class="fa fa-qrcode -myBorder-" ></a>        
+    </div>
+</body>
+
+</html>
